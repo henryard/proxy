@@ -30,6 +30,3 @@ DOMAIN-SUFFIX,uaa.com
 DOMAIN-SUFFIX,taiav.com
 DOMAIN-SUFFIX,javmove.com
 DOMAIN-SUFFIX,pandalive.co.kr
-USER-AGENT,*com.google.ios.youtubemusic*
-USER-AGENT,YouTubeMusic*
-USER-AGENT,com.google.ios.youtubemusic*
