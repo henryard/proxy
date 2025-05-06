@@ -42,13 +42,13 @@
 // const inArg = {'blkey':'iplc+GPT>GPTnewName+NF+IPLC', 'flag':true };
 const inArg = $arguments; // console.log(inArg)
 const nx = inArg.nx || false,
-  bl = inArg.bl || true,
+  bl = inArg.bl || false,
   nf = inArg.nf || false,
   key = inArg.key || false,
-  blgd = inArg.blgd || true,
-  blpx = inArg.blpx || true,
-  blnx = inArg.blnx || true,
-  numone = inArg.one || true,
+  blgd = inArg.blgd || false,
+  blpx = inArg.blpx || false,
+  blnx = inArg.blnx || false,
+  numone = inArg.one || false,
   debug = inArg.debug || false,
   clear = inArg.clear || false,
   addflag = inArg.flag || false,
@@ -295,7 +295,7 @@ function operator(pro) {
 }
 
 // prettier-ignore
-function getList(arg) { switch (arg) { case 'us': return EN; case 'gq': return FG; case 'quan': return QC; default: return EN; }}
+function getList(arg) { switch (arg) { case 'us': return EN; case 'gq': return FG; case 'quan': return QC; default: return ZH; }}
 // prettier-ignore
 function jxh(e) { const n = e.reduce((e, n) => { const t = e.find((e) => e.name === n.name); if (t) { t.count++; t.items.push({ ...n, name: `${n.name}${XHFGF}${t.count.toString().padStart(2, "0")}`, }); } else { e.push({ name: n.name, count: 1, items: [{ ...n, name: `${n.name}${XHFGF}01` }], }); } return e; }, []);const t=(typeof Array.prototype.flatMap==='function'?n.flatMap((e) => e.items):n.reduce((acc, e) => acc.concat(e.items),[])); e.splice(0, e.length, ...t); return e;}
 // prettier-ignore
