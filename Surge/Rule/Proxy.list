@@ -1,4 +1,5 @@
 DOMAIN-SUFFIX,taoqitu.me
+DOMAIN-SUFFIX,linux.do
 
 DOMAIN-SUFFIX,jable.tv
 DOMAIN-SUFFIX,stripchat.com
@@ -30,8 +31,6 @@ DOMAIN-SUFFIX,uaa.com
 DOMAIN-SUFFIX,taiav.com
 DOMAIN-SUFFIX,javmove.com
 DOMAIN-SUFFIX,pandalive.co.kr
-
-USER-AGENT,*YouTubeMusic*
 USER-AGENT,*com.google.ios.youtubemusic*
 USER-AGENT,YouTubeMusic*
 USER-AGENT,com.google.ios.youtubemusic*
