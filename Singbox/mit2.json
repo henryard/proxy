@@ -41,13 +41,6 @@
                 "address": "fakeip"
             },
             {
-                "tag": "DNS-GOOGLEFCM",
-                "address": "https://cloudflare-dns.com/dns-query",
-                "address_resolver": "DNS-RESOLVER",
-                "strategy": "ipv4_only",
-                "detour": "☁️ GoogleFCM"
-            },
-            {
                 "tag": "DNS-GOOGLE",
                 "address": "https://cloudflare-dns.com/dns-query",
                 "address_resolver": "DNS-RESOLVER",
