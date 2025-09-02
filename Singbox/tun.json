@@ -159,7 +159,7 @@
       "tag":"BiliBili",
       "type":"selector",
       "outbounds":[
-        "direct",
+        "全球直连",
         "香港节点",
         "台湾节点"
       ]
@@ -225,7 +225,7 @@
       "tag":"Apple",
       "type":"selector",
       "outbounds":[
-        "direct",
+        "全球直连",
         "香港节点",
         "台湾节点",
         "日本节点",
@@ -238,7 +238,7 @@
       "tag":"Microsoft",
       "type":"selector",
       "outbounds":[
-        "direct",
+        "全球直连",
         "香港节点",
         "台湾节点",
         "日本节点",
@@ -251,7 +251,7 @@
       "tag":"Games",
       "type":"selector",
       "outbounds":[
-        "direct",
+        "全球直连",
         "香港节点",
         "台湾节点",
         "日本节点",
