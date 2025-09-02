@@ -595,7 +595,8 @@
             "filter":[
                 {"action":"exclude","keywords":["网站|地址|剩余|过期|时间|有效"]}
             ],
-            "url": "https://cp.cloudflare.com"
+            "url": "https://cp.cloudflare.com",
+            "method": "tcping"
         },
         {
             "tag": "🇭🇰 香港节点",
