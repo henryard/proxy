@@ -24,14 +24,20 @@
             {
                 "tag": "proxyDns",
                 "address": "https://dns.google/dns-query",
-                "address_resolver": "defaultDns",
+                "address_resolver": "bootstrapDns",
                 "address_strategy": "ipv4_only",
                 "detour": "🔰 节点选择"
             },
             {
                 "tag": "localDns",
                 "address": "223.5.5.5",
-                "address_resolver": "defaultDns",
+                "address_resolver": "bootstrapDns",
+                "address_strategy": "ipv4_only",
+                "detour": "🎯 全球直连"
+            },
+            {
+                "tag": "bootstrapDns",
+                "address": "1.1.1.1",
                 "address_strategy": "ipv4_only",
                 "detour": "🎯 全球直连"
             },
@@ -66,7 +72,9 @@
     "inbounds": [
         {
             "type": "tun",
-            "address": "172.19.0.1/30",
+            "tag": "tun-in",
+            "interface_name": "tun0",
+            "inet4_address": "172.19.0.1/30",
             "mtu": 9000,
             "auto_route": true,
             "sniff": true,
@@ -81,6 +89,7 @@
         },
         {
             "type": "mixed",
+            "tag": "mixed-in",
             "listen": "127.0.0.1",
             "listen_port": 2080,
             "sniff": true,
@@ -254,17 +263,7 @@
         {
             "tag": "♻️ 自动选择",
             "type": "urltest",
-            "outbounds": [
-                "{all}"
-            ],
-            "filter": [
-                {
-                    "action": "exclude",
-                    "keywords": [
-                        "网站|地址|剩余|过期|时间|有效"
-                    ]
-                }
-            ],
+            "outbounds": [],
             "url": "http://www.gstatic.com/generate_204",
             "interval": "10m",
             "tolerance": 50
@@ -272,92 +271,32 @@
         {
             "tag": "🇭🇰 香港节点",
             "type": "selector",
-            "outbounds": [
-                "{all}"
-            ],
-            "filter": [
-                {
-                    "action": "include",
-                    "keywords": [
-                        "🇭🇰|HK|hk|香港|港|HongKong|Hong Kong"
-                    ]
-                }
-            ]
+            "outbounds": []
         },
         {
             "tag": "🇨🇳 台湾节点",
             "type": "selector",
-            "outbounds": [
-                "{all}"
-            ],
-            "filter": [
-                {
-                    "action": "include",
-                    "keywords": [
-                        "🇹🇼|TW|tw|台湾|Taiwan"
-                    ]
-                }
-            ]
+            "outbounds": []
         },
         {
             "tag": "🇯🇵 日本节点",
             "type": "selector",
-            "outbounds": [
-                "{all}"
-            ],
-            "filter": [
-                {
-                    "action": "include",
-                    "keywords": [
-                        "🇯🇵|日本|JP|jp|Japan"
-                    ]
-                }
-            ]
+            "outbounds": []
         },
         {
             "tag": "🇰🇷 韩国节点",
             "type": "selector",
-            "outbounds": [
-                "{all}"
-            ],
-            "filter": [
-                {
-                    "action": "include",
-                    "keywords": [
-                        "🇰🇷|韩国|KR|kr|Korea"
-                    ]
-                }
-            ]
+            "outbounds": []
         },
         {
             "tag": "🇸🇬 狮城节点",
             "type": "selector",
-            "outbounds": [
-                "{all}"
-            ],
-            "filter": [
-                {
-                    "action": "include",
-                    "keywords": [
-                        "🇸🇬|狮城|新加坡|SG|sg|Singapore"
-                    ]
-                }
-            ]
+            "outbounds": []
         },
         {
             "tag": "🇺🇲 美国节点",
             "type": "selector",
-            "outbounds": [
-                "{all}"
-            ],
-            "filter": [
-                {
-                    "action": "include",
-                    "keywords": [
-                        "🇺🇸|US|us|美国|美|United States"
-                    ]
-                }
-            ]
+            "outbounds": []
         },
         {
             "tag": "🚫 全球拦截",
@@ -374,16 +313,12 @@
         {
             "tag": "👋 手动切换",
             "type": "selector",
-            "outbounds": [
-                "{all}"
-            ]
+            "outbounds": []
         },
         {
             "tag": "🌎 GLOBAL",
             "type": "selector",
-            "outbounds": [
-                "{all}"
-            ]
+            "outbounds": []
         },
         {
             "tag": "🎯 全球直连",
@@ -399,11 +334,8 @@
         "final": "🐠 漏网之鱼",
         "rules": [
             {
-                "action": "sniff"
-            },
-            {
                 "protocol": "dns",
-                "action": "hijack-dns"
+                "outbound": "dns-out"
             },
             {
                 "domain": [
@@ -513,13 +445,12 @@
                 "outbound": "🎯 全球直连"
             }
         ],
-
         "rule_set": [
             {
                 "tag": "geosite-chat",
                 "type": "remote",
                 "format": "binary",
-                "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs",
+                "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs",
                 "download_detour": "🔰 节点选择"
             },
             {
@@ -620,7 +551,6 @@
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/private.srs",
                 "download_detour": "🔰 节点选择"
             },
-
             {
                 "tag": "geoip-google",
                 "type": "remote",
