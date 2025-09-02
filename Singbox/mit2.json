@@ -595,12 +595,9 @@
             "filter":[
                 {"action":"exclude","keywords":["网站|地址|剩余|过期|时间|有效"]}
             ],
-            "health_check": {
-                "type": "tcp",
-                "destination": "1.1.1.1",
-                "port": 443,
-                "interval": "5m"
-            }
+            "url": "http://www.gstatic.com/generate_204",
+            "interval": "30s",
+            "tolerance": 50
         },
         {
             "tag": "🇭🇰 香港节点",
