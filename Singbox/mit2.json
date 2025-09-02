@@ -588,21 +588,18 @@
         },
         {
             "tag": "♻️ 自动选择",
-            "type": "loadbalance",
+            "type": "urltest",
             "outbounds": [
                 "{all}"
             ],
             "filter":[
                 {"action":"exclude","keywords":["网站|地址|剩余|过期|时间|有效"]}
             ],
-            "strategy": {
-                "type": "least_latency",
-                "health_check": {
-                    "type": "tcp",
-                    "destination": "1.1.1.1",
-                    "port": 443,
-                    "interval": "5m"
-                }
+            "health_check": {
+                "type": "tcp",
+                "destination": "1.1.1.1",
+                "port": 443,
+                "interval": "5m"
             }
         },
         {
