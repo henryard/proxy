@@ -44,22 +44,22 @@
             },
             {
                 "clash_mode": "direct",
-                "server": "localDns"
+                "server": "dns_direct"
             },
             {
                 "clash_mode": "global",
-                "server": "proxyDns"
+                "server": "dns_proxy"
             },
             {
                 "rule_set": "geosite-cn",
-                "server": "localDns"
+                "server": "dns_direct"
             },
             {
                 "rule_set": "geosite-geolocation-!cn",
-                "server": "proxyDns"
+                "server": "dns_proxy"
             }
         ],
-        "final": "localDns",
+        "final": "dns_proxy",
         "strategy": "ipv4_only"
     },
     "inbounds": [
