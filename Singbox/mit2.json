@@ -90,13 +90,6 @@
                 "server": "DNS-GOOGLE"
             },
             {
-                "rule_set": [
-                    "GoogleFCM-Site"
-                ],
-                "action": "route",
-                "server": "DNS-GOOGLEFCM"
-            },
-            {
                 "query_type": [
                     "A",
                     "AAAA"
