@@ -102,6 +102,13 @@
         ],
         "final": "DNS-PROXY"
     },
+    "health_check": {
+        "tag": "tcp-checker",
+        "type": "tcp",
+        "destination": "1.1.1.1",
+        "port": 443,
+        "interval": "5m"
+    },
     "route": {
         "rule_set": [
             {
@@ -595,8 +602,10 @@
             "filter":[
                 {"action":"exclude","keywords":["网站|地址|剩余|过期|时间|有效"]}
             ],
-            "url": "https://cp.cloudflare.com",
-            "method": "tcping"
+            "strategy": {
+                "type": "least_latency",
+                "health_check": "tcp-checker"
+            }
         },
         {
             "tag": "🇭🇰 香港节点",
