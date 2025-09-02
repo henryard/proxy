@@ -62,7 +62,8 @@
                     "jsdmirror.cn",
                     "jsdmirror.com",
                     "fastly.jsdelivr.net",
-                    "converter-mitce.sakuraikaede.com"
+                    "converter-mitce.sakuraikaede.com",
+                    "cloudflare.com"
                 ],
                 "action": "route",
                 "server": "DNS-DIRECT"
