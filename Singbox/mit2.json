@@ -167,13 +167,6 @@
                 "download_detour": "🎯 全球直连"
             },
             {
-                "tag": "Disney-Site",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/disney.srs",
-                "download_detour": "🎯 全球直连"
-            },
-            {
                 "tag": "Microsoft-Site",
                 "type": "remote",
                 "format": "binary",
@@ -391,13 +384,6 @@
             },
             {
                 "rule_set": [
-                    "Disney-Site"
-                ],
-                "action": "route",
-                "outbound": "🎈 Disney"
-            },
-            {
-                "rule_set": [
                     "Microsoft-Site"
                 ],
                 "action": "route",
@@ -586,21 +572,6 @@
                 "🇰🇷 韩国节点",
                 "🇸🇬 狮城节点",
                 "🇺🇸 美国节点",
-                "👋 手动切换"
-            ],
-            "default": "🔰 默认代理"
-        },
-        {
-            "tag": "🎈 Disney",
-            "type": "selector",
-            "outbounds": [
-                "🔰 默认代理",
-                "🇭🇰 香港节点",
-                "🇨🇳 台湾节点",
-                "🇯🇵 日本节点",
-                "🇰🇷 韩国节点",
-                "🇸🇬 狮城节点",
-                "🇺🇲 美国节点",
                 "👋 手动切换"
             ],
             "default": "🔰 默认代理"
