@@ -102,13 +102,6 @@
         ],
         "final": "DNS-PROXY"
     },
-    "health_check": {
-        "tag": "tcp-checker",
-        "type": "tcp",
-        "destination": "1.1.1.1",
-        "port": 443,
-        "interval": "5m"
-    },
     "route": {
         "rule_set": [
             {
@@ -595,7 +588,7 @@
         },
         {
             "tag": "♻️ 自动选择",
-            "type": "urltest",
+            "type": "loadbalance",
             "outbounds": [
                 "{all}"
             ],
@@ -604,7 +597,12 @@
             ],
             "strategy": {
                 "type": "least_latency",
-                "health_check": "tcp-checker"
+                "health_check": {
+                    "type": "tcp",
+                    "destination": "1.1.1.1",
+                    "port": 443,
+                    "interval": "5m"
+                }
             }
         },
         {
