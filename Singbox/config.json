@@ -69,19 +69,10 @@
                     "dexlos.com",
                     "jsdmirror.cn",
                     "jsdmirror.com",
-                    "fastly.jsdelivr.net",
-                    "cloudflare.com"
+                    "fastly.jsdelivr.net"
                 ],
                 "action": "route",
                 "server": "DNS-DIRECT"
-            },
-            {
-                "domain_keyword": [
-                    "msftconnecttest.com",
-                    "msftncsi.com"
-                ],
-                "action": "route",
-                "server": "DNS-PROXY"
             },
             {
                 "domain_keyword": [
