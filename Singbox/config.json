@@ -309,7 +309,8 @@
             },
             {
                 "domain_keyword": [
-                    "vercel.app"
+                    "vercel.app",
+                    "ping0.cc"
                 ],
                 "action": "route",
                 "outbound": "🔰 默认代理"
