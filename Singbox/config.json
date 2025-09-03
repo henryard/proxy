@@ -55,6 +55,14 @@
         },
         "rules": [
             {
+                "clash_mode": "direct",
+                "server": "DNS-DIRECT"
+            },
+            {
+                "clash_mode": "global",
+                "server": "DNS-PROXY"
+            },
+            {
                 "domain_suffix": [
                     "ntp.aliyun.com",
                     "ddns-link-b5.uk",
@@ -62,7 +70,6 @@
                     "jsdmirror.cn",
                     "jsdmirror.com",
                     "fastly.jsdelivr.net",
-                    "converter-mitce.sakuraikaede.com",
                     "cloudflare.com"
                 ],
                 "action": "route",
@@ -271,6 +278,14 @@
                 "action": "hijack-dns"
             },
             {
+                "clash_mode": "direct",
+                "outbound": "🎯 全球直连"
+            },
+            {
+                "clash_mode": "global",
+                "outbound": "🌎 GLOBAL"
+            },
+            {
                 "ip_is_private": true,
                 "action": "route",
                 "outbound": "🎯 全球直连"
@@ -296,16 +311,13 @@
             },
             {
                 "domain": [
-                    "ntp.aliyun.com",
-                    "converter-mitce.sakuraikaede.com"
+                    "ntp.aliyun.com"
                 ],
                 "action": "route",
                 "outbound": "🎯 全球直连"
             },
             {
                 "domain_keyword": [
-                    "msftconnecttest.com",
-                    "msftncsi.com",
                     "vercel.app"
                 ],
                 "action": "route",
