@@ -13,24 +13,30 @@
     "dns": {
         "servers": [
             {
-                "tag": "DNS-RESOLVER",
-                "address": "223.5.5.5",
-                "strategy": "ipv4_only",
+                "tag": "DNS-BOOTSTRAP",
+                "address": "1.1.1.1",
+                "detour": "🎯 全球直连"
+            },
+            {
+                "tag": "DNS-DIRECT",
+                "address": "https://dns.alidns.com/dns-query",
+                "address_resolver": "DNS-BOOTSTRAP",
+                "strategy": "prefer_ipv4",
                 "detour": "🎯 全球直连"
             },
             {
                 "tag": "DNS-PROXY",
                 "address": "https://cloudflare-dns.com/dns-query",
-                "address_resolver": "DNS-RESOLVER",
-                "strategy": "ipv4_only",
+                "address_resolver": "DNS-BOOTSTRAP",
+                "strategy": "prefer_ipv4",
                 "detour": "🔰 默认代理"
             },
             {
-                "tag": "DNS-DIRECT",
-                "address": "https://dns.alidns.com/dns-query",
-                "address_resolver": "DNS-RESOLVER",
-                "strategy": "ipv4_only",
-                "detour": "🎯 全球直连"
+                "tag": "DNS-GOOGLE",
+                "address": "https://dns.google/dns-query",
+                "address_resolver": "DNS-BOOTSTRAP",
+                "strategy": "prefer_ipv4",
+                "detour": "🔍 Google"
             },
             {
                 "tag": "DNS-BLOCK",
@@ -39,13 +45,6 @@
             {
                 "tag": "DNS-FAKEIP",
                 "address": "fakeip"
-            },
-            {
-                "tag": "DNS-GOOGLE",
-                "address": "https://cloudflare-dns.com/dns-query",
-                "address_resolver": "DNS-RESOLVER",
-                "strategy": "ipv4_only",
-                "detour": "🔍 Google"
             }
         ],
         "fakeip": {
@@ -54,6 +53,10 @@
             "inet6_range": "fc00::/18"
         },
         "rules": [
+            {
+                "rule_set": "geosite-adblock",
+                "server": "DNS-BLOCK"
+            },
             {
                 "clash_mode": "direct",
                 "server": "DNS-DIRECT"
@@ -71,31 +74,36 @@
                     "jsdmirror.com",
                     "fastly.jsdelivr.net"
                 ],
-                "action": "route",
                 "server": "DNS-DIRECT"
             },
             {
                 "domain_keyword": [
                     "googleapis"
                 ],
-                "action": "route",
                 "server": "DNS-GOOGLE"
+            },
+            {
+                "rule_set": [
+                    "geosite-cn",
+                    "geosite-private"
+                ],
+                "server": "DNS-DIRECT"
+            },
+            {
+                "outbound": "🎯 全球直连",
+                "server": "DNS-DIRECT"
+            },
+            {
+                "outbound": "🚫 全球拦截",
+                "server": "DNS-BLOCK"
             },
             {
                 "query_type": [
                     "A",
                     "AAAA"
                 ],
-                "action": "route",
                 "server": "DNS-FAKEIP",
                 "disable_cache": true
-            },
-            {
-                "outbound": [
-                    "🎯 全球直连"
-                ],
-                "action": "route",
-                "server": "DNS-DIRECT"
             }
         ],
         "final": "DNS-PROXY"
@@ -238,21 +246,6 @@
         ],
         "rules": [
             {
-                "inbound": [
-                    "dns-in"
-                ],
-                "action": "hijack-dns"
-            },
-            {
-                "inbound": [
-                    "dns-in"
-                ],
-                "action": "route",
-                "override_address": "8.8.8.8",
-                "override_port": 53,
-                "outbound": "🎯 全球直连"
-            },
-            {
                 "port": 53,
                 "action": "hijack-dns"
             },
@@ -296,9 +289,7 @@
                         ]
                     }
                 ],
-                "action": "reject",
-                "method": "default",
-                "no_drop": false
+                "action": "reject"
             },
             {
                 "domain": [
@@ -522,7 +513,6 @@
             ],
             "default": "🔰 默认代理"
         },
-
         {
             "tag": "🎵 Spotify",
             "type": "selector",
@@ -597,9 +587,12 @@
             "outbounds": [
                 "{all}"
             ],
-            "filter":[
-                {"action":"exclude","keywords":["网站|地址|剩余|过期|时间|有效|永久|官网|到期|重置|套餐"]}
-            ],
+            "filter": {
+                "action": "exclude",
+                "keywords": [
+                    "网站|地址|剩余|过期|时间|有效|永久|官网|到期|重置|套餐"
+                ]
+            },
             "url": "http://www.gstatic.com/generate_204",
             "interval": "30s",
             "tolerance": 50
@@ -610,9 +603,12 @@
             "outbounds": [
                 "{all}"
             ],
-            "filter":[
-                {"action":"include","keywords":["🇭🇰|HK|hk|香港|港|香港节点"]}
-            ]
+            "filter": {
+                "action": "include",
+                "keywords": [
+                    "🇭🇰|HK|hk|香港|港|香港节点"
+                ]
+            }
         },
         {
             "tag": "🇨🇳 台湾节点",
@@ -620,9 +616,12 @@
             "outbounds": [
                 "{all}"
             ],
-            "filter":[
-                {"action":"include","keywords":["🇹🇼|TW|tw|台湾节点|臺灣|台|Taiwan"]}
-            ]
+            "filter": {
+                "action": "include",
+                "keywords": [
+                    "🇹🇼|TW|tw|台湾节点|臺灣|台|Taiwan"
+                ]
+            }
         },
         {
             "tag": "🇯🇵 日本节点",
@@ -630,9 +629,12 @@
             "outbounds": [
                 "{all}"
             ],
-            "filter":[
-                {"action":"include","keywords":["🇯🇵|JP|jp|日本|日|日本节点"]}
-            ]
+            "filter": {
+                "action": "include",
+                "keywords": [
+                    "🇯🇵|JP|jp|日本|日|日本节点"
+                ]
+            }
         },
         {
             "tag": "🇰🇷 韩国节点",
@@ -640,9 +642,12 @@
             "outbounds": [
                 "{all}"
             ],
-            "filter":[
-                {"action":"include","keywords":["🇰🇷|KR|kr|韩国|韩国节点"]}
-            ]
+            "filter": {
+                "action": "include",
+                "keywords": [
+                    "🇰🇷|KR|kr|韩国|韩国节点"
+                ]
+            }
         },
         {
             "tag": "🇸🇬 狮城节点",
@@ -650,9 +655,12 @@
             "outbounds": [
                 "{all}"
             ],
-            "filter":[
-                {"action":"include","keywords":["🇸🇬|SG|sg|新加坡|狮|狮城节点"]}
-            ]
+            "filter": {
+                "action": "include",
+                "keywords": [
+                    "🇸🇬|SG|sg|新加坡|狮|狮城节点"
+                ]
+            }
         },
         {
             "tag": "🇺🇸 美国节点",
@@ -660,9 +668,12 @@
             "outbounds": [
                 "{all}"
             ],
-            "filter":[
-                {"action":"include","keywords":["🇺🇸|US|us|美国|美|United States"]}
-            ]
+            "filter": {
+                "action": "include",
+                "keywords": [
+                    "🇺🇸|US|us|美国|美|United States"
+                ]
+            }
         },
         {
             "tag": "👋 手动切换",
