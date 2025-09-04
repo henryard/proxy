@@ -491,7 +491,6 @@
         ],
         "final": "🔰 默认代理",
         "auto_detect_interface": true,
-        "override_android_vpn": true,
         "default_mark": 0
     },
     "inbounds": [
