@@ -163,8 +163,7 @@
 		}],
 		"url": "https://www.apple.com/library/test/success.html",
 		"interval": "10m",
-		"tolerance": 50,
-		"download_detour": "🎯 DIRECT"
+		"tolerance": 50
 	},
 	{
 		"tag": "🇨🇳 TW",
@@ -176,8 +175,7 @@
 		}],
 		"url": "https://www.apple.com/library/test/success.html",
 		"interval": "10m",
-		"tolerance": 50,
-		"download_detour": "🎯 DIRECT"
+		"tolerance": 50
 	},
 	{
 		"tag": "🇯🇵 JP",
@@ -189,8 +187,7 @@
 		}],
 		"url": "https://www.apple.com/library/test/success.html",
 		"interval": "10m",
-		"tolerance": 50,
-		"download_detour": "🎯 DIRECT"
+		"tolerance": 50
 	},
 	{
 		"tag": "🇰🇷 KR",
@@ -202,8 +199,7 @@
 		}],
 		"url": "https://www.apple.com/library/test/success.html",
 		"interval": "10m",
-		"tolerance": 50,
-		"download_detour": "🎯 DIRECT"
+		"tolerance": 50
 	},
 	{
 		"tag": "🇸🇬 SG",
@@ -215,8 +211,7 @@
 		}],
 		"url": "https://www.apple.com/library/test/success.html",
 		"interval": "10m",
-		"tolerance": 50,
-		"download_detour": "🎯 DIRECT"
+		"tolerance": 50
 	},
 	{
 		"tag": "🇺🇸 US",
@@ -228,8 +223,7 @@
 		}],
 		"url": "https://www.apple.com/library/test/success.html",
 		"interval": "10m",
-		"tolerance": 50,
-		"download_detour": "🎯 DIRECT"
+		"tolerance": 50
 	},
 	{
 		"tag": "♻️ Auto",
@@ -241,8 +235,7 @@
 		}],
 		"url": "https://www.apple.com/library/test/success.html",
 		"interval": "10m",
-		"tolerance": 50,
-		"download_detour": "🎯 DIRECT"
+		"tolerance": 50
 	},
 	{
 		"tag": "👋 Select",
