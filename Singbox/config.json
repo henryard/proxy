@@ -88,18 +88,6 @@
                 "server": "DNS-DIRECT"
             },
             {
-                "rule_set": [
-                    "geosite-cn"
-                ],
-                "server": "DNS-DIRECT"
-            },
-            {
-                "rule_set": [
-                    "geosite-private"
-                ],
-                "server": "DNS-DIRECT"
-            },
-            {
                 "domain_suffix": [
                     "openai.com",
                     "anthropic.com",
@@ -137,6 +125,18 @@
                     "googleapis"
                 ],
                 "server": "DNS-GOOGLE"
+            },
+            {
+                "rule_set": [
+                    "geosite-cn"
+                ],
+                "server": "DNS-DIRECT"
+            },
+            {
+                "rule_set": [
+                    "geosite-private"
+                ],
+                "server": "DNS-DIRECT"
             },
             {
                 "query_type": [
