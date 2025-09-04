@@ -67,7 +67,7 @@
             },
             {
                 "clash_mode": "global",
-            __ "server": "DNS-PROXY"
+                "server": "DNS-PROXY"
             },
             {
                 "rule_set": [
