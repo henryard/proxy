@@ -81,7 +81,7 @@
 		"disable_expire": false,
 		"fakeip": {
 			"enabled": true,
-			"inet4": "172.19.1.0/24",
+			"inet4_range": "172.19.1.0/24",
 			"strict": true,
 			"independent_route": true
 		}
