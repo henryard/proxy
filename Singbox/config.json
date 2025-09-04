@@ -702,7 +702,7 @@
             "filter": [
                 {
                     "action": "include",
-                    "keywords": ["🇭🇰|HK|hk|Hong Kong|香港|港"]
+                    "keywords": "(?i)(?:🇭🇰|(?:^|[\\s_-])(HK)(?:(?=$|[\\s_-])|(?:[-_0-9]+(?=$|[\\s_-])))|(?:^|[\\s_-])[-_0-9]*HK(?=$|[\\s_-])|香港|Hong Kong|HongKong)"
                 }
             ],
             "url": "http://www.gstatic.com/generate_204",
