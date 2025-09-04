@@ -175,7 +175,7 @@
                     "geosite-private"
                 ],
                 "server": "DNS-DIRECT"
-            },
+            }
         ],
         "final": "DNS-PROXY",
         "strategy": "prefer_ipv4",
