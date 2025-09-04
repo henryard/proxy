@@ -33,7 +33,7 @@
       },
       {
         "tag": "tencent",
-        "address": "https://119.29.29.29/dns-query",
+        "address": "https://119.29.29.29",
         "detour": "🎯 全球直连"
       },
       {
