@@ -253,12 +253,16 @@
     {
       "tag": "🌎 GLOBAL",
       "type": "selector",
-      "outbounds": []
+      "outbounds": [
+          "{all}"
+        ]
     },
     {
       "tag": "♻️ 自动选择",
       "type": "urltest",
-      "outbounds": [],
+      "outbounds": [
+          "{all}"
+        ],
       "filter": [
                 {
                     "action": "exclude",
@@ -272,7 +276,9 @@
     {
       "tag": "🇭🇰 香港节点",
       "type": "urltest",
-      "outbounds": [],
+      "outbounds": [
+          "{all}"
+        ],
       "filter": [
         {
           "action": "include",
@@ -288,7 +294,9 @@
     {
       "tag": "🇨🇳 台湾节点",
       "type": "urltest",
-      "outbounds": [],
+      "outbounds": [
+          "{all}"
+        ],
       "filter": [
         {
           "action": "include",
@@ -304,7 +312,9 @@
     {
       "tag": "🇯🇵 日本节点",
       "type": "urltest",
-      "outbounds": [],
+      "outbounds": [
+          "{all}"
+        ],
       "filter": [
         {
           "action": "include",
@@ -320,7 +330,9 @@
     {
       "tag": "🇰🇷 韩国节点",
       "type": "urltest",
-      "outbounds": [],
+      "outbounds": [
+          "{all}"
+        ],
       "filter": [
         {
           "action": "include",
@@ -336,7 +348,9 @@
     {
       "tag": "🇸🇬 新加坡节点",
       "type": "urltest",
-      "outbounds": [],
+      "outbounds": [
+          "{all}"
+        ],
       "filter": [
         {
           "action": "include",
@@ -352,7 +366,9 @@
     {
       "tag": "🇺🇸 美国节点",
       "type": "urltest",
-      "outbounds": [],
+      "outbounds": [
+          "{all}"
+        ],
       "filter": [
         {
           "action": "include",
