@@ -246,7 +246,9 @@
     {
         "tag": "👋 手动选择",
         "type": "selector",
-        "outbounds": []
+        "outbounds": [
+          "{all}"
+        ]
     },
     {
       "tag": "🌎 GLOBAL",
