@@ -589,7 +589,7 @@
             "🇸🇬 新加坡节点",
             "🇺🇸 美国节点",
             "👋 手动切换",
-            "🇯🇵入口 -> ⛳️自建节点" 
+            "🔗 链式代理" 
         ],
         "default": "🔰 默认代理"
     },
@@ -680,17 +680,17 @@
         "tag": "⛳️ 自建节点",
         "type": "socks",
         "server": "217.142.236.91",
-        "server_port": 13123,
-        "username": "NXokJgLpXo",
-        "password": "NwufGWwnqs"
+        "server_port": 30893,
+        "username": "C4ULoQaEm5",
+        "password": "SvZbVCcDV0"
     },
     {
-        "tag": "🇯🇵入口 -> ⛳️自建节点",
+        "tag": "🔗 链式代理",
         "type": "socks",
-        "server": "jp-proxy.server.com",
-        "server_port": 1080,
-        "username": "user-jp",
-        "password": "pass-jp",
+        "server": "217.142.236.91",
+        "server_port": 30893,
+        "username": "C4ULoQaEm5",
+        "password": "SvZbVCcDV0",
         "detour": "⛳️ 自建节点"
     },
     {
