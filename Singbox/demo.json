@@ -75,9 +75,6 @@
         "rules": [
           {
             "rule_set": "geosite-geolocation-!cn"
-          },
-          {
-            "rule_set": "geoip-!cn"
           }
         ],
         "server": "cloudflare"
