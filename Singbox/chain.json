@@ -132,7 +132,7 @@
                 "🇺🇸 US",
                 "👋 Select"
             ],
-            "default": "🔰 默认代理"
+            "default": "🔰 Proxy"
         },
 	{
 		"tag": "📱 Telegram",
