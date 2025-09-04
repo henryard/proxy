@@ -19,13 +19,6 @@
                 "detour": "🎯 全球直连"
             },
             {
-                "tag": "DNS-PROXY",
-                "address": "https://1.1.1.1/dns-query",
-                "address_resolver": "DNS-RESOLVER",
-                "strategy": "prefer_ipv4",
-                "detour": "🔰 默认代理"
-            },
-            {
                 "tag": "DNS-DIRECT",
                 "address": "https://223.5.5.5/dns-query",
                 "address_resolver": "DNS-RESOLVER",
@@ -33,12 +26,22 @@
                 "detour": "🎯 全球直连"
             },
             {
-                "tag": "DNS-BLOCK",
-                "address": "rcode://refused"
+                "tag": "DNS-DIRECT-ALT",
+                "address": "https://1.12.12.12/dns-query",
+                "address_resolver": "DNS-RESOLVER",
+                "strategy": "ipv4_only",
+                "detour": "🎯 全球直连"
             },
             {
-                "tag": "DNS-FAKEIP",
-                "address": "fakeip"
+                "tag": "DNS-PROXY",
+                "address": "https://1.1.1.1/dns-query",
+                "address_resolver": "DNS-RESOLVER",
+                "strategy": "prefer_ipv4",
+                "detour": "🔰 默认代理"
+            },
+            {
+                "tag": "DNS-BLOCK",
+                "address": "rcode://refused"
             },
             {
                 "tag": "DNS-GOOGLE",
@@ -55,11 +58,6 @@
                 "detour": "🤖 AI服务"
             }
         ],
-        "fakeip": {
-            "enabled": true,
-            "inet4_range": "198.18.0.0/15",
-            "inet6_range": "fc00::/18"
-        },
         "rules": [
             {
                 "clash_mode": "direct",
@@ -84,6 +82,32 @@
                     "jsdmirror.com",
                     "fastly.jsdelivr.net",
                     "cdn.jsdelivr.net"
+                ],
+                "server": "DNS-DIRECT"
+            },
+            {
+                "domain_suffix": [
+                    "baidu.com",
+                    "taobao.com",
+                    "tmall.com",
+                    "jd.com",
+                    "douban.com",
+                    "weibo.com",
+                    "zhihu.com",
+                    "qq.com",
+                    "163.com",
+                    "sina.com.cn",
+                    "sohu.com",
+                    "youku.com",
+                    "iqiyi.com",
+                    "bilibili.com",
+                    "alipay.com",
+                    "tencent.com",
+                    "wechat.com",
+                    "alicdn.com",
+                    "aliyuncs.com",
+                    "qcloud.com",
+                    "qcloudcdn.com"
                 ],
                 "server": "DNS-DIRECT"
             },
@@ -137,14 +161,6 @@
                     "googleapis"
                 ],
                 "server": "DNS-GOOGLE"
-            },
-            {
-                "query_type": [
-                    "A",
-                    "AAAA"
-                ],
-                "server": "DNS-FAKEIP",
-                "disable_cache": true
             },
             {
                 "outbound": [
@@ -355,6 +371,32 @@
             {
                 "domain": [
                     "ntp.aliyun.com"
+                ],
+                "outbound": "🎯 全球直连"
+            },
+            {
+                "domain_suffix": [
+                    "baidu.com",
+                    "taobao.com",
+                    "tmall.com",
+                    "jd.com",
+                    "douban.com",
+                    "weibo.com",
+                    "zhihu.com",
+                    "qq.com",
+                    "163.com",
+                    "sina.com.cn",
+                    "sohu.com",
+                    "youku.com",
+                    "iqiyi.com",
+                    "bilibili.com",
+                    "alipay.com",
+                    "tencent.com",
+                    "wechat.com",
+                    "alicdn.com",
+                    "aliyuncs.com",
+                    "qcloud.com",
+                    "qcloudcdn.com"
                 ],
                 "outbound": "🎯 全球直连"
             },
