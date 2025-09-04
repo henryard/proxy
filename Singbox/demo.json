@@ -49,15 +49,10 @@
 			{
 				"tag": "block",
 				"address": "rcode://success"
-			},
-			{
-				"tag": "fakeip",
-				"address": "fakeip"
 			}
 		],
 		"rules": [
 			{
-				"query_type": ["A", "AAAA"],
 				"rule_set": ["geosite-category-ads-all"],
 				"server": "block"
 			},
@@ -102,13 +97,7 @@
 				"server": "tencent-doh"
 			},
 			{
-				"type": "logical",
-				"mode": "and",
-				"rules": [
-					{
-						"rule_set": "geosite-geolocation-!cn"
-					}
-				],
+				"rule_set": ["geosite-geolocation-!cn"],
 				"server": "cloudflare-doh"
 			}
 		],
