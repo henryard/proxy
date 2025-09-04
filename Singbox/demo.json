@@ -32,6 +32,12 @@
                 "detour": "🎯 全球直连"
             },
             {
+                "tag": "DNS-TENCENT",
+                "address": "119.29.29.29",
+                "strategy": "prefer_ipv4",
+                "detour": "🎯 全球直连"
+            },
+            {
                 "tag": "DNS-PROXY",
                 "address": "https://1.1.1.1/dns-query",
                 "address_resolver": "DNS-DIRECT",
@@ -83,6 +89,31 @@
                     "cdn.jsdelivr.net"
                 ],
                 "server": "DNS-DIRECT"
+            },
+            {
+                "domain_suffix": [
+                    "weixin.qq.com",
+                    "wx.qq.com",
+                    "qq.com",
+                    "tencent.com",
+                    "gtimg.com",
+                    "myqcloud.com",
+                    "qpic.cn",
+                    "qlogo.cn",
+                    "douyin.com",
+                    "douyinpic.com",
+                    "douyinvod.com",
+                    "douyinstatic.com",
+                    "bytedance.com",
+                    "byteimg.com",
+                    "pstatp.com",
+                    "snssdk.com",
+                    "xiaohongshu.com",
+                    "xhscdn.com",
+                    "xhscdn.net",
+                    "fengkongcloud.com"
+                ],
+                "server": "DNS-TENCENT"
             },
             {
                 "rule_set": [
@@ -148,15 +179,32 @@
                 "server": "DNS-ALI-DOH"
             }
         ],
-        "final": "DNS-PROXY",
+        "final": "DNS-ALI-DOH",
         "strategy": "prefer_ipv4",
         "disable_cache": false,
         "disable_expire": false,
         "independent_cache": true,
-        "reverse_mapping": false
+        "reverse_mapping": false,
+        "fakeip": {
+            "enabled": false
+        }
     },
     "route": {
         "rule_set": [
+            {
+                "tag": "WeChat-Site",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/tencent.srs",
+                "download_detour": "🎯 全球直连"
+            },
+            {
+                "tag": "Douyin-Site",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/bytedance.srs",
+                "download_detour": "🎯 全球直连"
+            },
             {
                 "tag": "AI-Services-Site",
                 "type": "remote",
@@ -350,6 +398,51 @@
                     }
                 ],
                 "action": "reject"
+            },
+            {
+                "domain_suffix": [
+                    "weixin.qq.com",
+                    "wx.qq.com",
+                    "qq.com",
+                    "tencent.com",
+                    "gtimg.com",
+                    "myqcloud.com",
+                    "qpic.cn",
+                    "qlogo.cn",
+                    "wechat.com"
+                ],
+                "outbound": "🎯 全球直连"
+            },
+            {
+                "domain_suffix": [
+                    "douyin.com",
+                    "douyinpic.com",
+                    "douyinvod.com",
+                    "douyinstatic.com",
+                    "bytedance.com",
+                    "byteimg.com",
+                    "pstatp.com",
+                    "snssdk.com",
+                    "amemv.com",
+                    "toutiao.com"
+                ],
+                "outbound": "🎯 全球直连"
+            },
+            {
+                "domain_suffix": [
+                    "xiaohongshu.com",
+                    "xhscdn.com",
+                    "xhscdn.net",
+                    "fengkongcloud.com"
+                ],
+                "outbound": "🎯 全球直连"
+            },
+            {
+                "rule_set": [
+                    "WeChat-Site",
+                    "Douyin-Site"
+                ],
+                "outbound": "🎯 全球直连"
             },
             {
                 "domain_suffix": [
@@ -549,11 +642,11 @@
             "tag": "🤖 AI服务",
             "type": "selector",
             "outbounds": [
+                "🇨🇳 台湾节点",
                 "🇯🇵 日本节点",
                 "🇰🇷 韩国节点",
                 "🇸🇬 新加坡节点",
                 "🇺🇸 美国节点",
-                "🇨🇳 台湾节点",
                 "👋 手动切换"
             ],
             "default": "🇯🇵 日本节点"
