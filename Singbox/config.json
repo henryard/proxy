@@ -697,7 +697,7 @@
             "tag": "🇭🇰 香港节点",
             "type": "urltest",
             "outbounds": [
-                "{all}"
+                
             ],
             "filter": [
                 {
