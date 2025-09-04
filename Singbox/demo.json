@@ -474,14 +474,6 @@
         "update_interval": "7d"
       },
       {
-        "tag": "geosite-claude",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/claude.srs",
-        "download_detour": "🎯 全球直连",
-        "update_interval": "7d"
-      },
-      {
         "tag": "geosite-google",
         "type": "remote",
         "format": "binary",
@@ -582,14 +574,6 @@
         "type": "remote",
         "format": "binary",
         "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/cn.srs",
-        "download_detour": "🎯 全球直连",
-        "update_interval": "7d"
-      },
-      {
-        "tag": "geoip-!cn",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/!cn.srs",
         "download_detour": "🎯 全球直连",
         "update_interval": "7d"
       }
