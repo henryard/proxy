@@ -67,7 +67,7 @@
             },
             {
                 "clash_mode": "global",
-                "server": "DNS-PROXY"
+            __ "server": "DNS-PROXY"
             },
             {
                 "rule_set": [
@@ -180,7 +180,7 @@
                 "tag": "YouTube-Site",
                 "type": "remote",
                 "format": "binary",
-                "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs",
+      _         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs",
                 "download_detour": "🎯 全球直连"
             },
             {
@@ -592,7 +592,7 @@
                 "🔰->⛳️ YouTube",
                 "🇯🇵->⛳️ YouTube"
             ],
-            "default": "🔰->⛳️ YouTube"
+            "default": "🔰 默认代理"
         },
         {
             "tag": "📱 Telegram",
@@ -725,7 +725,7 @@
                 "{all}"
             ],
             "filter": [
-                {
+    _           {
                     "action": "include",
                     "keywords": ["🇭🇰|HK|hk|Hong Kong|香港|港"]
                 }
