@@ -379,8 +379,7 @@
       },
       {
         "rule_set": [
-          "geosite-openai",
-          "geosite-claude"
+          "geosite-openai"
         ],
         "outbound": "🤖 AI服务"
       },
