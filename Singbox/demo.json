@@ -399,14 +399,6 @@
 			"update_interval": "7d"
 		},
 		{
-			"tag": "geosite-apple",
-			"type": "remote",
-			"format": "binary",
-			"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple.srs",
-			"download_detour": "🎯 全球直连",
-			"update_interval": "7d"
-		},
-		{
 			"tag": "geosite-microsoft",
 			"type": "remote",
 			"format": "binary",
