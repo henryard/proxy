@@ -139,7 +139,12 @@
                 "server": "DNS-GOOGLE"
             },
             {
-                "server": "DNS-FAKEIP"
+                "query_type": [
+                    "A",
+                    "AAAA"
+                ],
+                "server": "DNS-FAKEIP",
+                "disable_cache": true
             },
             {
                 "outbound": [
