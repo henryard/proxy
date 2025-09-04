@@ -257,7 +257,6 @@
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
 			"tolerance": 50,
-			"detour": "🔰 Proxy",
 			"override_dialer": {
 				"detour": "🔰 Proxy"
 			}
