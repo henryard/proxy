@@ -394,13 +394,6 @@
             },
             {
                 "rule_set": [
-                    "geoip-cn",
-                    "geosite-cn"
-                ],
-                "outbound": "🎯 全球直连"
-            },
-            {
-                "rule_set": [
                     "geoip-private",
                     "geosite-private"
                 ],
@@ -410,12 +403,6 @@
                 "domain_keyword": [
                     "vercel.app",
                     "ping0.cc"
-                ],
-                "outbound": "🔰 默认代理"
-            },
-            {
-                "rule_set": [
-                    "geosite-geolocation-!cn"
                 ],
                 "outbound": "🔰 默认代理"
             },
@@ -465,12 +452,6 @@
                 "outbound": "🤖 AI服务"
             },
             {
-                "rule_set": [
-                    "AI-Services-Site"
-                ],
-                "outbound": "🤖 AI服务"
-            },
-            {
                 "domain_keyword": [
                     "openai",
                     "chatgpt",
@@ -480,6 +461,12 @@
                     "huggingface",
                     "cohere",
                     "mistral"
+                ],
+                "outbound": "🤖 AI服务"
+            },
+            {
+                "rule_set": [
+                    "AI-Services-Site"
                 ],
                 "outbound": "🤖 AI服务"
             },
@@ -540,6 +527,19 @@
                     "Apple-IP"
                 ],
                 "outbound": "🍎 Apple"
+            },
+            {
+                "rule_set": [
+                    "geosite-cn",
+                    "geoip-cn"
+                ],
+                "outbound": "🎯 全球直连"
+            },
+            {
+                "rule_set": [
+                    "geosite-geolocation-!cn"
+                ],
+                "outbound": "🔰 默认代理"
             }
         ],
         "final": "🔰 默认代理",
