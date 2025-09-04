@@ -33,7 +33,7 @@
       },
       {
         "tag": "tencent",
-        "address": "https://119.29.29.29",
+        "address": "119.29.29.29",
         "detour": "🎯 全球直连"
       },
       {
@@ -379,7 +379,8 @@
       },
       {
         "rule_set": [
-          "geosite-openai"
+          "geosite-openai",
+          "geosite-claude"
         ],
         "outbound": "🤖 AI服务"
       },
@@ -466,6 +467,14 @@
         "type": "remote",
         "format": "binary",
         "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.srs",
+        "download_detour": "🎯 全球直连",
+        "update_interval": "7d"
+      },
+      {
+        "tag": "geosite-claude",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/claude.srs",
         "download_detour": "🎯 全球直连",
         "update_interval": "7d"
       },
