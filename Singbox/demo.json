@@ -161,9 +161,10 @@
 			"action": "include",
 			"keywords": ["🇭🇰|香港|HK|Hong"]
 		}],
-		"url": "http://www.gstatic.com/generate_204",
+		"url": "https://www.apple.com/library/test/success.html",
 		"interval": "10m",
-		"tolerance": 50
+		"tolerance": 50,
+		"download_detour": "🎯 DIRECT"
 	},
 	{
 		"tag": "🇨🇳 TW",
@@ -173,9 +174,10 @@
 			"action": "include",
 			"keywords": ["🇹🇼|台湾|TW|Taiwan"]
 		}],
-		"url": "http://www.gstatic.com/generate_204",
+		"url": "https://www.apple.com/library/test/success.html",
 		"interval": "10m",
-		"tolerance": 50
+		"tolerance": 50,
+		"download_detour": "🎯 DIRECT"
 	},
 	{
 		"tag": "🇯🇵 JP",
@@ -185,9 +187,10 @@
 			"action": "include",
 			"keywords": ["🇯🇵|日本|JP|Japan"]
 		}],
-		"url": "http://www.gstatic.com/generate_204",
+		"url": "https://www.apple.com/library/test/success.html",
 		"interval": "10m",
-		"tolerance": 50
+		"tolerance": 50,
+		"download_detour": "🎯 DIRECT"
 	},
 	{
 		"tag": "🇰🇷 KR",
@@ -197,9 +200,10 @@
 			"action": "include",
 			"keywords": ["🇰🇷|韩国|KR|Korea"]
 		}],
-		"url": "http://www.gstatic.com/generate_204",
+		"url": "https://www.apple.com/library/test/success.html",
 		"interval": "10m",
-		"tolerance": 50
+		"tolerance": 50,
+		"download_detour": "🎯 DIRECT"
 	},
 	{
 		"tag": "🇸🇬 SG",
@@ -209,9 +213,10 @@
 			"action": "include",
 			"keywords": ["🇸🇬|新加坡|SG|Singapore"]
 		}],
-		"url": "http://www.gstatic.com/generate_204",
+		"url": "https://www.apple.com/library/test/success.html",
 		"interval": "10m",
-		"tolerance": 50
+		"tolerance": 50,
+		"download_detour": "🎯 DIRECT"
 	},
 	{
 		"tag": "🇺🇸 US",
@@ -221,9 +226,10 @@
 			"action": "include",
 			"keywords": ["🇺🇸|美国|US|America|United States"]
 		}],
-		"url": "http://www.gstatic.com/generate_204",
+		"url": "https://www.apple.com/library/test/success.html",
 		"interval": "10m",
-		"tolerance": 50
+		"tolerance": 50,
+		"download_detour": "🎯 DIRECT"
 	},
 	{
 		"tag": "♻️ Auto",
@@ -233,9 +239,10 @@
 			"action": "exclude",
 			"keywords": ["网站|地址|剩余|过期|时间|有效|永久|官网|到期|重置|套餐|流量|GB|Traffic"]
 		}],
-		"url": "http://www.gstatic.com/generate_204",
+		"url": "https://www.apple.com/library/test/success.html",
 		"interval": "10m",
-		"tolerance": 50
+		"tolerance": 50,
+		"download_detour": "🎯 DIRECT"
 	},
 	{
 		"tag": "👋 Select",
