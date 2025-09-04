@@ -82,7 +82,7 @@
                     "dexlos.com",
                     "jsdmirror.cn",
                     "jsdmirror.com",
-"fastly.jsdelivr.net"
+                    "fastly.jsdelivr.net"
                 ],
                 "server": "DNS-DIRECT"
             },
@@ -167,133 +167,133 @@
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-!cn.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             },
             {
                 "tag": "Google-Site",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/google.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             },
             {
                 "tag": "YouTube-Site",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/youtube.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             },
             {
                 "tag": "Telegram-Site",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/telegram.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             },
             {
                 "tag": "Spotify-Site",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/spotify.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             },
             {
                 "tag": "TikTok-Site",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/tiktok.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             },
             {
                 "tag": "Netflix-Site",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             },
             {
                 "tag": "Microsoft-Site",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/microsoft.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             },
             {
                 "tag": "Apple-Site",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/apple.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             },
             {
                 "tag": "geosite-adblock",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/adblock.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             },
             {
                 "tag": "geosite-geolocation-!cn",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/geolocation-!cn.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             },
             {
                 "tag": "geosite-cn",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             },
             {
                 "tag": "geosite-private",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/private.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             },
             {
                 "tag": "Google-IP",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/google.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             },
             {
                 "tag": "Netflix-IP",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             },
             {
                 "tag": "Telegram-IP",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             },
             {
                 "tag": "Apple-IP",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/apple.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             },
             {
                 "tag": "geoip-cn",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/cn.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             },
             {
                 "tag": "geoip-private",
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/private.srs",
-                "download_detour": "🎯 全球直连"
+                "download_detour": "⛳️ 自建节点"
             }
         ],
         "rules": [
@@ -695,6 +695,15 @@
             "password": "SvZbVCcDV0",
             "version": "5",
             "detour": "🇯🇵 日本节点"
+        },
+        {
+            "tag": "⛳️ 自建节点",
+            "type": "socks",
+            "server": "217.142.236.91",
+            "server_port": 30893,
+            "username": "C4ULoQaEm5",
+            "password": "SvZbVCcDV0",
+            "version": "5"
         },
         {
             "tag": "♻️ 自动选择",
