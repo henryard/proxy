@@ -680,7 +680,7 @@
             "tag": "♻️ 自动选择",
             "type": "urltest",
             "outbounds": [
-                "{all}"
+                
             ],
             "filter": [
                 {
@@ -793,14 +793,14 @@
             "tag": "👋 手动切换",
             "type": "selector",
             "outbounds": [
-                "{all}"
+                
             ]
         },
         {
             "tag": "🌎 GLOBAL",
             "type": "selector",
             "outbounds": [
-                "{all}"
+                
             ]
         },
         {
