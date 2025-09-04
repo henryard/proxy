@@ -243,7 +243,7 @@
 		"outbounds": ["{all}"]
 	},
 	{
-		"tag": "🌎 GLOBAL",
+		"tag": "🌎 Global",
 		"type": "selector",
 		"outbounds": ["{all}"]
 	},
@@ -272,7 +272,7 @@
 		},
 		{
 			"clash_mode": "global",
-			"outbound": "🌎 GLOBAL"
+			"outbound": "🌎 Global"
 		},
 		{
 			"rule_set": ["geosite-category-ads-all"],
