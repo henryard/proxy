@@ -96,11 +96,11 @@
 	"outbounds": [{
 		"tag": "🔰 Proxy",
 		"type": "selector",
-		"outbounds": ["♻️ 自动选择", "🇭🇰 HK", "🇨🇳 TW", "🇯🇵 JP", "🇰🇷 KR", "🇸🇬 SG", "🇺🇸 US", "👋 手动选择", "🎯 DIRECT"],
-		"default": "♻️ 自动选择"
+		"outbounds": ["♻️ Auto", "🇭🇰 HK", "🇨🇳 TW", "🇯🇵 JP", "🇰🇷 KR", "🇸🇬 SG", "🇺🇸 US", "👋 Select", "🎯 DIRECT"],
+		"default": "♻️ Auto"
 	},
 	{
-		"tag": "🤖 AI服务",
+		"tag": "🤖 AI",
 		"type": "selector",
 		"outbounds": ["🔰 Proxy", "🇯🇵 JP", "🇰🇷 KR", "🇸🇬 SG", "🇺🇸 US"],
 		"default": "🇯🇵 JP"
@@ -226,7 +226,7 @@
 		"tolerance": 50
 	},
 	{
-		"tag": "♻️ 自动选择",
+		"tag": "♻️ Auto",
 		"type": "urltest",
 		"outbounds": ["{all}"],
 		"filter": [{
@@ -238,7 +238,7 @@
 		"tolerance": 50
 	},
 	{
-		"tag": "👋 手动选择",
+		"tag": "👋 Select",
 		"type": "selector",
 		"outbounds": ["{all}"]
 	},
@@ -280,7 +280,7 @@
 		},
 		{
 			"rule_set": ["geosite-openai", "geosite-gemini", "geosite-anthropic", "geosite-poe", "geosite-xai", "geosite-perplexity", "geosite-huggingface"],
-			"outbound": "🤖 AI服务"
+			"outbound": "🤖 AI"
 		},
 		{
 			"rule_set": ["geosite-youtube"],
