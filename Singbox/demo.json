@@ -338,7 +338,7 @@
 			"tag": "geosite-openai",
 			"type": "remote",
 			"format": "binary",
-			"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ai-!cn.srs",
+			"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ai-chat-!cn.srs",
 			"download_detour": "🎯 全球直连",
 			"update_interval": "7d"
 		},
