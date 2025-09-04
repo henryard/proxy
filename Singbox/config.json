@@ -114,24 +114,6 @@
                 "server": "DNS-ALI-DOH"
             },
             {
-                "rule_set": [
-                    "geosite-cn"
-                ],
-                "server": "DNS-ALI-DOH"
-            },
-            {
-                "rule_set": [
-                    "geoip-cn"
-                ],
-                "server": "DNS-ALI-DOH"
-            },
-            {
-                "rule_set": [
-                    "geosite-private"
-                ],
-                "server": "DNS-DIRECT"
-            },
-            {
                 "domain_suffix": [
                     "openai.com",
                     "anthropic.com",
@@ -175,7 +157,25 @@
                     "🎯 全球直连"
                 ],
                 "server": "DNS-ALI-DOH"
-            }
+            },
+            {
+                "rule_set": [
+                    "geosite-cn"
+                ],
+                "server": "DNS-ALI-DOH"
+            },
+            {
+                "rule_set": [
+                    "geoip-cn"
+                ],
+                "server": "DNS-ALI-DOH"
+            },
+            {
+                "rule_set": [
+                    "geosite-private"
+                ],
+                "server": "DNS-DIRECT"
+            },
         ],
         "final": "DNS-PROXY",
         "strategy": "prefer_ipv4",
@@ -257,13 +257,6 @@
                 "download_detour": "🎯 全球直连"
             },
             {
-                "tag": "geosite-geolocation-!cn",
-                "type": "remote",
-                "format": "binary",
-                "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
-                "download_detour": "🎯 全球直连"
-            },
-            {
                 "tag": "geosite-cn",
                 "type": "remote",
                 "format": "binary",
@@ -275,6 +268,13 @@
                 "type": "remote",
                 "format": "binary",
                 "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/private.srs",
+                "download_detour": "🎯 全球直连"
+            },
+            {
+                "tag": "geosite-geolocation-!cn",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/geolocation-!cn.srs",
                 "download_detour": "🎯 全球直连"
             },
             {
