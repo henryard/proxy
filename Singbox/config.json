@@ -354,7 +354,7 @@
                     "geosite-cn"
                 ],
                 "outbound": "🎯 全球直连"
-            }
+            },
             {
                 "rule_set": [
                     "geoip-private",
