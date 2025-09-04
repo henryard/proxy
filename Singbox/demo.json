@@ -431,13 +431,15 @@
       {
         "rule_set": [
           "geosite-google",
+          "geoip-google",
           "geosite-github"
         ],
         "outbound": "🔍 Google"
       },
       {
         "rule_set": [
-          "geosite-telegram"
+          "geosite-telegram",
+          "geoip-telegram"
         ],
         "outbound": "📱 Telegram"
       },
@@ -449,7 +451,8 @@
       },
       {
         "rule_set": [
-          "geosite-netflix"
+          "geosite-netflix",
+          "geoip-netflix"
         ],
         "outbound": "📽️ Netflix"
       },
@@ -467,7 +470,8 @@
       },
       {
         "rule_set": [
-          "geosite-apple"
+          "geosite-apple",
+          "geoip-apple"
         ],
         "outbound": "🍎 Apple"
       },
@@ -504,7 +508,7 @@
         "tag": "geosite-openai",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.srs",
+        "url": "hhttps://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ai-!cn.srs",
         "download_detour": "🎯 全球直连",
         "update_interval": "7d"
       },
@@ -525,14 +529,6 @@
         "update_interval": "7d"
       },
       {
-        "tag": "geosite-telegram",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/telegram.srs",
-        "download_detour": "🎯 全球直连",
-        "update_interval": "7d"
-      },
-      {
         "tag": "geosite-youtube",
         "type": "remote",
         "format": "binary",
@@ -541,10 +537,18 @@
         "update_interval": "7d"
       },
       {
-        "tag": "geosite-netflix",
+        "tag": "geosite-telegram",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/netflix.srs",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/telegram.srs",
+        "download_detour": "🎯 全球直连",
+        "update_interval": "7d"
+      },
+      {
+        "tag": "geosite-spotify",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/spotify.srs",
         "download_detour": "🎯 全球直连",
         "update_interval": "7d"
       },
@@ -557,10 +561,10 @@
         "update_interval": "7d"
       },
       {
-        "tag": "geosite-spotify",
+        "tag": "geosite-netflix",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/spotify.srs",
+        "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/netflix.srs",
         "download_detour": "🎯 全球直连",
         "update_interval": "7d"
       },
@@ -580,6 +584,13 @@
         "download_detour": "🎯 全球直连",
         "update_interval": "7d"
       },
+      {
+                "tag": "geosite-apple",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple.srs",
+                "download_detour": "🎯 全球直连"
+            },
       {
         "tag": "geosite-geolocation-!cn",
         "type": "remote",
@@ -604,6 +615,34 @@
         "download_detour": "🎯 全球直连",
         "update_interval": "7d"
       },
+      {
+                "tag": "geoip-google",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/google.srs",
+                "download_detour": "🎯 全球直连"
+            },
+            {
+                "tag": "geoip-telegram",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/telegram.srs",
+                "download_detour": "🎯 全球直连"
+            },
+            {
+                "tag": "geoip-netflix",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geoip/netflix.srs",
+                "download_detour": "🎯 全球直连"
+            },
+            {
+                "tag": "geoip-apple",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo-lite/geoip/apple.srs",
+                "download_detour": "🎯 全球直连"
+            },
       {
         "tag": "geoip-cn",
         "type": "remote",
