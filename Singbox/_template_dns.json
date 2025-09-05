@@ -73,7 +73,7 @@
 			},
 			{
 				"query_type": ["A", "AAAA"],
-				"rule_set": ["geosite-openai", "geosite-gemini", "geosite-anthropic", "geosite-poe", "geosite-xai", "geosite-perplexity", "geosite-huggingface"],
+				"rule_set": ["geosite-openai"],
 				"server": "fake-ip"
 			},
 			{
@@ -329,7 +329,7 @@
 				"outbound": "🎯 DIRECT"
 			},
 			{
-				"rule_set": ["geosite-openai", "geosite-gemini", "geosite-anthropic", "geosite-poe", "geosite-xai", "geosite-perplexity", "geosite-huggingface"],
+				"rule_set": ["geosite-openai"],
 				"outbound": "🤖 AI"
 			},
 			{
@@ -385,55 +385,7 @@
 				"tag": "geosite-openai",
 				"type": "remote",
 				"format": "binary",
-				"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ai-chat-!cn.srs",
-				"download_detour": "🎯 DIRECT",
-				"update_interval": "7d"
-			},
-			{
-				"tag": "geosite-gemini",
-				"type": "remote",
-				"format": "binary",
-				"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google-gemini.srs",
-				"download_detour": "🎯 DIRECT",
-				"update_interval": "7d"
-			},
-			{
-				"tag": "geosite-anthropic",
-				"type": "remote",
-				"format": "binary",
-				"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/anthropic.srs",
-				"download_detour": "🎯 DIRECT",
-				"update_interval": "7d"
-			},
-			{
-				"tag": "geosite-poe",
-				"type": "remote",
-				"format": "binary",
-				"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/poe.srs",
-				"download_detour": "🎯 DIRECT",
-				"update_interval": "7d"
-			},
-			{
-				"tag": "geosite-perplexity",
-				"type": "remote",
-				"format": "binary",
-				"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/perplexity.srs",
-				"download_detour": "🎯 DIRECT",
-				"update_interval": "7d"
-			},
-			{
-				"tag": "geosite-huggingface",
-				"type": "remote",
-				"format": "binary",
-				"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/huggingface.srs",
-				"download_detour": "🎯 DIRECT",
-				"update_interval": "7d"
-			},
-			{
-				"tag": "geosite-xai",
-				"type": "remote",
-				"format": "binary",
-				"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/xai.srs",
+				"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ai-!cn.srs",
 				"download_detour": "🎯 DIRECT",
 				"update_interval": "7d"
 			},
