@@ -388,7 +388,7 @@
 				"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ai-!cn.srs",
 				"download_detour": "🎯 DIRECT",
 				"update_interval": "7d"
-			}
+			},
 			{
 				"tag": "geosite-google",
 				"type": "remote",
