@@ -66,16 +66,16 @@
 	},
 	"inbounds": [{
 		"type": "tun",
-	    "tag": "tun-in",
-	    "interface_name": "utun",
-	    "address": ["172.19.0.1/30"],
-	    "mtu": 9000,
-	    "auto_route": true,
-	    "strict_route": true,
-	    "stack": "system",
-	    "endpoint_independent_nat": false,
-	    "sniff": true,
-	    "sniff_override_destination": false
+	    "tag": "tun-in",
+	    "interface_name": "utun",
+	    "address": ["172.19.0.1/30"],
+	    "mtu": 9000,
+	    "auto_route": true,
+	    "strict_route": true,
+	    "stack": "system",
+	    "endpoint_independent_nat": false,
+	    "sniff": true,
+	    "sniff_override_destination": false
 	},
 	{
 		"type": "mixed",
@@ -250,6 +250,12 @@
 	{
 		"tag": "dns-out",
 		"type": "dns"
+	},
+	{
+		"tag": "🐟 漏网之鱼",
+		"type": "selector",
+		"outbounds": ["🔰 Proxy"],
+		"default": "🔰 Proxy"
 	}],
 	"route": {
 		"auto_detect_interface": true,
@@ -313,6 +319,9 @@
 		{
 			"rule_set": ["geosite-geolocation-!cn"],
 			"outbound": "🔰 Proxy"
+		},
+		{
+			"outbound": "🐟 漏网之鱼"
 		}],
 		"rule_set": [{
 			"tag": "geosite-category-ads-all",
