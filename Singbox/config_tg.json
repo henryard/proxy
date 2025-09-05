@@ -20,18 +20,12 @@
 				"tag": "cloudflare",
 				"address": "https://1.1.1.1/dns-query",
 				"address_resolver": "ali-resolver",
-				"detour": "🔰 Proxy",
-				"hosts": {
-					"venus.web.telegram.org": ["91.108.56.147", "91.108.56.135"],
-					"aurora.web.telegram.org": ["91.108.56.147", "91.108.56.135"],
-					"vesta.web.telegram.org": ["91.108.56.147", "91.108.56.135"],
-					"flora.web.telegram.org": ["91.108.56.147", "91.108.56.135"]
-				}
+				"detour": "🔰 Proxy"
 			},
 			{
 				"tag": "google",
 				"address": "https://8.8.8.8/dns-query",
-				"address_resolver": "ali-resolver",
+				"address_resolver": "ali-resolver", 
 				"detour": "🔰 Proxy"
 			},
 			{
@@ -64,7 +58,7 @@
 				"server": "ali"
 			},
 			{
-				"clash_mode": "global",
+				"clash_mode": "global", 
 				"server": "cloudflare"
 			},
 			{
@@ -110,7 +104,7 @@
 			"strict_route": true,
 			"stack": "system",
 			"endpoint_independent_nat": false,
-			"sniff": false,
+			"sniff": true,
 			"sniff_override_destination": true
 		},
 		{
