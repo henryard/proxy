@@ -73,7 +73,7 @@
 			},
 			{
 				"query_type": ["A", "AAAA"],
-				"rule_set": ["geosite-openai", "geosite-gemini", "geosite-anthropic", "geosite-poe", "geosite-xai", "geosite-perplexity", "geosite-huggingface"],
+				"rule_set": ["geosite-openai"],
 				"server": "fake-ip"
 			},
 			{
