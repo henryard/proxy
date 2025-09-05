@@ -1,7 +1,7 @@
 {
 	"log": {
 		"disabled": false,
-		"level": "error",
+		"level": "info",
 		"timestamp": true
 	},
 	"experimental": {
@@ -18,12 +18,12 @@
 		"servers": [{
 			"tag": "cloudflare",
 			"address": "https://1.1.1.1/dns-query",
-			"detour": "🔰 Proxy"
+			"detour": "🎯 DIRECT"
 		},
 		{
 			"tag": "google",
 			"address": "https://8.8.8.8/dns-query",
-			"detour": "🔰 Proxy"
+			"detour": "🎯 DIRECT"
 		},
 		{
 			"tag": "ali",
