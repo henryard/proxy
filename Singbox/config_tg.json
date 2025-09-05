@@ -40,6 +40,21 @@
 				"detour": "🎯 DIRECT"
 			},
 			{
+				"tag": "tg-override",
+				"type": "override",
+				"server": "cloudflare",
+				"rules": [
+					{
+						"rule_set": ["geosite-telegram"],
+						"address": [
+							"91.108.56.147",
+							"91.108.56.135"
+						],
+						"strategy": "prefer_ipv4"
+					}
+				]
+			},
+			{
 				"tag": "fake-ip",
 				"address": "fakeip"
 			},
@@ -63,13 +78,7 @@
 			},
 			{
 				"rule_set": ["geosite-telegram"],
-				"server": "cloudflare",
-				"rewrite": {
-					"A": [
-						"91.108.56.147",
-						"91.108.56.135"
-					]
-				}
+				"server": "tg-override"
 			},
 			{
 				"query_type": ["A", "AAAA"],
