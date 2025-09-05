@@ -48,7 +48,7 @@
 			"server": "cloudflare"
 		}],
 		"final": "cloudflare",
-		"strategy": "proxy_only",
+		"strategy": "prefer_proxy",
 		"disable_cache": false,
 		"disable_expire": false
 	},
