@@ -50,7 +50,7 @@
 		{
 			"clash_mode": "global",
 			"server": "cloudflare"
-		}
+		},
 		{
 			"rule_set": ["geosite-cn", "geosite-geolocation-cn"],
 			"server": "ali"
