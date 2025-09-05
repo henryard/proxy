@@ -107,7 +107,7 @@
 		"tag": "🍟 YouTube",
 		"type": "selector",
 		"outbounds": ["🔰 Proxy", "🇭🇰 HK", "🇨🇳 TW", "🇯🇵 JP", "🇰🇷 KR", "🇸🇬 SG", "🇺🇸 US"],
-		"default": "🔰 Proxy"
+		"default": "🇯🇵 JP"
 	},
 	{
 		"tag": "📱 Telegram",
