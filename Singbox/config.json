@@ -181,12 +181,7 @@
 			"tag": "🇭🇰 HK",
 			"type": "urltest",
 			"outbounds": ["{all}"],
-			"filter": [
-				{
-					"action": "include",
-					"keywords": ["🇭🇰|香港|HK|Hong"]
-				}
-			],
+			"filter": [{"action": "include", "keywords": ["🇭🇰|香港|HK|Hong"]}],
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
 			"tolerance": 50
@@ -195,12 +190,7 @@
 			"tag": "🇨🇳 TW",
 			"type": "urltest",
 			"outbounds": ["{all}"],
-			"filter": [
-				{
-					"action": "include",
-					"keywords": ["🇹🇼|台湾|TW|Taiwan"]
-				}
-			],
+			"filter": [{"action": "include", "keywords": ["🇹🇼|台湾|TW|Taiwan"]}],
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
 			"tolerance": 50
@@ -209,12 +199,7 @@
 			"tag": "🇯🇵 JP",
 			"type": "urltest",
 			"outbounds": ["{all}"],
-			"filter": [
-				{
-					"action": "include",
-					"keywords": ["🇯🇵|日本|JP|Japan"]
-				}
-			],
+			"filter": [{"action": "include", "keywords": ["🇯🇵|日本|JP|Japan"]}],
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
 			"tolerance": 50
@@ -223,12 +208,7 @@
 			"tag": "🇰🇷 KR",
 			"type": "urltest",
 			"outbounds": ["{all}"],
-			"filter": [
-				{
-					"action": "include",
-					"keywords": ["🇰🇷|韩国|KR|Korea"]
-				}
-			],
+			"filter": [{"action": "include", "keywords": ["🇰🇷|韩国|KR|Korea"]}],
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
 			"tolerance": 50
@@ -237,12 +217,7 @@
 			"tag": "🇸🇬 SG",
 			"type": "urltest",
 			"outbounds": ["{all}"],
-			"filter": [
-				{
-					"action": "include",
-					"keywords": ["🇸🇬|新加坡|SG|Singapore"]
-				}
-			],
+			"filter": [{"action": "include", "keywords": ["🇸🇬|新加坡|SG|Singapore"]}],
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
 			"tolerance": 50
@@ -251,12 +226,7 @@
 			"tag": "🇺🇸 US",
 			"type": "urltest",
 			"outbounds": ["{all}"],
-			"filter": [
-				{
-					"action": "include",
-					"keywords": ["🇺🇸|美国|US|America|United States"]
-				}
-			],
+			"filter": [{"action": "include", "keywords": ["🇺🇸|美国|US|America|United States"]}],
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
 			"tolerance": 50
@@ -265,112 +235,38 @@
 			"tag": "♻️ Auto",
 			"type": "urltest",
 			"outbounds": ["{all}"],
-			"filter": [
-				{
-					"action": "exclude",
-					"keywords": ["网站|地址|剩余|过期|时间|有效|永久|官网|到期|重置|套餐|流量|GB|Traffic"]
-				}
-			],
+			"filter": [{"action": "exclude", "keywords": ["网站|地址|剩余|过期|时间|有效|永久|官网|到期|重置|套餐|流量|GB|Traffic"]}],
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
 			"tolerance": 50
 		},
-		{
-			"tag": "👋 Select",
-			"type": "selector",
-			"outbounds": ["{all}"]
-		},
-		{
-			"tag": "🌎 Global",
-			"type": "selector",
-			"outbounds": ["{all}"]
-		},
-		{
-			"tag": "🎯 DIRECT",
-			"type": "direct"
-		},
-		{
-			"tag": "block",
-			"type": "block"
-		},
-		{
-			"tag": "dns-out",
-			"type": "dns"
-		},
-		{
-			"tag": "🐟 漏网之鱼",
-			"type": "selector",
-			"outbounds": ["🔰 Proxy"],
-			"default": "🔰 Proxy"
-		}
+		{"tag": "👋 Select", "type": "selector", "outbounds": ["{all}"]},
+		{"tag": "🌎 Global", "type": "selector", "outbounds": ["{all}"]},
+		{"tag": "🎯 DIRECT", "type": "direct"},
+		{"tag": "block", "type": "block"},
+		{"tag": "dns-out", "type": "dns"},
+		{"tag": "🐟 漏网之鱼", "type": "selector", "outbounds": ["🔰 Proxy"],	"default": "🔰 Proxy"}
 	],
 	"route": {
 		"auto_detect_interface": true,
 		"final": "🔰 Proxy",
 		"rules": [
-			{
-				"protocol": "dns",
-				"outbound": "dns-out"
-			},
-			{
-				"clash_mode": "direct",
-				"outbound": "🎯 DIRECT"
-			},
-			{
-				"clash_mode": "global",
-				"outbound": "🌎 Global"
-			},
-			{
-				"rule_set": ["geosite-category-ads-all"],
-				"outbound": "block"
-			},
-			{
-				"rule_set": ["geosite-cn", "geosite-geolocation-cn"],
-				"outbound": "🎯 DIRECT"
-			},
-			{
-				"rule_set": ["geosite-openai"],
-				"outbound": "🤖 AI"
-			},
-			{
-				"rule_set": ["geosite-youtube"],
-				"outbound": "🍟 YouTube"
-			},
-			{
-				"rule_set": ["geosite-google", "geosite-github"],
-				"outbound": "🔍 Google"
-			},
-			{
-				"rule_set": ["geosite-telegram"],
-				"outbound": "📱 Telegram"
-			},
-			{
-				"rule_set": ["geosite-spotify"],
-				"outbound": "🎵 Spotify"
-			},
-			{
-				"rule_set": ["geosite-netflix"],
-				"outbound": "📽️ Netflix"
-			},
-			{
-				"rule_set": ["geosite-tiktok"],
-				"outbound": "🎶 TikTok"
-			},
-			{
-				"rule_set": ["geosite-microsoft"],
-				"outbound": "🧑🏻‍💻 Microsoft"
-			},
-			{
-				"rule_set": ["geosite-apple"],
-				"outbound": "🍎 Apple"
-			},
-			{
-				"rule_set": ["geosite-geolocation-!cn"],
-				"outbound": "🔰 Proxy"
-			},
-			{
-				"outbound": "🐟 漏网之鱼"
-			}
+			{"protocol": "dns",	"outbound": "dns-out"},
+			{"clash_mode": "direct", "outbound": "🎯 DIRECT"},
+			{"clash_mode": "global", "outbound": "🌎 Global"},
+			{"rule_set": ["geosite-category-ads-all"], "outbound": "block"},
+			{"rule_set": ["geosite-cn", "geosite-geolocation-cn"], "outbound": "🎯 DIRECT"},
+			{"rule_set": ["geosite-openai"], "outbound": "🤖 AI"},
+			{"rule_set": ["geosite-youtube"], "outbound": "🍟 YouTube"},
+			{"rule_set": ["geosite-google", "geosite-github"], "outbound": "🔍 Google"},
+			{"rule_set": ["geosite-telegram"], "outbound": "📱 Telegram"},
+			{"rule_set": ["geosite-spotify"], "outbound": "🎵 Spotify"},
+			{"rule_set": ["geosite-netflix"], "outbound": "📽️ Netflix"},
+			{"rule_set": ["geosite-tiktok"], "outbound": "🎶 TikTok"},
+			{"rule_set": ["geosite-microsoft"], "outbound": "🧑🏻‍💻 Microsoft"},
+			{"rule_set": ["geosite-apple"],	"outbound": "🍎 Apple"},
+			{"rule_set": ["geosite-geolocation-!cn"], "outbound": "🔰 Proxy"},
+			{"outbound": "🐟 漏网之鱼"}
 		],
 		"rule_set": [
 			{
