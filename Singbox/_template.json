@@ -260,69 +260,24 @@
 	"route": {
 		"auto_detect_interface": true,
 		"final": "🔰 Proxy",
-		"rules": [{
-			"protocol": "dns",
-			"outbound": "dns-out"
-		},
-		{
-			"clash_mode": "direct",
-			"outbound": "🎯 DIRECT"
-		},
-		{
-			"clash_mode": "global",
-			"outbound": "🌎 Global"
-		},
-		{
-			"rule_set": ["geosite-category-ads-all"],
-			"outbound": "block"
-		},
-		{
-			"rule_set": ["geosite-cn", "geosite-geolocation-cn"],
-			"outbound": "🎯 DIRECT"
-		},
-		{
-			"rule_set": ["geosite-openai", "geosite-gemini", "geosite-anthropic", "geosite-poe", "geosite-xai", "geosite-perplexity", "geosite-huggingface"],
-			"outbound": "🤖 AI"
-		},
-		{
-			"rule_set": ["geosite-youtube"],
-			"outbound": "🍟 YouTube"
-		},
-		{
-			"rule_set": ["geosite-google", "geosite-github"],
-			"outbound": "🔍 Google"
-		},
-		{
-			"rule_set": ["geosite-telegram"],
-			"outbound": "📱 Telegram"
-		},
-		{
-			"rule_set": ["geosite-spotify"],
-			"outbound": "🎵 Spotify"
-		},
-		{
-			"rule_set": ["geosite-netflix"],
-			"outbound": "📽️ Netflix"
-		},
-		{
-			"rule_set": ["geosite-tiktok"],
-			"outbound": "🎶 TikTok"
-		},
-		{
-			"rule_set": ["geosite-microsoft"],
-			"outbound": "🧑🏻‍💻 Microsoft"
-		},
-		{
-			"rule_set": ["geosite-apple"],
-			"outbound": "🍎 Apple"
-		},
-		{
-			"rule_set": ["geosite-geolocation-!cn"],
-			"outbound": "🔰 Proxy"
-		},
-		{
-			"outbound": "🐟 漏网之鱼"
-		}],
+		"rules": [
+			{"protocol": "dns",	"outbound": "dns-out"},
+			{"clash_mode": "direct", "outbound": "🎯 DIRECT"},
+			{"clash_mode": "global", "outbound": "🌎 Global"},
+			{"rule_set": ["geosite-category-ads-all"], "outbound": "block"},
+			{"rule_set": ["geosite-cn", "geosite-geolocation-cn"], "outbound": "🎯 DIRECT"},
+			{"rule_set": ["geosite-openai"], "outbound": "🤖 AI"},
+			{"rule_set": ["geosite-youtube"], "outbound": "🍟 YouTube"},
+			{"rule_set": ["geosite-google", "geosite-github"], "outbound": "🔍 Google"},
+			{"rule_set": ["geosite-telegram"], "outbound": "📱 Telegram"},
+			{"rule_set": ["geosite-spotify"], "outbound": "🎵 Spotify"},
+			{"rule_set": ["geosite-netflix"], "outbound": "📽️ Netflix"},
+			{"rule_set": ["geosite-tiktok"], "outbound": "🎶 TikTok"},
+			{"rule_set": ["geosite-microsoft"], "outbound": "🧑🏻‍💻 Microsoft"},
+			{"rule_set": ["geosite-apple"],	"outbound": "🍎 Apple"},
+			{"rule_set": ["geosite-geolocation-!cn"], "outbound": "🔰 Proxy"},
+			{"outbound": "🐟 漏网之鱼"}
+		],
 		"rule_set": [{
 			"tag": "geosite-category-ads-all",
 			"type": "remote",
@@ -335,55 +290,7 @@
 			"tag": "geosite-openai",
 			"type": "remote",
 			"format": "binary",
-			"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ai-chat-!cn.srs",
-			"download_detour": "🎯 DIRECT",
-			"update_interval": "7d"
-		},
-		{
-			"tag": "geosite-gemini",
-			"type": "remote",
-			"format": "binary",
-			"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google-gemini.srs",
-			"download_detour": "🎯 DIRECT",
-			"update_interval": "7d"
-		},
-		{
-			"tag": "geosite-anthropic",
-			"type": "remote",
-			"format": "binary",
-			"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/anthropic.srs",
-			"download_detour": "🎯 DIRECT",
-			"update_interval": "7d"
-		},
-		{
-			"tag": "geosite-poe",
-			"type": "remote",
-			"format": "binary",
-			"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/poe.srs",
-			"download_detour": "🎯 DIRECT",
-			"update_interval": "7d"
-		},
-		{
-			"tag": "geosite-perplexity",
-			"type": "remote",
-			"format": "binary",
-			"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/perplexity.srs",
-			"download_detour": "🎯 DIRECT",
-			"update_interval": "7d"
-		},
-		{
-			"tag": "geosite-huggingface",
-			"type": "remote",
-			"format": "binary",
-			"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/huggingface.srs",
-			"download_detour": "🎯 DIRECT",
-			"update_interval": "7d"
-		},
-		{
-			"tag": "geosite-xai",
-			"type": "remote",
-			"format": "binary",
-			"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/xai.srs",
+			"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ai-!cn.srs",
 			"download_detour": "🎯 DIRECT",
 			"update_interval": "7d"
 		},
