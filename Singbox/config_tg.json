@@ -20,7 +20,13 @@
 				"tag": "cloudflare",
 				"address": "https://1.1.1.1/dns-query",
 				"address_resolver": "ali-resolver",
-				"detour": "🔰 Proxy"
+				"detour": "🔰 Proxy",
+				"hosts": {
+					"venus.web.telegram.org": ["91.108.56.147", "91.108.56.135"],
+					"aurora.web.telegram.org": ["91.108.56.147", "91.108.56.135"],
+					"vesta.web.telegram.org": ["91.108.56.147", "91.108.56.135"],
+					"flora.web.telegram.org": ["91.108.56.147", "91.108.56.135"]
+				}
 			},
 			{
 				"tag": "google",
@@ -38,21 +44,6 @@
 				"tag": "ali-resolver",
 				"address": "223.5.5.5",
 				"detour": "🎯 DIRECT"
-			},
-			{
-				"tag": "tg-override",
-				"type": "override",
-				"server": "cloudflare",
-				"rules": [
-					{
-						"rule_set": ["geosite-telegram"],
-						"address": [
-							"91.108.56.147",
-							"91.108.56.135"
-						],
-						"strategy": "prefer_ipv4"
-					}
-				]
 			},
 			{
 				"tag": "fake-ip",
@@ -75,10 +66,6 @@
 			{
 				"clash_mode": "global",
 				"server": "cloudflare"
-			},
-			{
-				"rule_set": ["geosite-telegram"],
-				"server": "tg-override"
 			},
 			{
 				"query_type": ["A", "AAAA"],
