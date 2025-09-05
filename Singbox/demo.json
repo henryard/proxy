@@ -43,8 +43,10 @@
     ],
     "rules": [
       {
-        "rule_set": [
-          "geosite-dns-leak-test"
+        "domain_suffix": [
+          "ipleak.net",
+          "browserleaks.com",
+          "dnsleaktest.com"
         ],
         "server": "cloudflare"
       },
@@ -407,8 +409,10 @@
     "final": "🔰 Proxy",
     "rules": [
       {
-        "rule_set": [
-          "geosite-dns-leak-test"
+        "domain_suffix": [
+          "ipleak.net",
+          "browserleaks.com",
+          "dnsleaktest.com"
         ],
         "outbound": "🔰 Proxy"
       },
@@ -509,14 +513,6 @@
       }
     ],
     "rule_set": [
-      {
-        "tag": "geosite-dns-leak-test",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/dns.txt",
-        "download_detour": "🎯 DIRECT",
-        "update_interval": "7d"
-      },
       {
         "tag": "geosite-category-ads-all",
         "type": "remote",
