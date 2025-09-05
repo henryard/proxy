@@ -156,13 +156,13 @@
 		{
 			"tag": "📽️ Netflix",
 			"type": "selector",
-			"outbounds": ["🔰 Proxy", "🇯🇵 JP", "🇰🇷 KR", "🇸🇬 SG", "🇺🇸 US"],
+			"outbounds": ["🔰 Proxy", "🇭🇰 HK", "🇨🇳 TW", "🇯🇵 JP", "🇰🇷 KR", "🇸🇬 SG", "🇺🇸 US"],
 			"default": "🔰 Proxy"
 		},
 		{
 			"tag": "🎶 TikTok",
 			"type": "selector",
-			"outbounds": ["🔰 Proxy", "🇭🇰 HK", "🇨🇳 TW", "🇯🇵 JP", "🇰🇷 KR", "🇸🇬 SG", "🇺🇸 US"],
+			"outbounds": ["🔰 Proxy", "🇯🇵 JP", "🇰🇷 KR", "🇸🇬 SG", "🇺🇸 US"],
 			"default": "🔰 Proxy"
 		},
 		{
