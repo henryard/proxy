@@ -44,19 +44,19 @@
 			"server": "block"
 		},
 		{
-			"rule_set": ["geosite-cn", "geosite-geolocation-cn"],
-			"server": "ali"
-		},
-		{
-			"rule_set": ["geosite-geolocation-!cn"],
-			"server": "cloudflare"
-		},
-		{
 			"clash_mode": "direct",
 			"server": "ali"
 		},
 		{
 			"clash_mode": "global",
+			"server": "cloudflare"
+		}
+		{
+			"rule_set": ["geosite-cn", "geosite-geolocation-cn"],
+			"server": "ali"
+		},
+		{
+			"rule_set": ["geosite-geolocation-!cn"],
 			"server": "cloudflare"
 		}],
 		"final": "ali",
