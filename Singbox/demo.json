@@ -44,7 +44,7 @@
 			"server": "block"
 		},
 		{
-			"rule_set": ["geosite-cn", "geosite-geolocation-cn", "geoip-cn"],
+			"rule_set": ["geosite-cn", "geosite-geolocation-cn"],
 			"server": "ali"
 		},
 		{
