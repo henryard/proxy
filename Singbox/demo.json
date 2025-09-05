@@ -59,7 +59,7 @@
 			"rule_set": ["geosite-geolocation-!cn"],
 			"server": "cloudflare"
 		}],
-		"final": "ali",
+		"final": "cloudflare",
 		"strategy": "prefer_ipv4",
 		"disable_cache": false,
 		"disable_expire": false
