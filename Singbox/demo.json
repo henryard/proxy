@@ -28,12 +28,12 @@
 		{
 			"tag": "ali",
 			"address": "https://223.5.5.5/dns-query",
-			"detour": "🎯 DIRECT"
+			"detour": "🔰 Proxy"
 		},
 		{
 			"tag": "tencent",
 			"address": "119.29.29.29",
-			"detour": "🎯 DIRECT"
+			"detour": "🔰 Proxy"
 		},
 		{
 			"tag": "block",
@@ -44,38 +44,26 @@
 			"server": "block"
 		},
 		{
-			"clash_mode": "direct",
-			"server": "ali"
-		},
-		{
-			"clash_mode": "global",
-			"server": "cloudflare"
-		},
-		{
-			"rule_set": ["geosite-cn", "geosite-geolocation-cn"],
-			"server": "ali"
-		},
-		{
-			"rule_set": ["geosite-geolocation-!cn"],
+			"outbound": "any",
 			"server": "cloudflare"
 		}],
-		"final": "ali",
-		"strategy": "prefer_ipv4",
+		"final": "cloudflare",
+		"strategy": "proxy_only",
 		"disable_cache": false,
 		"disable_expire": false
 	},
 	"inbounds": [{
 		"type": "tun",
-        "tag": "tun-in",
-        "interface_name": "utun",
-        "address": ["172.19.0.1/30"],
-        "mtu": 9000,
-        "auto_route": true,
-        "strict_route": true,
-        "stack": "system",
-        "endpoint_independent_nat": false,
-        "sniff": true,
-        "sniff_override_destination": false
+        "tag": "tun-in",
+        "interface_name": "utun",
+        "address": ["172.19.0.1/30"],
+        "mtu": 9000,
+        "auto_route": true,
+        "strict_route": true,
+        "stack": "system",
+        "endpoint_independent_nat": false,
+        "sniff": true,
+        "sniff_override_destination": false
 	},
 	{
 		"type": "mixed",
@@ -261,10 +249,6 @@
 		"auto_detect_interface": true,
 		"final": "🔰 Proxy",
 		"rules": [{
-			"protocol": "dns",
-			"outbound": "dns-out"
-		},
-		{
 			"clash_mode": "direct",
 			"outbound": "🎯 DIRECT"
 		},
