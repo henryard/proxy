@@ -81,7 +81,7 @@
 				"server": "ali"
 			}
 		],
-		"final": "fake-ip",
+		"final": "cloudflare",
 		"strategy": "prefer_ipv4",
 		"disable_cache": false,
 		"disable_expire": false,
