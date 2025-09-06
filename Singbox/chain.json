@@ -25,7 +25,7 @@
 			{
 				"tag": "google",
 				"address": "https://8.8.8.8/dns-query",
-				"address_resolver": "ali-resolver",
+				"address_resolver": "ali-resolver", 
 				"detour": "🔰 Proxy"
 			},
 			{
@@ -58,7 +58,7 @@
 				"server": "ali"
 			},
 			{
-				"clash_mode": "global",
+				"clash_mode": "global", 
 				"server": "cloudflare"
 			},
 			{
@@ -206,15 +206,21 @@
 		},
 		{
 			"tag": "🇯🇵 JP-Chain",
-			"type": "selector",
-			"outbounds": ["🇯🇵 JP", "⛳️ 自建节点"],
-			"default": "🇯🇵 JP"
+			"type": "socks",
+			"server": "217.142.236.91",
+			"server_port": 30893,
+			"username": "C4ULoQaEm5",
+			"password": "SvZbVCcDV0",
+			"outbound_detour": "🇯🇵 JP"
 		},
 		{
 			"tag": "🔰 Proxy-Chain",
-			"type": "selector",
-			"outbounds": ["🔰 Proxy", "⛳️ 自建节点"],
-			"default": "🔰 Proxy"
+			"type": "socks",
+			"server": "217.142.236.91",
+			"server_port": 30893,
+			"username": "C4ULoQaEm5",
+			"password": "SvZbVCcDV0",
+			"outbound_detour": "🔰 Proxy"
 		},
 		{
 			"tag": "🇰🇷 KR",
