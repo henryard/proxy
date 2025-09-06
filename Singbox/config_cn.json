@@ -120,7 +120,7 @@
 		{
 			"tag": "🔰 默认代理",
 			"type": "selector",
-			"outbounds": ["♻️ Auto", "🇭🇰 香港节点", "🇨🇳 台湾节点", "🇯🇵 日本节点", "🇰🇷 韩国节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点", "👋 Select", "🎯 全球直连"],
+			"outbounds": ["♻️ Auto", "🇭🇰 香港节点", "🇨🇳 台湾节点", "🇯🇵 日本节点", "🇰🇷 韩国节点", "🇸🇬 新加坡节点", "🇺🇸 美国节点", "👋 手动选择", "🎯 全球直连"],
 			"default": "♻️ Auto"
 		},
 		{
@@ -239,8 +239,8 @@
 			"interval": "10m",
 			"tolerance": 50
 		},
-		{"tag": "👋 Select", "type": "selector", "outbounds": ["{all}"]},
-		{"tag": "🌎 Global", "type": "selector", "outbounds": ["{all}"]},
+		{"tag": "👋 手动选择", "type": "selector", "outbounds": ["{all}"]},
+		{"tag": "🌎 全局节点", "type": "selector", "outbounds": ["{all}"]},
 		{"tag": "🎯 全球直连", "type": "direct"},
 		{"tag": "block", "type": "block"},
 		{"tag": "dns-out", "type": "dns"},
@@ -252,7 +252,7 @@
 		"rules": [
 			{"protocol": "dns",	"outbound": "dns-out"},
 			{"clash_mode": "direct", "outbound": "🎯 全球直连"},
-			{"clash_mode": "global", "outbound": "🌎 Global"},
+			{"clash_mode": "global", "outbound": "🌎 全局节点"},
 			{"rule_set": ["geosite-category-ads-all"], "outbound": "block"},
 			{"rule_set": ["geosite-cn", "geosite-geolocation-cn"], "outbound": "🎯 全球直连"},
 			{"rule_set": ["geosite-openai"], "outbound": "🤖 AI"},
