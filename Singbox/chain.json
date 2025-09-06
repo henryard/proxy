@@ -25,7 +25,7 @@
 			{
 				"tag": "google",
 				"address": "https://8.8.8.8/dns-query",
-				"address_resolver": "ali-resolver", 
+				"address_resolver": "ali-resolver",
 				"detour": "🔰 Proxy"
 			},
 			{
