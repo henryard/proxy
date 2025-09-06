@@ -211,6 +211,7 @@
 			"server_port": 30893,
 			"username": "C4ULoQaEm5",
 			"password": "SvZbVCcDV0",
+			"network": "udp",
 			"detour": "🇯🇵 JP"
 		},
 		{
@@ -220,6 +221,7 @@
 			"server_port": 30893,
 			"username": "C4ULoQaEm5",
 			"password": "SvZbVCcDV0",
+			"network": "udp",
 			"detour": "🔰 Proxy"
 		},
 		{
@@ -263,7 +265,8 @@
 			"server": "217.142.236.91",
 			"server_port": 30893,
 			"username": "C4ULoQaEm5",
-			"password": "SvZbVCcDV0"
+			"password": "SvZbVCcDV0",
+			"network": "udp"
 		},
 		{"tag": "👋 Select", "type": "selector", "outbounds": ["{all}"]},
 		{"tag": "🌎 Global", "type": "selector", "outbounds": ["{all}"]},
