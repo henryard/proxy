@@ -235,6 +235,7 @@
 			"tag": "♻️ Auto",
 			"type": "urltest",
 			"outbounds": [],
+			"filter": [*],
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
 			"tolerance": 50
