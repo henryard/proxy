@@ -138,8 +138,8 @@
 		{
 			"tag": "🍟 YouTube",
 			"type": "selector",
-			"outbounds": ["🇯🇵 JP-Chain", "🔰 Proxy-Chain", "🔰 Proxy", "🇭🇰 HK", "🇨🇳 TW", "🇯🇵 JP", "🇰🇷 KR", "🇸🇬 SG", "🇺🇸 US"],
-			"default": "🇯🇵 JP-Chain"
+			"outbounds": ["🇯🇵 -> 自建节点", "🔰 -> 自建节点", "🔰 Proxy", "🇭🇰 HK", "🇨🇳 TW", "🇯🇵 JP", "🇰🇷 KR", "🇸🇬 SG", "🇺🇸 US"],
+			"default": "🇯🇵 -> 自建节点"
 		},
 		{
 			"tag": "📱 Telegram",
@@ -205,7 +205,7 @@
 			"tolerance": 50
 		},
 		{
-			"tag": "🇯🇵 JP-Chain",
+			"tag": "🇯🇵 -> 自建节点",
 			"type": "socks",
 			"server": "217.142.236.91",
 			"server_port": 30893,
@@ -214,7 +214,7 @@
 			"outbound_detour": "🇯🇵 JP"
 		},
 		{
-			"tag": "🔰 Proxy-Chain",
+			"tag": "🔰 -> 自建节点",
 			"type": "socks",
 			"server": "217.142.236.91",
 			"server_port": 30893,
