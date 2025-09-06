@@ -249,7 +249,6 @@
 			{"protocol": "dns",	"outbound": "dns-out"},
 			{"clash_mode": "direct", "outbound": "🎯 DIRECT"},
 			{"clash_mode": "global", "outbound": "🌎 Global"},
-			{"rule_set": ["geosite-category-ads-all"], "outbound": "block"},
 			{"rule_set": ["geosite-cn", "geosite-geolocation-cn"], "outbound": "🎯 DIRECT"},
 			{"rule_set": ["geosite-openai"], "outbound": "🤖 AI"},
 			{"rule_set": ["geosite-youtube"], "outbound": "🍟 YouTube"},
