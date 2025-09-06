@@ -286,8 +286,10 @@
 			"rule_set": ["geosite-cn", "geosite-geolocation-cn"],
 			"outbound": "🎯 DIRECT"
 		}, {
-			"domain_suffix": ["mitce.net"],
 			"ip_cidr": ["217.142.236.91/32"],
+			"outbound": "🔰 Proxy"
+		}, {
+			"domain_suffix": ["mitce.net"],
 			"outbound": "🎯 DIRECT"
 		}, {
 			"rule_set": ["geosite-openai"],
