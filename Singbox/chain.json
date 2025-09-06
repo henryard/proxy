@@ -206,21 +206,19 @@
 		},
 		{
 			"tag": "🇯🇵 -> 自建节点",
-			"type": "socks",
-			"server": "217.142.236.91",
-			"server_port": 30893,
-			"username": "C4ULoQaEm5",
-			"password": "SvZbVCcDV0",
-			"outbound_detour": "🇯🇵 JP"
+			"type": "chain",
+			"outbounds": [
+				"🇯🇵 JP",
+				"⛳️ 自建节点"
+			]
 		},
 		{
 			"tag": "🔰 -> 自建节点",
-			"type": "socks",
-			"server": "217.142.236.91",
-			"server_port": 30893,
-			"username": "C4ULoQaEm5",
-			"password": "SvZbVCcDV0",
-			"outbound_detour": "🔰 Proxy"
+			"type": "chain",
+			"outbounds": [
+				"🔰 Proxy",
+				"⛳️ 自建节点"
+			]
 		},
 		{
 			"tag": "🇰🇷 KR",
@@ -276,7 +274,7 @@
 		"auto_detect_interface": true,
 		"final": "🔰 Proxy",
 		"rules": [
-			{"protocol": "dns",	"outbound": "dns-out"},
+			{"protocol": "dns", "outbound": "dns-out"},
 			{"clash_mode": "direct", "outbound": "🎯 DIRECT"},
 			{"clash_mode": "global", "outbound": "🌎 Global"},
 			{"rule_set": ["geosite-category-ads-all"], "outbound": "block"},
