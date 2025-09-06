@@ -148,7 +148,7 @@
 	{
 		"tag": "🇭🇰 HK",
 		"type": "urltest",
-		"outbounds": ["{all}"],
+		"outbounds": [],
 		"filter": [{
 			"action": "include",
 			"keywords": ["🇭🇰|香港|HK|Hong"]
@@ -160,7 +160,7 @@
 	{
 		"tag": "🇨🇳 TW",
 		"type": "urltest",
-		"outbounds": ["{all}"],
+		"outbounds": [],
 		"filter": [{
 			"action": "include",
 			"keywords": ["🇹🇼|台湾|TW|Taiwan"]
@@ -172,7 +172,7 @@
 	{
 		"tag": "🇯🇵 JP",
 		"type": "urltest",
-		"outbounds": ["{all}"],
+		"outbounds": [],
 		"filter": [{
 			"action": "include",
 			"keywords": ["🇯🇵|日本|JP|Japan"]
@@ -184,7 +184,7 @@
 	{
 		"tag": "🇰🇷 KR",
 		"type": "urltest",
-		"outbounds": ["{all}"],
+		"outbounds": [],
 		"filter": [{
 			"action": "include",
 			"keywords": ["🇰🇷|韩国|KR|Korea"]
@@ -196,7 +196,7 @@
 	{
 		"tag": "🇸🇬 SG",
 		"type": "urltest",
-		"outbounds": ["{all}"],
+		"outbounds": [],
 		"filter": [{
 			"action": "include",
 			"keywords": ["🇸🇬|新加坡|SG|Singapore"]
@@ -208,7 +208,7 @@
 	{
 		"tag": "🇺🇸 US",
 		"type": "urltest",
-		"outbounds": ["{all}"],
+		"outbounds": [],
 		"filter": [{
 			"action": "include",
 			"keywords": ["🇺🇸|美国|US|America|United States"]
