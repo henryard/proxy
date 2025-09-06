@@ -58,7 +58,7 @@
 				"server": "ali"
 			},
 			{
-				"clash_mode": "global", 
+				"clash_mode": "global",
 				"server": "cloudflare"
 			},
 			{
