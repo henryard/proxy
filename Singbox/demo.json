@@ -198,7 +198,7 @@
 		{
 			"tag": "🇯🇵 JP",
 			"type": "urltest",
-			"outbounds": ["{all}"],
+			"outbounds": [],
 			"filter": [{"action": "include", "keywords": ["🇯🇵|日本|JP|Japan"]}],
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
@@ -207,7 +207,7 @@
 		{
 			"tag": "🇰🇷 KR",
 			"type": "urltest",
-			"outbounds": ["{all}"],
+			"outbounds": [],
 			"filter": [{"action": "include", "keywords": ["🇰🇷|韩国|KR|Korea"]}],
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
@@ -216,7 +216,7 @@
 		{
 			"tag": "🇸🇬 SG",
 			"type": "urltest",
-			"outbounds": ["{all}"],
+			"outbounds": [],
 			"filter": [{"action": "include", "keywords": ["🇸🇬|新加坡|SG|Singapore"]}],
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
@@ -225,7 +225,7 @@
 		{
 			"tag": "🇺🇸 US",
 			"type": "urltest",
-			"outbounds": ["{all}"],
+			"outbounds": [],
 			"filter": [{"action": "include", "keywords": ["🇺🇸|美国|US|America|United States"]}],
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
