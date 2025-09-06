@@ -138,7 +138,7 @@
 		{
 			"tag": "🍟 YouTube",
 			"type": "selector",
-			"outbounds": ["🇯🇵 JP-Chain", "🔰 Proxy", "🇭🇰 HK", "🇨🇳 TW", "🇯🇵 JP", "🇰🇷 KR", "🇸🇬 SG", "🇺🇸 US"],
+			"outbounds": ["🇯🇵 JP-Chain", "🔰 Proxy-Chain", "🔰 Proxy", "🇭🇰 HK", "🇨🇳 TW", "🇯🇵 JP", "🇰🇷 KR", "🇸🇬 SG", "🇺🇸 US"],
 			"default": "🇯🇵 JP-Chain"
 		},
 		{
@@ -207,8 +207,14 @@
 		{
 			"tag": "🇯🇵 JP-Chain",
 			"type": "selector",
-			"outbounds": ["⛳️ 自建节点"],
-			"default": "⛳️ 自建节点"
+			"outbounds": ["🇯🇵 JP", "⛳️ 自建节点"],
+			"default": "🇯🇵 JP"
+		},
+		{
+			"tag": "🔰 Proxy-Chain",
+			"type": "selector",
+			"outbounds": ["🔰 Proxy", "⛳️ 自建节点"],
+			"default": "🔰 Proxy"
 		},
 		{
 			"tag": "🇰🇷 KR",
