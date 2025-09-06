@@ -68,12 +68,7 @@
 			},
 			{
 				"query_type": ["A", "AAAA"],
-				"rule_set": ["geosite-geolocation-!cn"],
-				"server": "fake-ip"
-			},
-			{
-				"query_type": ["A", "AAAA"],
-				"rule_set": ["geosite-openai"],
+				"rule_set": ["geosite-geolocation-!cn", "geosite-openai"],
 				"server": "fake-ip"
 			},
 			{
@@ -83,10 +78,6 @@
 		],
 		"final": "cloudflare",
 		"strategy": "prefer_ipv4",
-		"disable_cache": false,
-		"disable_expire": false,
-		"independent_cache": true,
-		"reverse_mapping": false,
 		"fakeip": {
 			"enabled": true,
 			"inet4_range": "198.18.0.0/15",
@@ -98,12 +89,11 @@
 			"type": "tun",
 			"tag": "tun-in",
 			"interface_name": "utun",
-			"address": ["172.19.0.1/30"],
+			"inet4_address": "172.19.0.1/30",
 			"mtu": 9000,
 			"auto_route": true,
 			"strict_route": true,
 			"stack": "system",
-			"endpoint_independent_nat": false,
 			"sniff": true,
 			"sniff_override_destination": true
 		},
@@ -112,10 +102,23 @@
 			"tag": "mixed-in",
 			"listen": "127.0.0.1",
 			"listen_port": 6160,
-			"sniff": true,
-			"users": []
+			"sniff": true
 		}
 	],
+    "outbound_providers": [
+        {
+            "tag": "subscription-provider",
+            "type": "remote",
+            "url": "https://app.mitce.net/?sid=319133&token=9da80e8bc6a835bcb23f",
+            "download_detour": "🎯 DIRECT",
+            "update_interval": "12h",
+            "healthcheck": {
+                "enabled": true,
+                "url": "http://www.gstatic.com/generate_204",
+                "interval": "10m"
+            }
+        }
+    ],
 	"outbounds": [
 		{
 			"tag": "🔰 Proxy",
@@ -178,10 +181,34 @@
 			"default": "🎯 DIRECT"
 		},
 		{
+			"tag": "👋 Select",
+			"type": "selector",
+			"use": ["subscription-provider"]
+		},
+		{
+			"tag": "🌎 Global",
+			"type": "selector",
+			"use": ["subscription-provider"]
+		},
+		{
+			"tag": "🐟 漏网之鱼",
+			"type": "selector",
+			"outbounds": ["🔰 Proxy"],
+			"default": "🔰 Proxy"
+		},
+		{
+			"tag": "♻️ Auto",
+			"type": "urltest",
+			"use": ["subscription-provider"],
+			"url": "http://www.gstatic.com/generate_204",
+			"interval": "10m",
+			"tolerance": 50
+		},
+		{
 			"tag": "🇭🇰 HK",
 			"type": "urltest",
-			"outbounds": [],
-			"filter": [{"action": "include", "keywords": ["🇭🇰|香港|HK|Hong"]}],
+			"use": ["subscription-provider"],
+            "filter": "(?i)🇭🇰|香港|HK|Hong",
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
 			"tolerance": 50
@@ -189,8 +216,8 @@
 		{
 			"tag": "🇨🇳 TW",
 			"type": "urltest",
-			"outbounds": [],
-			"filter": [{"action": "include", "keywords": ["🇹🇼|台湾|TW|Taiwan"]}],
+			"use": ["subscription-provider"],
+            "filter": "(?i)🇹🇼|台湾|TW|Taiwan",
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
 			"tolerance": 50
@@ -198,8 +225,35 @@
 		{
 			"tag": "🇯🇵 JP",
 			"type": "urltest",
-			"outbounds": [],
-			"filter": [{"action": "include", "keywords": ["🇯🇵|日本|JP|Japan"]}],
+			"use": ["subscription-provider"],
+            "filter": "(?i)🇯🇵|日本|JP|Japan",
+			"url": "http://www.gstatic.com/generate_204",
+			"interval": "10m",
+			"tolerance": 50
+		},
+		{
+			"tag": "🇰🇷 KR",
+			"type": "urltest",
+			"use": ["subscription-provider"],
+            "filter": "(?i)🇰🇷|韩国|KR|Korea",
+			"url": "http://www.gstatic.com/generate_204",
+			"interval": "10m",
+			"tolerance": 50
+		},
+		{
+			"tag": "🇸🇬 SG",
+			"type": "urltest",
+			"use": ["subscription-provider"],
+            "filter": "(?i)🇸🇬|新加坡|SG|Singapore",
+			"url": "http://www.gstatic.com/generate_204",
+			"interval": "10m",
+			"tolerance": 50
+		},
+		{
+			"tag": "🇺🇸 US",
+			"type": "urltest",
+			"use": ["subscription-provider"],
+            "filter": "(?i)🇺🇸|美国|US|America|United States",
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
 			"tolerance": 50
@@ -211,7 +265,6 @@
 			"server_port": 30893,
 			"username": "C4ULoQaEm5",
 			"password": "SvZbVCcDV0",
-			"network": "udp",
 			"detour": "🇯🇵 JP"
 		},
 		{
@@ -221,65 +274,17 @@
 			"server_port": 30893,
 			"username": "C4ULoQaEm5",
 			"password": "SvZbVCcDV0",
-			"network": "udp",
 			"detour": "🔰 Proxy"
 		},
-		{
-			"tag": "🇰🇷 KR",
-			"type": "urltest",
-			"outbounds": [],
-			"filter": [{"action": "include", "keywords": ["🇰🇷|韩国|KR|Korea"]}],
-			"url": "http://www.gstatic.com/generate_204",
-			"interval": "10m",
-			"tolerance": 50
-		},
-		{
-			"tag": "🇸🇬 SG",
-			"type": "urltest",
-			"outbounds": [],
-			"filter": [{"action": "include", "keywords": ["🇸🇬|新加坡|SG|Singapore"]}],
-			"url": "http://www.gstatic.com/generate_204",
-			"interval": "10m",
-			"tolerance": 50
-		},
-		{
-			"tag": "🇺🇸 US",
-			"type": "urltest",
-			"outbounds": [],
-			"filter": [{"action": "include", "keywords": ["🇺🇸|美国|US|America|United States"]}],
-			"url": "http://www.gstatic.com/generate_204",
-			"interval": "10m",
-			"tolerance": 50
-		},
-		{
-			"tag": "♻️ Auto",
-			"type": "urltest",
-			"outbounds": ["{all}"],
-			"url": "http://www.gstatic.com/generate_204",
-			"interval": "10m",
-			"tolerance": 50
-		},
-		{
-			"tag": "⛳️ 自建节点",
-			"type": "socks",
-			"server": "217.142.236.91",
-			"server_port": 30893,
-			"username": "C4ULoQaEm5",
-			"password": "SvZbVCcDV0",
-			"network": "udp"
-		},
-		{"tag": "👋 Select", "type": "selector", "outbounds": ["{all}"]},
-		{"tag": "🌎 Global", "type": "selector", "outbounds": ["{all}"]},
 		{"tag": "🎯 DIRECT", "type": "direct"},
 		{"tag": "block", "type": "block"},
-		{"tag": "dns-out", "type": "dns"},
-		{"tag": "🐟 漏网之鱼", "type": "selector", "outbounds": ["🔰 Proxy"],	"default": "🔰 Proxy"}
+		{"tag": "dns-out", "type": "dns"}
 	],
 	"route": {
 		"auto_detect_interface": true,
 		"final": "🔰 Proxy",
 		"rules": [
-			{"protocol": "dns",	"outbound": "dns-out"},
+			{"protocol": "dns", "outbound": "dns-out"},
 			{"clash_mode": "direct", "outbound": "🎯 DIRECT"},
 			{"clash_mode": "global", "outbound": "🌎 Global"},
 			{"rule_set": ["geosite-category-ads-all"], "outbound": "block"},
@@ -292,9 +297,9 @@
 			{"rule_set": ["geosite-netflix"], "outbound": "📽️ Netflix"},
 			{"rule_set": ["geosite-tiktok"], "outbound": "🎶 TikTok"},
 			{"rule_set": ["geosite-microsoft"], "outbound": "🧑🏻‍💻 Microsoft"},
-			{"rule_set": ["geosite-apple"],	"outbound": "🍎 Apple"},
+			{"rule_set": ["geosite-apple"], "outbound": "🍎 Apple"},
 			{"rule_set": ["geosite-geolocation-!cn"], "outbound": "🔰 Proxy"},
-			{"outbound": "🐟 漏网之 fish"}
+			{"outbound": "🐟 漏网之鱼"}
 		],
 		"rule_set": [
 			{
@@ -382,7 +387,8 @@
 				"type": "remote",
 				"format": "binary",
 				"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple.srs",
-				"download_detour": "🎯 DIRECT"
+				"download_detour": "🎯 DIRECT",
+				"update_interval": "7d"
 			},
 			{
 				"tag": "geosite-geolocation-!cn",
