@@ -42,9 +42,6 @@
 			"address": "rcode://success"
 		}],
 		"rules": [{
-			"rule_set": ["geosite-category-ads-all"],
-			"server": "block"
-		}, {
 			"clash_mode": "direct",
 			"server": "ali"
 		}, {
@@ -280,9 +277,6 @@
 			"clash_mode": "global",
 			"outbound": "🌎 Global"
 		}, {
-			"rule_set": ["geosite-category-ads-all"],
-			"outbound": "block"
-		}, {
 			"rule_set": ["geosite-cn", "geosite-geolocation-cn"],
 			"outbound": "🎯 DIRECT"
 		}, {
@@ -325,13 +319,6 @@
 			"outbound": "🐟 漏网之鱼"
 		}],
 		"rule_set": [{
-			"tag": "geosite-category-ads-all",
-			"type": "remote",
-			"format": "binary",
-			"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs",
-			"download_detour": "🎯 DIRECT",
-			"update_interval": "7d"
-		}, {
 			"tag": "geosite-openai",
 			"type": "remote",
 			"format": "binary",
