@@ -50,10 +50,6 @@
 		],
 		"rules": [
 			{
-				"rule_set": ["geosite-category-ads-all"],
-				"server": "block"
-			},
-			{
 				"clash_mode": "direct",
 				"server": "ali"
 			},
@@ -268,14 +264,6 @@
 			{"outbound": "🐟 漏网之鱼"}
 		],
 		"rule_set": [
-			{
-				"tag": "geosite-category-ads-all",
-				"type": "remote",
-				"format": "binary",
-				"url": "https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs",
-				"download_detour": "🎯 DIRECT",
-				"update_interval": "7d"
-			},
 			{
 				"tag": "geosite-openai",
 				"type": "remote",
