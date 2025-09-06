@@ -188,7 +188,6 @@
 		"server_port": 30893,
 		"username": "C4ULoQaEm5",
 		"password": "SvZbVCcDV0",
-		"network": "udp",
 		"detour": "🇯🇵 JP"
 	}, {
 		"tag": "🔰 -> 自建节点",
@@ -197,7 +196,6 @@
 		"server_port": 30893,
 		"username": "C4ULoQaEm5",
 		"password": "SvZbVCcDV0",
-		"network": "udp",
 		"detour": "🔰 Proxy"
 	}, {
 		"tag": "🇰🇷 KR",
