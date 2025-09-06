@@ -234,13 +234,13 @@
 		{
 			"tag": "♻️ Auto",
 			"type": "urltest",
-			"outbounds": ["{all}"],
+			"outbounds": [],
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
 			"tolerance": 50
 		},
-		{"tag": "👋 Select", "type": "selector", "outbounds": ["{all}"]},
-		{"tag": "🌎 Global", "type": "selector", "outbounds": ["{all}"]},
+		{"tag": "👋 Select", "type": "selector", "outbounds": []},
+		{"tag": "🌎 Global", "type": "selector", "outbounds": []},
 		{"tag": "🎯 DIRECT", "type": "direct"},
 		{"tag": "block", "type": "block"},
 		{"tag": "dns-out", "type": "dns"},
