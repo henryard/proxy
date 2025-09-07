@@ -1,12 +1,30 @@
 /*
- * Clash Meta 节点重命名脚本
+ * Clash Meta 节点重命名与过滤脚本
  *
  * 功能:
- * 1. 按指定格式重命名节点: 国旗 国家中文名称 序号
- * 2. 按指定优先级排序: 香港, 台湾, 日本, 韩国, 新加坡, 美国, 其他...
- * 3. 包含主流国家和地区的匹配规则
+ * 1. 过滤掉包含特定关键字的节点 (如官网、流量信息等)
+ * 2. 按指定格式重命名节点: 国旗 国家中文名称 序号
+ * 3. 按指定优先级排序: 香港, 台湾, 日本, 韩国, 新加坡, 美国, 其他...
+ * 4. 包含主流国家和地区的匹配规则
  */
 function main(proxies) {
+  // --- 新增功能：节点名称过滤 ---
+  // 定义需要过滤掉的关键字 (不区分大小写)
+  const filterKeywords = [
+    '永久', '官网', '到期', '重置', '套餐', '失联', '公益', '剩余', '所有', 
+    '邮箱', '硬盘服', '资源服', '教学服', '69云', '频道', '导航', '更新', 
+    '更换', '流量', '故障', '用户', '网站', '正在处理', '异常', '近期', '今日'
+  ];
+  
+  // 使用 Array.prototype.filter() 方法创建新的节点数组
+  // 这个新数组将只包含名称中“不”含任何过滤关键字的节点
+  const filteredProxies = proxies.filter(proxy => {
+    const proxyNameLower = proxy.name.toLowerCase();
+    // .some() 方法会检查数组中是否至少有一个元素满足条件
+    // 我们在前面加上 ! (非)，表示“不满足”这个条件的节点才会被保留
+    return !filterKeywords.some(keyword => proxyNameLower.includes(keyword.toLowerCase()));
+  });
+
   // 定义国家/地区的重命名规则
   // keywords: 用于匹配节点名称的关键字 (请使用小写)
   // name:     重命名后的中文名称
@@ -47,55 +65,43 @@ function main(proxies) {
     // 可在此处继续添加更多规则...
   ];
 
+  // --- 注意：后续所有操作都基于过滤后的 filteredProxies 数组 ---
+
   // 第一步: 为每个节点找到匹配的规则并打上标记
-  proxies.forEach(proxy => {
+  filteredProxies.forEach(proxy => {
     const proxyNameLower = proxy.name.toLowerCase();
     for (const rule of countryRules) {
-      // 使用 some 方法判断是否有任何一个关键字匹配
       if (rule.keywords.some(keyword => proxyNameLower.includes(keyword))) {
-        proxy.matchedRule = rule; // 将匹配到的规则对象附加到节点上
-        return; // 找到第一个匹配后即可跳出, 防止澳门节点被澳大利亚规则覆盖
+        proxy.matchedRule = rule;
+        return;
       }
     }
   });
 
   // 第二步: 根据匹配规则的 sort 属性对节点进行排序
-  proxies.sort((a, b) => {
-    // 如果 a, b 都有匹配规则, 则按 sort 值排序
+  filteredProxies.sort((a, b) => {
     if (a.matchedRule && b.matchedRule) {
       return a.matchedRule.sort - b.matchedRule.sort;
     }
-    // 如果只有 a 有匹配规则, a 排在前面
-    if (a.matchedRule) {
-      return -1;
-    }
-    // 如果只有 b 有匹配规则, b 排在前面
-    if (b.matchedRule) {
-      return 1;
-    }
-    // 如果都没有匹配规则, 保持原始相对顺序
+    if (a.matchedRule) return -1;
+    if (b.matchedRule) return 1;
     return 0;
   });
 
   // 第三步: 遍历排序后的节点, 进行重命名和编号
-  const counters = {}; // 用于记录每个国家/地区的节点序号
-  proxies.forEach(proxy => {
+  const counters = {};
+  filteredProxies.forEach(proxy => {
     if (proxy.matchedRule) {
       const rule = proxy.matchedRule;
       const countryName = rule.name;
       
-      // 初始化或增加计数器
       counters[countryName] = (counters[countryName] || 0) + 1;
-      
-      // 格式化序号, 不足两位的在前面补 0 (例如: 1 -> 01)
       const number = String(counters[countryName]).padStart(2, '0');
       
-      // 生成最终节点名称
       proxy.name = `${rule.flag} ${countryName} ${number}`;
     }
-    // 对于没有匹配到任何规则的节点, 保持其原始名称不变
   });
 
   // 返回处理后的节点列表
-  return proxies;
+  return filteredProxies;
 }
