@@ -105,7 +105,6 @@ proxy-groups:
   - {name: 🇺🇲 US, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$"}
 
 rules:
-  - DOMAIN-SUFFIX,qichiyu.com,🚀 Proxy
   - RULE-SET,private_domain,🎯 Direct
   - RULE-SET,apple_domain,🍎 Apple
   - RULE-SET,proxylite,🚀 Proxy
