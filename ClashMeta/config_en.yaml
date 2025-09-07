@@ -10,7 +10,7 @@ proxy-providers:
     proxy: 🎯 Direct
     exclude-filter: ".*(永久|官网|到期|重置|套餐|流量|公益|剩余|所有|邮箱|频道|导航|更新|更换|故障|用户|网站|正在处理|异常|近期|今日|GB|Traffic|Used).*"
     parsers:
-      - url: “https://raw.githubusercontent.com/henryard/proxy/main/rename.js”
+      - url: “https://raw.githubusercontent.com/henryard/proxy/main/clash_rename.js”
 
 proxies:
   - {name: 🎯 Direct, type: direct}
