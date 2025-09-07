@@ -1,6 +1,6 @@
 proxy-providers:
   sublink:
-    url: "__SUBC_URL__"
+    url: "机场订阅链接"
     type: http
     interval: 86400
     health-check:
