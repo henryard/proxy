@@ -203,7 +203,7 @@
 		{
 			"tag": "🇰🇷 KR",
 			"type": "urltest",
-			"outbounds": [],
+			"outbounds": ["block"],
 			"filter": [{"action": "include", "keywords": ["🇰🇷|韩国|KR|Korea"]}],
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
