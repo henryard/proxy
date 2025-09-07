@@ -230,13 +230,13 @@
 		{
 			"tag": "♻️ Auto",
 			"type": "urltest",
-			"outbounds": ["block"],
+			"outbounds": ["{all}"],
 			"url": "http://www.gstatic.com/generate_204",
 			"interval": "10m",
 			"tolerance": 50
 		},
-		{"tag": "👋 Select", "type": "selector", "outbounds": ["block"]},
-		{"tag": "🌎 Global", "type": "selector", "outbounds": ["block"]},
+		{"tag": "👋 Select", "type": "selector", "outbounds": ["{all}"]},
+		{"tag": "🌎 Global", "type": "selector", "outbounds": ["{all}"]},
 		{"tag": "🎯 DIRECT", "type": "direct"},
 		{"tag": "block", "type": "block"},
 		{"tag": "dns-out", "type": "dns"},
