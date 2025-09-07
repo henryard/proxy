@@ -25,7 +25,6 @@ unified-delay: true
 tcp-concurrent: true
 log-level: warning
 find-process-mode: 'off'
-# interface-name: en0
 global-client-fingerprint: chrome
 keep-alive-idle: 600
 keep-alive-interval: 15
@@ -51,7 +50,6 @@ sniffer:
 
 tun:
   enable: true
-  # system/gvisor/mixed
   stack: mixed
   dns-hijack: ["any:53", "tcp://any:53"]
   auto-route: true
@@ -76,7 +74,6 @@ dns:
     - 223.5.5.5
   proxy-server-nameserver:
     - https://223.5.5.5/dns-query
-  # namesever尽量用运营商提供的DNS
   nameserver:
     - 223.5.5.5
     - 119.29.29.29
