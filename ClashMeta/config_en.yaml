@@ -7,8 +7,43 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
-    parsers:
-      - url: “https://raw.githubusercontent.com/henryard/proxy/main/clash_rename.js”
+    parser:
+      script: |
+        function main(proxies) {
+          const countryMap = {
+            'HK|Hong Kong|港': ['🇭🇰', '香港'],
+            'JP|Japan|日': ['🇯🇵', '日本'],
+            'SG|Singapore|新|狮城': ['🇸🇬', '新加坡'],
+            'US|United States|States|America|美': ['🇺🇸', '美国'],
+            'TW|Taiwan|台': ['🇹🇼', '台湾'],
+            'GB|UK|United Kingdom|英': ['🇬🇧', '英国'],
+            'KR|Korea|韩': ['🇰🇷', '韩国'],
+            'MO|Macau|澳': ['🇲🇴', '澳门'],
+            'DE|Germany|德': ['🇩🇪', '德国'],
+            'FR|France|法': ['🇫🇷', '法国'],
+            'CA|Canada|加': ['🇨🇦', '加拿大'],
+            'AU|Australia|澳': ['🇦🇺', '澳大利亚'],
+            'RU|Russia|俄|毛': ['🇷🇺', '俄罗斯'],
+            'TR|Turkey|土': ['🇹🇷', '土耳其'],
+          };
+        
+          const counters = {};
+        
+          proxies.forEach(proxy => {
+            for (const key in countryMap) {
+              const regex = new RegExp(key, 'i');
+              if (regex.test(proxy.name)) {
+                const [flag, name] = countryMap[key];
+                counters[name] = (counters[name] || 0) + 1;
+                const index = counters[name].toString().padStart(2, '0');
+                proxy.name = `${flag} ${name} ${index}`;
+                break;
+              }
+            }
+          });
+        
+          return proxies;
+        }
 
 proxies:
   - {name: 🎯 Direct, type: direct}
