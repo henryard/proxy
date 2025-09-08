@@ -7,7 +7,6 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
-    proxy: 🎯 Direct
     parsers:
       - url: “https://raw.githubusercontent.com/henryard/proxy/main/clash_rename.js”
 
