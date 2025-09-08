@@ -69,7 +69,7 @@ proxy-groups:
   - {name: 👋 Select, type: select, include-all: true, filter: "^((?!(Direct|直连|防失联|套餐到期)).)*$"}
   - {name: 📹 YouTube, type: select, proxies: [🚀 Proxy, 🇭🇰 HK, 🇯🇵 JP, 🇸🇬 SG, 🇺🇲 US]}
   - {name: 🍀 Google, type: select, proxies: [🚀 Proxy, 🇭🇰 HK, 🇯🇵 JP, 🇸🇬 SG, 🇺🇲 US]}
-  - {name: 🤖 ChatGPT, type: select, proxies: [🚀 Proxy, 🇭🇰 HK, 🇯🇵 JP, 🇸🇬 SG, 🇺🇲 US]}
+  - {name: 🤖 ChatGPT, type: select, proxies: [🚀 Proxy, 🇭🇰 HK, 🇯🇵 JP, 🇸🇬 SG, 🇺🇲 US], default: 🇺🇲 US}
   - {name: 👨🏿‍💻 GitHub, type: select, proxies: [🚀 Proxy, 🇭🇰 HK, 🇯🇵 JP, 🇸🇬 SG, 🇺🇲 US]}
   - {name: 🐬 OneDrive, type: select, proxies: [🚀 Proxy, 🇭🇰 HK, 🇯🇵 JP, 🇸🇬 SG, 🇺🇲 US]}
   - {name: 🪟 Microsoft, type: select, proxies: [🚀 Proxy, 🇭🇰 HK, 🇯🇵 JP, 🇸🇬 SG, 🇺🇲 US]}
