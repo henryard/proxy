@@ -10,39 +10,60 @@ proxy-providers:
     parser:
       script: |
         function main(proxies) {
+          // 定义地区关键词与 [旗帜, 中文名] 的映射关系
+          // 增加了更多常用关键词以提高匹配成功率
           const countryMap = {
-            'HK|Hong Kong|港': ['🇭🇰', '香港'],
-            'JP|Japan|日': ['🇯🇵', '日本'],
+            'HK|Hong Kong|HongKong|港': ['🇭🇰', '香港'],
+            'JP|Japan|日本|日': ['🇯🇵', '日本'],
             'SG|Singapore|新|狮城': ['🇸🇬', '新加坡'],
-            'US|United States|States|America|美': ['🇺🇸', '美国'],
+            'US|United States|USA|America|美': ['🇺🇸', '美国'],
             'TW|Taiwan|台': ['🇹🇼', '台湾'],
-            'GB|UK|United Kingdom|英': ['🇬🇧', '英国'],
+            'GB|UK|United Kingdom|England|英': ['🇬🇧', '英国'],
             'KR|Korea|韩': ['🇰🇷', '韩国'],
             'MO|Macau|澳': ['🇲🇴', '澳门'],
             'DE|Germany|德': ['🇩🇪', '德国'],
             'FR|France|法': ['🇫🇷', '法国'],
             'CA|Canada|加': ['🇨🇦', '加拿大'],
-            'AU|Australia|澳': ['🇦🇺', '澳大利亚'],
+            'AU|Australia|澳': ['🇦🇺', '澳大利亚'], // '澳' 关键词会优先匹配上面的澳门
             'RU|Russia|俄|毛': ['🇷🇺', '俄罗斯'],
             'TR|Turkey|土': ['🇹🇷', '土耳其'],
+            'PH|Philippines|菲': ['🇵🇭', '菲律宾'],
+            'MY|Malaysia|马': ['🇲🇾', '马来西亚'],
+            'IN|India|印': ['🇮🇳', '印度']
           };
-        
+
+          // 用于为每个地区的节点进行序号计数
           const counters = {};
-        
-          proxies.forEach(proxy => {
+
+          // 使用 .map 创建一个新数组，而不是直接修改原数组，这样更稳健
+          const renamedProxies = proxies.map(proxy => {
+            const newProxy = { ...proxy }; // 创建一个副本以进行修改
+
             for (const key in countryMap) {
-              const regex = new RegExp(key, 'i');
-              if (regex.test(proxy.name)) {
+              const regex = new RegExp(key, 'i'); // 'i' 表示不区分大小写
+              if (regex.test(newProxy.name)) {
                 const [flag, name] = countryMap[key];
+                
+                // 初始化或增加该地区的计数器
                 counters[name] = (counters[name] || 0) + 1;
+                
+                // 格式化序号，使其始终为两位数 (例如: 01, 02, 10)
                 const index = counters[name].toString().padStart(2, '0');
-                proxy.name = `${flag} ${name} ${index}`;
-                break;
+                
+                // 设置新的节点名称
+                newProxy.name = `${flag} ${name} ${index}`;
+                
+                // 匹配成功后，立即返回修改后的节点副本
+                return newProxy;
               }
             }
+            
+            // 如果遍历完所有关键词都没有匹配成功，则返回原始节点（的副本）
+            return newProxy;
           });
-        
-          return proxies;
+
+          // 返回包含所有已重命名或未变动节点的全新数组
+          return renamedProxies;
         }
 
 proxies:
