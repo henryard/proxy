@@ -9,6 +9,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 直连
+    exclude-filter: ".*(永久|官网|到期|重置|套餐|失联|公益|剩余|所有|邮箱|频道|导航|更新|更换|订阅|流量|故障|用户|网站|正在处理|异常|近期|今日).*"
 
 # 节点信息
 proxies:
