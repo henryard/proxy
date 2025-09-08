@@ -7,52 +7,7 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
-    parser:
-      script: |
-        function main(proxies) {
-          const countryMap = {
-            'HK|Hong Kong|HongKong|港': ['🇭🇰', '香港'],
-            'JP|Japan|日本|日': ['🇯🇵', '日本'],
-            'SG|Singapore|新|狮城': ['🇸🇬', '新加坡'],
-            'US|United States|USA|America|美': ['🇺🇸', '美国'],
-            'TW|Taiwan|台': ['🇹🇼', '台湾'],
-            'GB|UK|United Kingdom|England|英': ['🇬🇧', '英国'],
-            'KR|Korea|韩': ['🇰🇷', '韩国'],
-            'MO|Macau|澳': ['🇲🇴', '澳门'],
-            'DE|Germany|德': ['🇩🇪', '德国'],
-            'FR|France|法': ['🇫🇷', '法国'],
-            'CA|Canada|加': ['🇨🇦', '加拿大'],
-            'AU|Australia|澳': ['🇦🇺', '澳大利亚'],
-            'RU|Russia|俄|毛': ['🇷🇺', '俄罗斯'],
-            'TR|Turkey|土': ['🇹🇷', '土耳其'],
-          };
-          
-          const counters = {};
-    
-          // 定义一个正则表达式，用于检查节点是否已经被重命名（包含中文地区名）
-          const chineseNameRegex = /香港|日本|新加坡|美国|台湾|英国|韩国|澳门|德国|法国|加拿大|澳大利亚|俄罗斯|土耳其/;
-    
-          const renamedProxies = proxies.map(proxy => {
-            // 如果节点名称已经包含中文地区，说明处理过了，直接跳过
-            if (chineseNameRegex.test(proxy.name)) {
-              return proxy;
-            }
-    
-            const newProxy = { ...proxy };
-            for (const key in countryMap) {
-              const regex = new RegExp(key, 'i');
-              if (regex.test(newProxy.name)) {
-                const [flag, name] = countryMap[key];
-                counters[name] = (counters[name] || 0) + 1;
-                const index = counters[name].toString().padStart(2, '0');
-                newProxy.name = `${flag} ${name} ${index}`;
-                return newProxy;
-              }
-            }
-            return newProxy;
-          });
-          return renamedProxies;
-        }
+    exclude-filter: ".*(永久|官网|到期|重置|套餐|流量|公益|剩余|所有|邮箱|频道|导航|更新|更换|故障|用户|网站|正在处理|异常|近期|今日|GB|Traffic|Used).*"
 
 proxies:
   - {name: 🎯 Direct, type: direct}
