@@ -7,7 +7,7 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
-    exclude-filter: ".*(永久|网|到期|重置|套餐|量|公益|剩余|所有|邮箱|频道|导航|更|故障|用户|异常).*"
+    exclude-filter: ".*(到期|重置|流量|公益|剩余|邮箱).*"
 
 proxies:
   - {name: 🎯 Direct, type: direct}
