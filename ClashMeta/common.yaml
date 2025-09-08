@@ -65,7 +65,7 @@ dns:
  
 proxy-groups:
   - {name: 🚀 Proxy, type: select, proxies: [♻️ Auto, 🇭🇰 HK, 🇯🇵 JP, 🇸🇬 SG, 🇺🇲 US, 👋 Select, 🎯 Direct]}
-  - {name: ♻️ Auto, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连|防失联|套餐到期)).)*$"}
+  - {name: ♻️ Auto, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(Direct|直连|防失联|套餐到期)).)*$"}
   - {name: 👋 Select, type: select, include-all: true, filter: "^((?!(Direct|直连|防失联|套餐到期)).)*$"}
   - {name: 📹 YouTube, type: select, proxies: [🚀 Proxy, 🇭🇰 HK, 🇯🇵 JP, 🇸🇬 SG, 🇺🇲 US]}
   - {name: 🍀 Google, type: select, proxies: [🚀 Proxy, 🇭🇰 HK, 🇯🇵 JP, 🇸🇬 SG, 🇺🇲 US]}
