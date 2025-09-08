@@ -1,3 +1,4 @@
+profile-name: '__PROFILE_NAME__'
 proxy-providers:
   sublink:
     url: "__SUBSCRIBE_URL__"
