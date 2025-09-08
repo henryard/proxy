@@ -1,5 +1,3 @@
-# config_en.yaml
-
 proxy-providers:
   sublink:
     url: "__SUBSCRIBE_URL__"
