@@ -1,3 +1,5 @@
+# config_en.yaml
+
 proxy-providers:
   sublink:
     url: "__SUBSCRIBE_URL__"
@@ -7,7 +9,7 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
-    exclude-filter: ".*(永久|官网|到期|重置|套餐|流量|公益|剩余|所有|邮箱|频道|导航|更新|更换|故障|用户|网站|正在处理|异常|近期|今日|GB|Traffic|Used).*"
+    exclude-filter: *node_exclude_filter
 
 proxies:
   - {name: 🎯 Direct, type: direct}
