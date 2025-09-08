@@ -7,7 +7,6 @@ proxy-providers:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
-    exclude-filter: *node_exclude_filter
 
 proxies:
   - {name: 🎯 Direct, type: direct}
