@@ -1,3 +1,6 @@
+common_definitions:
+  exclude_filter: &node_exclude_filter ".*(永久|官网|到期|重置|套餐|流量|公益|剩余|所有|邮箱|频道|导航|更新|更换|故障|用户|网站|正在处理|异常|近期|今日|GB|Traffic|Used).*"
+
 port: 7890
 socks-port: 7891
 redir-port: 7892
