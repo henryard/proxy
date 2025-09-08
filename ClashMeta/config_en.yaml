@@ -1,13 +1,13 @@
-# ... other settings ...
-# 代理节点 (由 Worker 动态填充)
-proxies:
-__PROXIES_PLACEHOLDER__
+proxy-providers:
+  sublink:
+    url: "__SUBSCRIBE_URL__"
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    exclude-filter: ".*(永久|网|到期|重置|套餐|量|公益|剩余|所有|邮箱|频道|导航|更|故障|用户|异常).*"
 
-# 代理组 (Proxy Groups)
-proxy-groups:
-  - name: "PROXY"
-    type: select
-    # 在这里使用 'use' 关键字来引用所有由 Worker 生成的节点
-    use:
-      - ALL
-# ...
+proxies:
+  - {name: 🎯 Direct, type: direct}
