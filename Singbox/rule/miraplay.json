@@ -1,0 +1,40 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "domain_suffix": [
+                "mihdr.top"
+            ],
+            "domain": [
+                "666.666291.xyz",
+                "www.muou.asia",
+                "www.muou.site",
+                "fmao.shop",
+                "www.miqk.cc",
+                "xiaomi666.fun",
+                "tv.214521.xyz",
+                "duo.hidns.vip",
+                "zhizhen1.top",
+                "xhban.xyz",
+                "xsayang.fun",
+                "woog.nxog.eu.org",
+                "sd.sduc.site"
+            ],
+            "domain_keyword": [
+                "wogg",
+                "yydsys",
+                "erxiaopan",
+                "erixaopan",
+                "erxiaozhan",
+                "2xiaozhan",
+                "2xiaopan",
+                "wexwp"
+            ],
+            "ip_cidr": [
+                "154.222.27.33/32",
+                "103.45.162.207/32",
+                "154.201.83.50/32"
+            ]
+        }
+    ]
+}
