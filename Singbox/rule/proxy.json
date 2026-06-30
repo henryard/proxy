@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "domain_suffix": [
+                "updf.com",
+                "superace.com",
+                "hdhive.com"
+            ],
+            "domain": [
+                ""
+            ]
+        }
+    ]
+}
