@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "domain_suffix": [
+                "shudaozhigui.com",
+                "17wanxiao.com",
+                "59wanmei.com",
+                "wjsor.com",
+                "cc.cd"
+            ],
+            "domain": [
+                "china.69yun69.net"
+            ]
+        }
+    ]
+}
