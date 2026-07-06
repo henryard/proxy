@@ -1,0 +1,11 @@
+#!name=Google Redirect
+#!desc=Google重定向
+#!author=Gemini
+
+https://ahrefs.com/writing-tools/paragraph-rewriter
+# 将常见的国家/地区顶级域名重定向到 google.com
+^https?:\/\/(www\.)?google\.(cn|com\.hk|com\.tw|co\.jp|co\.kr|co\.uk|com\.au|de|fr|es|it)\/(.*) https://www.google.com/$3 302
+
+[MITM]
+# 必须配置 MitM 才能解密并重定向 HTTPS 流量
+hostname = %APPEND% www.google.cn, www.google.com.hk, www.google.com.tw, www.google.co.jp, www.google.co.kr, www.google.co.uk, www.google.com.au, www.google.de, www.google.fr, www.google.es, www.google.it
