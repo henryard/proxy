@@ -1,5 +1,5 @@
-#!name=henry自定义
-#!desc=更新主配置也不会丢失的专属规则
+#!name=henry
+#!desc=自定义规则
 #!author=henry
 
 [Rule]
