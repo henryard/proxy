@@ -1,4 +1,4 @@
-#!name = DNS
+#!name = DNS防泄漏
 #!desc = DNS防泄露
 
 [General]
