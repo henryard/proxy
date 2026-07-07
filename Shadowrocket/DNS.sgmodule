@@ -1,4 +1,4 @@
-#!name=DNS 防泄漏与安全
+#!name=DNS 防泄漏
 #!desc=防止 DNS 泄漏与 ISP 劫持。使用 DoH 加密请求，强制关闭 IPv6，并劫持传统 53 端口。订阅更新不会覆盖此模块。
 #!author=Gemini
 
