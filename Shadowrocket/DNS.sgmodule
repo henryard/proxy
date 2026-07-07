@@ -1,23 +1,31 @@
-#!name=DNS防泄漏
-#!desc=防止DNS泄露与ISP劫持。
-#!author=Gemini
+#!name = DNS 防泄露（国内解析不受影响）
+#!desc = 只改变"直连"域名的本地 DNS 解析方式：换成国内加密 DoH/DoT，杜绝明文 DNS 被运营商嗅探/劫持；代理域名仍按 Shadowrocket 默认方式交由远程节点解析，不受本模块影响，国内网站 CDN 就近解析结果也不会变化。请将本模块拖到模块列表最上方并启用。
 
 [General]
-# 1. 强制关闭 IPv6 (绝大多数泄露的罪魁祸首)
-ipv6 = false
+# 直连域名的 DNS 覆写：阿里云 + 腾讯 DNSPod 的加密解析（DoH×2 + DoT×2 并行请求，取最快返回）
+# 用的仍是国内解析器，返回的 IP 依旧是国内 CDN 就近节点，速度和现在一样，只是传输过程加密了
+dns-server = https://dns.alidns.com/dns-query, https://doh.pub/dns-query, tls://dns.alidns.com, tls://dot.pub
 
-# 2. 主 DNS：纯加密 (国内直连)
-# 彻底移除所有明文 IP！只允许通过 HTTPS 加密查询。
-# 直接使用 IP 形式，防止解析 DoH 域名时产生 Bootstrap 泄露。
-# (阿里 DoH IP, 腾讯 DoH IP)
-dns-server = https://223.5.5.5/dns-query, https://1.12.12.12/dns-query
+# 上面全部超时/失败（2 秒）后的备用 DNS，同样使用国内解析器，不引入国外解析结果
+fallback-dns-server = 223.5.5.5, 119.29.29.29
 
-# 3. 备用 DNS：纯加密 (海外代理解析)
-# 同样剔除 8.8.8.8 明文，只保留纯 IP 形式的加密 DoH。
-# (Google DoH IP, Cloudflare DoH IP)
-fallback-dns-server = https://8.8.8.8/dns-query, https://1.1.1.1/dns-query
+# 关键开关：确保"直连"域名走的是上面配置的加密 DNS，而不是设备/网络自带的系统 DNS
+# 系统 DNS 通常是明文 UDP 53，最容易被运营商劫持/嗅探，这正是"DNS 泄露"最常见的来源
+dns-direct-system = false
 
-# 4. 终极防漏：全局劫持所有 53 端口
-# 将 *:53 拦截。无论任何 App 试图用自己的协议去查任何 DNS 的 53 端口，
-# 全部拦截并强行转交给 Shadowrocket 的加密 DNS 处理。
-hijack-dns = *:53
+# 解析结果为私有 IP 时按正常应答处理（例如校园网/内网服务），不会被误判为"被劫持"而强推代理
+private-ip-answer = true
+
+[Rule]
+# 本地/私有/保留地址段：直连且不触发 DNS 解析
+# 作用：规则表中排在前面的 IP-CIDR 规则如果不加 no-resolve，Shadowrocket 会先做一次本地 DNS 查询才能判断是否匹配
+# 这一步查询本来就不该发生在"该走代理"的域名身上——加 no-resolve 后这些私有段直接跳过解析，从源头减少一类泄露
+IP-CIDR,0.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+IP-CIDR,169.254.0.0/16,DIRECT,no-resolve
+IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+IP-CIDR,224.0.0.0/4,DIRECT,no-resolve
+IP-CIDR,255.255.255.255/32,DIRECT,no-resolve
