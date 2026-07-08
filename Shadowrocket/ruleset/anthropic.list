@@ -1,0 +1,14 @@
+# Shadowrocket rule-set: anthropic
+# Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/anthropic.json
+# Updated: 2026-07-08 23:49:33 (Beijing / UTC+8)
+# Rules: DOMAIN=1, DOMAIN-SUFFIX=7
+
+DOMAIN,servd-anthropic-website.b-cdn.net
+
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,clau.de
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,claudemcpcontent.com
+DOMAIN-SUFFIX,claudeusercontent.com

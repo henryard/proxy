@@ -1,0 +1,11 @@
+# Shadowrocket rule-set: perplexity
+# Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/perplexity.json
+# Updated: 2026-07-08 23:49:33 (Beijing / UTC+8)
+# Rules: DOMAIN=2, DOMAIN-SUFFIX=3
+
+DOMAIN,ppl-ai-file-upload.s3.amazonaws.com
+DOMAIN,pplx-res.cloudinary.com
+
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,perplexity.com
+DOMAIN-SUFFIX,pplx.ai
