@@ -3,8 +3,8 @@
 #!author=henry
 
 [Rule]
-DOMAIN-SUFFIX,69yun69.com,PROXY
-DOMAIN-SUFFIX,hdhive.com,PROXY
+DOMAIN-SUFFIX,69yun69.com,🚀 Proxy
+DOMAIN-SUFFIX,hdhive.com,🚀 Proxy
 
 RULE-SET,https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/anthropic.list,🤖 AI
 
@@ -12,33 +12,33 @@ RULE-SET,https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/m
 
 RULE-SET,https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-scholar-!cn.list,🎯 Direct
 
-DOMAIN-SUFFIX,cc.cd,DIRECT
-DOMAIN-SUFFIX,qzz.io,DIRECT
+DOMAIN-SUFFIX,cc.cd,🎯 Direct
+DOMAIN-SUFFIX,qzz.io,🎯 Direct
 
-DOMAIN-SUFFIX,mihdr.top,DIRECT
-DOMAIN,666.666291.xyz,DIRECT
-DOMAIN,www.muou.asia,DIRECT
-DOMAIN,www.muou.site,DIRECT
-DOMAIN,fmao.shop,DIRECT
-DOMAIN,www.qiqk.cc,DIRECT
-DOMAIN,xiaomi666.fun,DIRECT
-DOMAIN,tv.214521.xyz,DIRECT
-DOMAIN,duo.hidns.vip,DIRECT
-DOMAIN,zhizhen1.top,DIRECT
-DOMAIN,xhban.xyz,DIRECT
-DOMAIN,xsayang.fun,DIRECT
-DOMAIN,woog.nxog.eu.org,DIRECT
-DOMAIN,sd.sduc.site,DIRECT
+DOMAIN-SUFFIX,mihdr.top,🎯 Direct
+DOMAIN,666.666291.xyz,🎯 Direct
+DOMAIN,www.muou.asia,🎯 Direct
+DOMAIN,www.muou.site,🎯 Direct
+DOMAIN,fmao.shop,🎯 Direct
+DOMAIN,www.qiqk.cc,🎯 Direct
+DOMAIN,xiaomi666.fun,🎯 Direct
+DOMAIN,tv.214521.xyz,🎯 Direct
+DOMAIN,duo.hidns.vip,🎯 Direct
+DOMAIN,zhizhen1.top,🎯 Direct
+DOMAIN,xhban.xyz,🎯 Direct
+DOMAIN,xsayang.fun,🎯 Direct
+DOMAIN,woog.nxog.eu.org,🎯 Direct
+DOMAIN,sd.sduc.site,🎯 Direct
 
-DOMAIN-KEYWORD,wogg,DIRECT
-DOMAIN-KEYWORD,yydsys,DIRECT
-DOMAIN-KEYWORD,erxiaopan,DIRECT
-DOMAIN-KEYWORD,erixaopan,DIRECT
-DOMAIN-KEYWORD,erxiaozhan,DIRECT
-DOMAIN-KEYWORD,2xiaozhan,DIRECT
-DOMAIN-KEYWORD,2xiaopan,DIRECT
-DOMAIN-KEYWORD,wexwp,DIRECT
+DOMAIN-KEYWORD,wogg,🎯 Direct
+DOMAIN-KEYWORD,yydsys,🎯 Direct
+DOMAIN-KEYWORD,erxiaopan,🎯 Direct
+DOMAIN-KEYWORD,erixaopan,🎯 Direct
+DOMAIN-KEYWORD,erxiaozhan,🎯 Direct
+DOMAIN-KEYWORD,2xiaozhan,🎯 Direct
+DOMAIN-KEYWORD,2xiaopan,🎯 Direct
+DOMAIN-KEYWORD,wexwp,🎯 Direct
 
-IP-CIDR,154.222.27.33/32,DIRECT
-IP-CIDR,103.45.162.207/32,DIRECT
-IP-CIDR,154.201.83.50/32,DIRECT
+IP-CIDR,154.222.27.33/32,🎯 Direct
+IP-CIDR,103.45.162.207/32,🎯 Direct
+IP-CIDR,154.201.83.50/32,🎯 Direct
