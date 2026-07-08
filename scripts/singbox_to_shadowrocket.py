@@ -58,7 +58,7 @@ RULESETS = [
     "cloudflare",
     "alibaba",
     "baidu",
-    "tencent",  # NOTE: includes WeChat/Weixin domains (wechat.json does not exist on the sing branch)
+    "tencent",
     "douban",
     "xiaohongshu",
     "douyin",
