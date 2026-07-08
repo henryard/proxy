@@ -6,11 +6,11 @@
 DOMAIN-SUFFIX,69yun69.com,PROXY
 DOMAIN-SUFFIX,hdhive.com,PROXY
 
-RULE-SET,https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/anthropic.list,AI
+RULE-SET,https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/anthropic.list,🤖 AI
 
-RULE-SET,https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/google-scholar.list,AI
+RULE-SET,https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/google-scholar.list,🤖 AI
 
-RULE-SET,https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-scholar-!cn.list,DIRECT
+RULE-SET,https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-scholar-!cn.list,🎯 Direct
 
 DOMAIN-SUFFIX,cc.cd,DIRECT
 DOMAIN-SUFFIX,qzz.io,DIRECT
