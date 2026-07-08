@@ -1,5 +1,5 @@
 #!name = DNS
-#!desc = DNS防泄露
+#!desc = DNS防泄漏
 
 [General]
 dns-server = https://dns.google/dns-query#proxy,https://8.8.8.8/dns-query#proxy,https://cloudflare-dns.com/dns-query#proxy
