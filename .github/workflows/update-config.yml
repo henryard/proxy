@@ -1,0 +1,46 @@
+name: Auto Sync Config
+
+# 触发条件
+on:
+  schedule:
+    # 每天北京时间早上 8:00 执行一次 (UTC时间 00:00)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  update-config:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 检出 proxy 仓库代码
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # 2. 合并配置
+      - name: Download and Merge Conf
+        run: |
+          # 将上游配置临时下载到当前运行环境的根目录
+          curl -o upstream.conf https://raw.githubusercontent.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever/release/lazy_group.conf
+          
+          # 读取你的自定义配置，和上游配置合并，并输出为 Shadowrocket/final.conf
+          cat Shadowrocket/henryard.conf upstream.conf > Shadowrocket/final.conf
+          
+          # 删除临时文件，保持仓库干净
+          rm upstream.conf
+
+      # 3. 自动提交到仓库
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 仅追踪我们刚刚生成/更新的 final.conf 文件
+          git add Shadowrocket/final.conf
+          
+          # 检查是否有更新
+          if git diff --staged --quiet; then
+            echo "配置没有变化，无需提交。"
+          else
+            git commit -m "Auto-update: Sync final.conf"
+            git push
+          fi
