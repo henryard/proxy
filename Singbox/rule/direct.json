@@ -3,12 +3,15 @@
     "rules": [
         {
             "domain_suffix": [
+                "531108.xyz",
+                "833863.xyz",
                 "pingan.com.cn",
                 "shudaozhigui.com",
                 "17wanxiao.com",
                 "59wanmei.com",
                 "wjsor.com",
                 "cc.cd",
+                "pp.ua",
                 "mihdr.top"
             ],
             "domain": [
