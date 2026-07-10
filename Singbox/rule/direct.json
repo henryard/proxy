@@ -3,22 +3,14 @@
     "rules": [
         {
             "domain_suffix": [
-                "531108.xyz",
-                "833863.xyz",
                 "pingan.com.cn",
                 "shudaozhigui.com",
                 "17wanxiao.com",
                 "59wanmei.com",
                 "wjsor.com",
-                "cc.cd",
-                "pp.ua",
                 "mihdr.top"
             ],
             "domain": [
-                "531108.xyz",
-                "833863.xyz",
-                "cdtu.cc.cd",
-                "cdtu.pp.ua",
                 "china.69yun69.net",
                 "666.666291.xyz",
                 "www.muou.asia",
