@@ -44,3 +44,18 @@ jobs:
             git commit -m "chore: update Shadowrocket rulesets ($(date -u +'%Y-%m-%d'))"
             git push
           fi
+
+      # 保活：不依赖第三方 action，规则长期无变化时也能防止定时任务被禁用
+      - name: Keepalive workflow
+        run: |
+          last=$(git log -1 --format=%ct)
+          now=$(date +%s)
+          days=$(( (now - last) / 86400 ))
+          echo "距上次提交已 ${days} 天"
+          if [ "$days" -ge 45 ]; then
+            git commit --allow-empty -m "chore: keepalive to prevent scheduled workflow from being disabled"
+            git push
+            echo "已推送空提交以保活。"
+          else
+            echo "未满 45 天，跳过保活提交。"
+          fi
