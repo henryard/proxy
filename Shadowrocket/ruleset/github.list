@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: github
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/github.json
-# Updated: 2026-07-08 23:49:43 (Beijing / UTC+8)
+# Updated: 2026-07-13 09:44:16 (Beijing / UTC+8)
 # Rules: DOMAIN=32, DOMAIN-SUFFIX=31
 
 DOMAIN,github-api.arkoselabs.com

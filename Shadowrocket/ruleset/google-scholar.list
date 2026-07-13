@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: google-scholar
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google-scholar.json
-# Updated: 2026-07-08 23:49:34 (Beijing / UTC+8)
+# Updated: 2026-07-13 09:44:11 (Beijing / UTC+8)
 # Rules: DOMAIN=76
 
 DOMAIN,scholar.google.ae

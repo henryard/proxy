@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: twitter
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/twitter.json
-# Updated: 2026-07-08 23:49:41 (Beijing / UTC+8)
+# Updated: 2026-07-13 09:44:15 (Beijing / UTC+8)
 # Rules: DOMAIN-SUFFIX=24
 
 DOMAIN-SUFFIX,twitter.jp

@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: tencent
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/tencent.json
-# Updated: 2026-07-08 23:49:46 (Beijing / UTC+8)
+# Updated: 2026-07-13 09:44:21 (Beijing / UTC+8)
 # Rules: DOMAIN=1, DOMAIN-SUFFIX=674
 
 DOMAIN,wetv.qq.com
@@ -359,8 +359,6 @@ DOMAIN-SUFFIX,chatqidian.cn
 DOMAIN-SUFFIX,chatdrama.net
 DOMAIN-SUFFIX,chatdrama.cn
 DOMAIN-SUFFIX,aireads.cn
-DOMAIN-SUFFIX,koowo.com
-DOMAIN-SUFFIX,koowo.cn
 DOMAIN-SUFFIX,kugouyouth.com
 DOMAIN-SUFFIX,kugouvoice.com
 DOMAIN-SUFFIX,kugoustore.com
@@ -371,6 +369,8 @@ DOMAIN-SUFFIX,kugoukid.com
 DOMAIN-SUFFIX,kugouipv6.com
 DOMAIN-SUFFIX,kugouaudio.com
 DOMAIN-SUFFIX,kugou.net
+DOMAIN-SUFFIX,kugou.com
+DOMAIN-SUFFIX,kugoo.com
 DOMAIN-SUFFIX,mting.info
 DOMAIN-SUFFIX,tencentmusic.com
 DOMAIN-SUFFIX,sogoucdndl.com
@@ -403,8 +403,8 @@ DOMAIN-SUFFIX,xiangrikuisite.com
 DOMAIN-SUFFIX,xinyan.cn
 DOMAIN-SUFFIX,yeyousg.com
 DOMAIN-SUFFIX,sogoucdn.com
-DOMAIN-SUFFIX,xmcdn.com
-DOMAIN-SUFFIX,kglink.cn
+DOMAIN-SUFFIX,kuwo.cn
+DOMAIN-SUFFIX,fanxingliveshow.com
 DOMAIN-SUFFIX,openmidas.com
 DOMAIN-SUFFIX,qq.design
 DOMAIN-SUFFIX,qqgamedesign.com
@@ -415,9 +415,9 @@ DOMAIN-SUFFIX,tjstats.com
 DOMAIN-SUFFIX,wegamedeveloper.com
 DOMAIN-SUFFIX,weixinbridge.com
 DOMAIN-SUFFIX,weui.io
-DOMAIN-SUFFIX,cnb.cool
 DOMAIN-SUFFIX,coding.me
 DOMAIN-SUFFIX,coding.net
+DOMAIN-SUFFIX,cnb.cool
 DOMAIN-SUFFIX,videoxiaoyouxi.com
 DOMAIN-SUFFIX,nagcloudcs.com
 DOMAIN-SUFFIX,gameloop.com
@@ -498,17 +498,17 @@ DOMAIN-SUFFIX,scid.cn
 DOMAIN-SUFFIX,scsentry.cn
 DOMAIN-SUFFIX,supercellcommunity.cn
 DOMAIN-SUFFIX,supercellsupport.cn
-DOMAIN-SUFFIX,kgimg.com
-DOMAIN-SUFFIX,fanxingliveshow.com
+DOMAIN-SUFFIX,xmcdn.com
+DOMAIN-SUFFIX,ximalaya.com
 DOMAIN-SUFFIX,ultimatemusic.cn
 DOMAIN-SUFFIX,tingmall.com
 DOMAIN-SUFFIX,97ting.com
 DOMAIN-SUFFIX,wting.info
-DOMAIN-SUFFIX,kugou.com
-DOMAIN-SUFFIX,kuwo.cn
 DOMAIN-SUFFIX,ktv.com
-DOMAIN-SUFFIX,ximalaya.com
-DOMAIN-SUFFIX,kugoo.com
+DOMAIN-SUFFIX,koowo.cn
+DOMAIN-SUFFIX,kgimg.com
+DOMAIN-SUFFIX,koowo.com
+DOMAIN-SUFFIX,kglink.cn
 DOMAIN-SUFFIX,lrts.me
 DOMAIN-SUFFIX,qqmusic.com
 DOMAIN-SUFFIX,testjrzk.net.cn
@@ -672,10 +672,10 @@ DOMAIN-SUFFIX,report.tencentmusic.com
 DOMAIN-SUFFIX,stat.y.qq.com
 DOMAIN-SUFFIX,tmead.y.qq.com
 DOMAIN-SUFFIX,tmeadcomm.y.qq.com
-DOMAIN-SUFFIX,ads.service.kugou.com
-DOMAIN-SUFFIX,adserviceretry.kglink.cn
-DOMAIN-SUFFIX,adserviceretry.kugou.com
 DOMAIN-SUFFIX,adbehavior.ximalaya.com
 DOMAIN-SUFFIX,adse.wsa.ximalaya.com
 DOMAIN-SUFFIX,adse.ximalaya.com
+DOMAIN-SUFFIX,ads.service.kugou.com
+DOMAIN-SUFFIX,adserviceretry.kglink.cn
+DOMAIN-SUFFIX,adserviceretry.kugou.com
 DOMAIN-SUFFIX,webnovel.com

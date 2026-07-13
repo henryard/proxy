@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: netflix
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/netflix.json
-# Updated: 2026-07-08 23:49:41 (Beijing / UTC+8)
+# Updated: 2026-07-13 09:44:16 (Beijing / UTC+8)
 # Rules: DOMAIN=1, DOMAIN-SUFFIX=23
 # Note: skipped 4 domain_regex rule(s) (unsupported by Shadowrocket)
 

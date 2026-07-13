@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: baidu
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/baidu.json
-# Updated: 2026-07-08 23:49:46 (Beijing / UTC+8)
+# Updated: 2026-07-13 09:44:21 (Beijing / UTC+8)
 # Rules: DOMAIN-SUFFIX=136
 
 DOMAIN-SUFFIX,baidu
