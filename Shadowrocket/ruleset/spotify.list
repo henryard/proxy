@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: spotify
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/spotify.json
-# Updated: 2026-07-13 09:44:13 (Beijing / UTC+8)
+# Updated: 2026-07-20 09:53:46 (Beijing / UTC+8)
 # Rules: DOMAIN=11, DOMAIN-SUFFIX=17
 
 DOMAIN,audio-ak-spotify-com.akamaized.net

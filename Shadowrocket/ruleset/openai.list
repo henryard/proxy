@@ -1,7 +1,7 @@
 # Shadowrocket rule-set: openai
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.json
-# Updated: 2026-07-13 09:44:06 (Beijing / UTC+8)
-# Rules: DOMAIN=9, DOMAIN-SUFFIX=12
+# Updated: 2026-07-20 09:53:39 (Beijing / UTC+8)
+# Rules: DOMAIN=9, DOMAIN-SUFFIX=13
 # Note: skipped 1 domain_regex rule(s) (unsupported by Shadowrocket)
 
 DOMAIN,openaiapi-site.azureedge.net
@@ -14,12 +14,13 @@ DOMAIN,browser-intake-datadoghq.com
 DOMAIN,o33249.ingest.sentry.io
 DOMAIN,openai.qualtrics.com
 
-DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,chatgpt.site
 DOMAIN-SUFFIX,crixet.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaistatsig.com
-DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,chatgpt.livekit.cloud

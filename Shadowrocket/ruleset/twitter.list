@@ -1,21 +1,21 @@
 # Shadowrocket rule-set: twitter
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/twitter.json
-# Updated: 2026-07-13 09:44:15 (Beijing / UTC+8)
+# Updated: 2026-07-20 09:53:49 (Beijing / UTC+8)
 # Rules: DOMAIN-SUFFIX=24
 
 DOMAIN-SUFFIX,twitter.jp
-DOMAIN-SUFFIX,x.com
-DOMAIN-SUFFIX,cms-twdigitalassets.com
+DOMAIN-SUFFIX,twitter.biz
+DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,t.co
 DOMAIN-SUFFIX,tellapart.com
 DOMAIN-SUFFIX,tweetdeck.com
 DOMAIN-SUFFIX,twimg.com
-DOMAIN-SUFFIX,twitpic.com
-DOMAIN-SUFFIX,twitter.biz
 DOMAIN-SUFFIX,twittercommunity.com
-DOMAIN-SUFFIX,pscp.tv
-DOMAIN-SUFFIX,periscope.tv
+DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,periscope.tv
+DOMAIN-SUFFIX,cms-twdigitalassets.com
+DOMAIN-SUFFIX,twitpic.com
 DOMAIN-SUFFIX,twitterflightschool.com
 DOMAIN-SUFFIX,twitterinc.com
 DOMAIN-SUFFIX,twitteroauth.com
