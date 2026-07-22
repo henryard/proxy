@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: google-gemini
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google-gemini.json
-# Updated: 2026-07-20 09:53:40 (Beijing / UTC+8)
+# Updated: 2026-07-22 09:25:10 (Beijing / UTC+8)
 # Rules: DOMAIN=11, DOMAIN-SUFFIX=29
 
 DOMAIN,ai.google.dev

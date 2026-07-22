@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: douban
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/douban.json
-# Updated: 2026-07-20 09:53:56 (Beijing / UTC+8)
+# Updated: 2026-07-22 09:25:42 (Beijing / UTC+8)
 # Rules: DOMAIN-SUFFIX=3
 
 DOMAIN-SUFFIX,douban.com

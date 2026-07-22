@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: perplexity
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/perplexity.json
-# Updated: 2026-07-20 09:53:41 (Beijing / UTC+8)
+# Updated: 2026-07-22 09:25:12 (Beijing / UTC+8)
 # Rules: DOMAIN=2, DOMAIN-SUFFIX=3
 
 DOMAIN,ppl-ai-file-upload.s3.amazonaws.com

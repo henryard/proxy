@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: telegram
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/telegram.json
-# Updated: 2026-07-20 09:53:48 (Beijing / UTC+8)
+# Updated: 2026-07-22 09:25:27 (Beijing / UTC+8)
 # Rules: DOMAIN-SUFFIX=21
 
 DOMAIN-SUFFIX,cdn-telegram.org
