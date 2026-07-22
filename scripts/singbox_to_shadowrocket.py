@@ -44,6 +44,7 @@ RULESETS = [
     "google-gemini",
     "perplexity",
     "category-ai-!cn",
+    "category-stun",
     "google-scholar",
     "google",
     "youtube",
