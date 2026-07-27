@@ -53,6 +53,7 @@ RULESETS = [
     "tiktok",
     "twitter",
     "netflix",
+    "category-porn",
     "github",
     "microsoft",
     "apple",
