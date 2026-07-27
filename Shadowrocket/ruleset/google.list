@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: google
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/google.json
-# Updated: 2026-07-27 09:51:20 (Beijing / UTC+8)
+# Updated: 2026-07-27 21:34:39 (Beijing / UTC+8)
 # Rules: DOMAIN=233, DOMAIN-SUFFIX=835
 # Note: skipped 2 domain_regex rule(s) (unsupported by Shadowrocket)
 
