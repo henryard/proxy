@@ -55,6 +55,7 @@ RULESETS = [
     "netflix",
     "category-porn",
     "github",
+    "nodeseek",
     "microsoft",
     "apple",
     "cloudflare",
