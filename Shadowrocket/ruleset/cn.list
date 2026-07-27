@@ -1,7 +1,7 @@
 # Shadowrocket rule-set: cn
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.json
-# Updated: 2026-07-22 09:25:44 (Beijing / UTC+8)
-# Rules: DOMAIN-SUFFIX=111868
+# Updated: 2026-07-27 09:51:29 (Beijing / UTC+8)
+# Rules: DOMAIN-SUFFIX=111872
 
 DOMAIN-SUFFIX,alibaba
 DOMAIN-SUFFIX,yun
@@ -55,8 +55,8 @@ DOMAIN-SUFFIX,citic
 DOMAIN-SUFFIX,baidu
 DOMAIN-SUFFIX,anquan
 DOMAIN-SUFFIX,alipay
-DOMAIN-SUFFIX,jsgc.com
-DOMAIN-SUFFIX,denganliang.com
+DOMAIN-SUFFIX,jsgc168.com
+DOMAIN-SUFFIX,gxchuen.com
 DOMAIN-SUFFIX,028-xhxgt.com
 DOMAIN-SUFFIX,0283home.com
 DOMAIN-SUFFIX,0289kh1448.xin
@@ -12495,7 +12495,7 @@ DOMAIN-SUFFIX,artdata.net
 DOMAIN-SUFFIX,artebuy.com
 DOMAIN-SUFFIX,artech-graphite.com
 DOMAIN-SUFFIX,artemedhospital.com
-DOMAIN-SUFFIX,arterytek.com
+DOMAIN-SUFFIX,jsmodeling.com
 DOMAIN-SUFFIX,artexamcq.com
 DOMAIN-SUFFIX,artfinace.com
 DOMAIN-SUFFIX,artfoxlive.com
@@ -18665,7 +18665,7 @@ DOMAIN-SUFFIX,cbea.com
 DOMAIN-SUFFIX,cbecok.com
 DOMAIN-SUFFIX,cbecx.com
 DOMAIN-SUFFIX,cbeeexpo.com
-DOMAIN-SUFFIX,jsmolfa.com
+DOMAIN-SUFFIX,cbes21.com
 DOMAIN-SUFFIX,cbex.com
 DOMAIN-SUFFIX,cbf92cea38c259ee.com
 DOMAIN-SUFFIX,cbfau.com
@@ -19104,6 +19104,7 @@ DOMAIN-SUFFIX,cd-wx.net
 DOMAIN-SUFFIX,cd-zc.com
 DOMAIN-SUFFIX,cd00c44f211031.beer
 DOMAIN-SUFFIX,cd120.com
+DOMAIN-SUFFIX,cd120.info
 DOMAIN-SUFFIX,cd12371.com
 DOMAIN-SUFFIX,cd1958.com
 DOMAIN-SUFFIX,cd20.net
@@ -26278,7 +26279,7 @@ DOMAIN-SUFFIX,cxgaugrv.com
 DOMAIN-SUFFIX,cxgeo.com
 DOMAIN-SUFFIX,cxgj56.com
 DOMAIN-SUFFIX,cxglys.com
-DOMAIN-SUFFIX,jsmo.xin
+DOMAIN-SUFFIX,cxgw.com
 DOMAIN-SUFFIX,cxh99.com
 DOMAIN-SUFFIX,cxhan.com
 DOMAIN-SUFFIX,cxhr.com
@@ -27994,7 +27995,7 @@ DOMAIN-SUFFIX,demososo.com
 DOMAIN-SUFFIX,denachina.com
 DOMAIN-SUFFIX,denaircompressor.com
 DOMAIN-SUFFIX,deng88.com
-DOMAIN-SUFFIX,jsmodeling.com
+DOMAIN-SUFFIX,denganliang.com
 DOMAIN-SUFFIX,dengbaogonggao.com
 DOMAIN-SUFFIX,dengbi8.com
 DOMAIN-SUFFIX,dengbiao.com
@@ -36171,7 +36172,7 @@ DOMAIN-SUFFIX,fymall3.com
 DOMAIN-SUFFIX,fymall4.com
 DOMAIN-SUFFIX,fymall5.com
 DOMAIN-SUFFIX,fymall6.com
-DOMAIN-SUFFIX,fymall7.com
+DOMAIN-SUFFIX,jsmrmf.com
 DOMAIN-SUFFIX,fymall8.com
 DOMAIN-SUFFIX,fymall9.com
 DOMAIN-SUFFIX,fymallqa0.com
@@ -40543,7 +40544,7 @@ DOMAIN-SUFFIX,gxchlrf.com
 DOMAIN-SUFFIX,gxchr.com
 DOMAIN-SUFFIX,gxchuanghua.com
 DOMAIN-SUFFIX,gxchuanlan.com
-DOMAIN-SUFFIX,gxchuen.com
+DOMAIN-SUFFIX,jsmolfa.com
 DOMAIN-SUFFIX,gxchunmao.com
 DOMAIN-SUFFIX,gxchuxin.com
 DOMAIN-SUFFIX,gxcic.net
@@ -55789,8 +55790,8 @@ DOMAIN-SUFFIX,jsfyjt.com
 DOMAIN-SUFFIX,jsfywater.com
 DOMAIN-SUFFIX,jsfyxh.net
 DOMAIN-SUFFIX,jsgbds.com
+DOMAIN-SUFFIX,jsgc.com
 DOMAIN-SUFFIX,0.zone
-DOMAIN-SUFFIX,jsgc168.com
 DOMAIN-SUFFIX,jsgcbank.com
 DOMAIN-SUFFIX,jsgcjyw.com
 DOMAIN-SUFFIX,jsgclaw.com
@@ -55961,10 +55962,10 @@ DOMAIN-SUFFIX,jsmfk.com
 DOMAIN-SUFFIX,jsminstar.com
 DOMAIN-SUFFIX,jsmjys.com
 DOMAIN-SUFFIX,jsmkyy.com
-DOMAIN-SUFFIX,cxgw.com
+DOMAIN-SUFFIX,jsmo.xin
+DOMAIN-SUFFIX,arterytek.com
 DOMAIN-SUFFIX,027zpw.com
-DOMAIN-SUFFIX,cbes21.com
-DOMAIN-SUFFIX,jsmrmf.com
+DOMAIN-SUFFIX,fymall7.com
 DOMAIN-SUFFIX,jsmsg.com
 DOMAIN-SUFFIX,jsmxgs.com
 DOMAIN-SUFFIX,jsmxw.com
@@ -66537,6 +66538,7 @@ DOMAIN-SUFFIX,moe233.org
 DOMAIN-SUFFIX,moe321.com
 DOMAIN-SUFFIX,moeclub.org
 DOMAIN-SUFFIX,moedot.net
+DOMAIN-SUFFIX,moedu.com
 DOMAIN-SUFFIX,moeelf.com
 DOMAIN-SUFFIX,moefactory.com
 DOMAIN-SUFFIX,moefantasy.com
@@ -90619,6 +90621,7 @@ DOMAIN-SUFFIX,tsingoofoods.com
 DOMAIN-SUFFIX,tsingpost.com
 DOMAIN-SUFFIX,tsingshang.com
 DOMAIN-SUFFIX,tsingtek.com
+DOMAIN-SUFFIX,tsingtengms.com
 DOMAIN-SUFFIX,tsingtoo.com
 DOMAIN-SUFFIX,tsingtuo.com
 DOMAIN-SUFFIX,tsingyangroup.com
@@ -98251,6 +98254,7 @@ DOMAIN-SUFFIX,xcxwo.com
 DOMAIN-SUFFIX,xcxymw.com
 DOMAIN-SUFFIX,xcxzww.com
 DOMAIN-SUFFIX,xcyg.net
+DOMAIN-SUFFIX,xcz.im
 DOMAIN-SUFFIX,xczhmzb.com
 DOMAIN-SUFFIX,xczhsh.com
 DOMAIN-SUFFIX,xczim.com

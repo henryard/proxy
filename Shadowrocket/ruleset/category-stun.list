@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: category-stun
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-stun.json
-# Updated: 2026-07-22 09:25:15 (Beijing / UTC+8)
+# Updated: 2026-07-27 09:51:20 (Beijing / UTC+8)
 # Rules: DOMAIN=358, DOMAIN-SUFFIX=1
 
 DOMAIN,iphone-stun.strato-iphone.de
