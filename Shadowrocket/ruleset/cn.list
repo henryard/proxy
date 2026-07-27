@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: cn
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.json
-# Updated: 2026-07-27 21:34:48 (Beijing / UTC+8)
+# Updated: 2026-07-27 21:39:22 (Beijing / UTC+8)
 # Rules: DOMAIN-SUFFIX=111872
 
 DOMAIN-SUFFIX,alibaba
