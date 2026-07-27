@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: openai
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.json
-# Updated: 2026-07-27 21:39:01 (Beijing / UTC+8)
+# Updated: 2026-07-27 21:57:11 (Beijing / UTC+8)
 # Rules: DOMAIN=9, DOMAIN-SUFFIX=13
 # Note: skipped 1 domain_regex rule(s) (unsupported by Shadowrocket)
 

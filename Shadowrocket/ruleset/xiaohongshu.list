@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: xiaohongshu
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/xiaohongshu.json
-# Updated: 2026-07-27 21:39:21 (Beijing / UTC+8)
+# Updated: 2026-07-27 21:57:23 (Beijing / UTC+8)
 # Rules: DOMAIN-SUFFIX=11
 
 DOMAIN-SUFFIX,redelight.cn

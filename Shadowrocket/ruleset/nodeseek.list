@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: nodeseek
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/nodeseek.json
-# Updated: 2026-07-27 21:39:15 (Beijing / UTC+8)
+# Updated: 2026-07-27 21:57:16 (Beijing / UTC+8)
 # Rules: DOMAIN-SUFFIX=6
 
 DOMAIN-SUFFIX,22112211.xyz

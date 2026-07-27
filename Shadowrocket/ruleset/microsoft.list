@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: microsoft
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/microsoft.json
-# Updated: 2026-07-27 21:39:16 (Beijing / UTC+8)
+# Updated: 2026-07-27 21:57:16 (Beijing / UTC+8)
 # Rules: DOMAIN=114, DOMAIN-SUFFIX=632, DOMAIN-KEYWORD=3
 
 DOMAIN,img-prod-cms-rt-microsoft-com.akamaized.net

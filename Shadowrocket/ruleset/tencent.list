@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: tencent
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/tencent.json
-# Updated: 2026-07-27 21:39:20 (Beijing / UTC+8)
+# Updated: 2026-07-27 21:57:22 (Beijing / UTC+8)
 # Rules: DOMAIN=1, DOMAIN-SUFFIX=675
 
 DOMAIN,wetv.qq.com
