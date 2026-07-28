@@ -3,7 +3,6 @@
     "rules": [
         {
             "domain_suffix": [
-                "xmby.cc.cd",
                 "pingan.com.cn",
                 "shudaozhigui.com",
                 "17wanxiao.com",
@@ -12,6 +11,7 @@
                 "mihdr.top"
             ],
             "domain": [
+                "emby.xmby.cc.cd",
                 "china.69yun69.net",
                 "666.666291.xyz",
                 "www.muou.asia",
