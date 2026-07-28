@@ -3,6 +3,35 @@
 #!author=henry
 
 [Rule]
+# ===== Claude / Anthropic =====
+# 核心域名
+DOMAIN-SUFFIX,anthropic.com,🤖 AI
+DOMAIN-SUFFIX,claude.ai,🤖 AI
+DOMAIN-SUFFIX,claude.com,🤖 AI
+DOMAIN-SUFFIX,clau.de,🤖 AI
+DOMAIN-SUFFIX,claudemcpclient.com,🤖 AI
+DOMAIN-SUFFIX,claudemcpcontent.com,🤖 AI
+DOMAIN-SUFFIX,claudeusercontent.com,🤖 AI
+# CDN / 认证 / 内容
+DOMAIN,servd-anthropic-website.b-cdn.net,🤖 AI
+DOMAIN,anthropic.com.cdn.cloudflare.net,🤖 AI
+DOMAIN,anthropic.auth0.com,🤖 AI
+DOMAIN,anthropic-com.ghost.io,🤖 AI
+# 监控 / 遥测
+DOMAIN-SUFFIX,sentry.io,🤖 AI
+DOMAIN-SUFFIX,statsigapi.net,🤖 AI
+DOMAIN,browser-intake-us5-datadoghq.com,🤖 AI
+DOMAIN-KEYWORD,datadog,🤖 AI
+DOMAIN-KEYWORD,sift,🤖 AI
+# 客服 / 统计 widget（纯 API/CLI 用户可删除下面 3 条）
+DOMAIN-SUFFIX,intercom.io,🤖 AI
+DOMAIN-SUFFIX,intercomcdn.com,🤖 AI
+DOMAIN,cdn.usefathom.com,🤖 AI
+# IP 段兜底：域名规则因 DoH/ECH 失效时的最后防线
+IP-CIDR,160.79.104.0/21,🤖 AI,no-resolve
+IP-CIDR6,2607:6bc0::/32,🤖 AI,no-resolve
+# ===== Claude 分流结束 =====
+
 DOMAIN,ip.net.coffee,🤖 AI
 
 DOMAIN-SUFFIX,69yun69.com,🚀 Proxy
