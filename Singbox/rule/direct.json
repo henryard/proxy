@@ -3,6 +3,9 @@
     "rules": [
         {
             "domain_suffix": [
+                "cloudflare.com",
+                "dash.cloudflare.com",
+                "cloudflareaccess.com",
                 "pingan.com.cn",
                 "shudaozhigui.com",
                 "17wanxiao.com",
