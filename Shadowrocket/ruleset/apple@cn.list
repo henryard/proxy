@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: apple@cn
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple@cn.json
-# Updated: 2026-07-27 21:57:18 (Beijing / UTC+8)
+# Updated: 2026-08-03 09:46:28 (Beijing / UTC+8)
 # Rules: DOMAIN=232, DOMAIN-SUFFIX=62
 
 DOMAIN,amp-api-edge.apps.apple.com
@@ -274,13 +274,6 @@ DOMAIN-SUFFIX,livephotos.com.cn
 DOMAIN-SUFFIX,xn--czrs0t4phtr3a.cn
 DOMAIN-SUFFIX,xn--fiqs8sxootzz.cn
 DOMAIN-SUFFIX,xn--ohq11k7pl25iyo8a.cn
-DOMAIN-SUFFIX,beats1.cn
-DOMAIN-SUFFIX,beats1.com.cn
-DOMAIN-SUFFIX,beats2.com.cn
-DOMAIN-SUFFIX,beats4.cn
-DOMAIN-SUFFIX,beatsbydre.com
-DOMAIN-SUFFIX,beatsbydre.com.cn
-DOMAIN-SUFFIX,beatsep.cn
 DOMAIN-SUFFIX,apple-icloud.cn
 DOMAIN-SUFFIX,appleicloud.cn
 DOMAIN-SUFFIX,icloud-apple.cn
@@ -294,6 +287,13 @@ DOMAIN-SUFFIX,itunes-apple.cn
 DOMAIN-SUFFIX,itunesapple.cn
 DOMAIN-SUFFIX,itunesradio.cn
 DOMAIN-SUFFIX,itunesradio.com.cn
+DOMAIN-SUFFIX,beats1.cn
+DOMAIN-SUFFIX,beats1.com.cn
+DOMAIN-SUFFIX,beats2.com.cn
+DOMAIN-SUFFIX,beats4.cn
+DOMAIN-SUFFIX,beatsbydre.com
+DOMAIN-SUFFIX,beatsbydre.com.cn
+DOMAIN-SUFFIX,beatsep.cn
 DOMAIN-SUFFIX,researchkit.cn
 DOMAIN-SUFFIX,researchkit.com.cn
 DOMAIN-SUFFIX,swiftui.cn

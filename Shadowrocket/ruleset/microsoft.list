@@ -1,7 +1,7 @@
 # Shadowrocket rule-set: microsoft
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/microsoft.json
-# Updated: 2026-07-27 21:57:16 (Beijing / UTC+8)
-# Rules: DOMAIN=114, DOMAIN-SUFFIX=632, DOMAIN-KEYWORD=3
+# Updated: 2026-08-03 09:46:26 (Beijing / UTC+8)
+# Rules: DOMAIN=114, DOMAIN-SUFFIX=633, DOMAIN-KEYWORD=3
 
 DOMAIN,img-prod-cms-rt-microsoft-com.akamaized.net
 DOMAIN,img-s-msn-com.akamaized.net
@@ -129,10 +129,10 @@ DOMAIN-SUFFIX,xbox
 DOMAIN-SUFFIX,onedriveupdater
 DOMAIN-SUFFIX,onedrive
 DOMAIN-SUFFIX,appcenter.ms
-DOMAIN-SUFFIX,microsoft.pl
+DOMAIN-SUFFIX,githubsupport.com
 DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,microsoft.cz
-DOMAIN-SUFFIX,microsoft.de
+DOMAIN-SUFFIX,gamesstack.com
 DOMAIN-SUFFIX,microsoft.dk
 DOMAIN-SUFFIX,microsoft.ee
 DOMAIN-SUFFIX,microsoft.es
@@ -149,7 +149,7 @@ DOMAIN-SUFFIX,microsoft.lu
 DOMAIN-SUFFIX,microsoft.lv
 DOMAIN-SUFFIX,microsoft.md
 DOMAIN-SUFFIX,microsoft.net
-DOMAIN-SUFFIX,dot.net
+DOMAIN-SUFFIX,microsoft.pl
 DOMAIN-SUFFIX,microsoft.pt
 DOMAIN-SUFFIX,microsoft.red
 DOMAIN-SUFFIX,microsoft.ro
@@ -165,7 +165,7 @@ DOMAIN-SUFFIX,femalefounderscomp.com
 DOMAIN-SUFFIX,m12.vc
 DOMAIN-SUFFIX,a-msedge.net
 DOMAIN-SUFFIX,aka.ms
-DOMAIN-SUFFIX,devopsassessment.net
+DOMAIN-SUFFIX,ankarazirvesi2018.com
 DOMAIN-SUFFIX,applicationinsights.io
 DOMAIN-SUFFIX,applicationinsights.net
 DOMAIN-SUFFIX,aria.ms
@@ -308,7 +308,7 @@ DOMAIN-SUFFIX,powerappscdn.net
 DOMAIN-SUFFIX,powerautomate.com
 DOMAIN-SUFFIX,powerbi.com
 DOMAIN-SUFFIX,powershellgallery.com
-DOMAIN-SUFFIX,projectmurphy.net
+DOMAIN-SUFFIX,insiderdevtour.com
 DOMAIN-SUFFIX,projectsangam.com
 DOMAIN-SUFFIX,pxt.io
 DOMAIN-SUFFIX,s-dc-msedge.net
@@ -357,7 +357,7 @@ DOMAIN-SUFFIX,windowsmarketplace.com
 DOMAIN-SUFFIX,windowsphone-int.com
 DOMAIN-SUFFIX,windowsphone.com
 DOMAIN-SUFFIX,windowssearch.com
-DOMAIN-SUFFIX,gamesstack.com
+DOMAIN-SUFFIX,windowsupdate.com
 DOMAIN-SUFFIX,winhec.com
 DOMAIN-SUFFIX,winhec.net
 DOMAIN-SUFFIX,yammer.com
@@ -370,11 +370,11 @@ DOMAIN-SUFFIX,microsoft.ch
 DOMAIN-SUFFIX,blazor.net
 DOMAIN-SUFFIX,botframework.com
 DOMAIN-SUFFIX,codethemicrobit.com
-DOMAIN-SUFFIX,ankarazirvesi2018.com
+DOMAIN-SUFFIX,devopsassessment.net
+DOMAIN-SUFFIX,dot.net
+DOMAIN-SUFFIX,microsoft.de
 DOMAIN-SUFFIX,microsoft.cl
-DOMAIN-SUFFIX,windowsupdate.com
-DOMAIN-SUFFIX,graphengine.io
-DOMAIN-SUFFIX,insiderdevtour.com
+DOMAIN-SUFFIX,projectmurphy.net
 DOMAIN-SUFFIX,jwt.ms
 DOMAIN-SUFFIX,microbit.org
 DOMAIN-SUFFIX,microsoftadc.com
@@ -450,7 +450,7 @@ DOMAIN-SUFFIX,octocaptcha.com
 DOMAIN-SUFFIX,myoctocat.com
 DOMAIN-SUFFIX,githubusercontent.com
 DOMAIN-SUFFIX,githubuniverse.com
-DOMAIN-SUFFIX,githubstatus.com
+DOMAIN-SUFFIX,graphengine.io
 DOMAIN-SUFFIX,microsoft.by
 DOMAIN-SUFFIX,gamepass.com
 DOMAIN-SUFFIX,orithegame.com
@@ -580,8 +580,8 @@ DOMAIN-SUFFIX,renovacionoffice.com
 DOMAIN-SUFFIX,sprinklesapp.com
 DOMAIN-SUFFIX,copilot-stg.com
 DOMAIN-SUFFIX,copilot.com
+DOMAIN-SUFFIX,githubstatus.com
 DOMAIN-SUFFIX,githubpreview.dev
-DOMAIN-SUFFIX,githubnext.com
 DOMAIN-SUFFIX,atom.io
 DOMAIN-SUFFIX,dependabot.com
 DOMAIN-SUFFIX,gh.io
@@ -598,6 +598,7 @@ DOMAIN-SUFFIX,github.io
 DOMAIN-SUFFIX,githubapp.com
 DOMAIN-SUFFIX,githubassets.com
 DOMAIN-SUFFIX,githubhackathon.com
+DOMAIN-SUFFIX,githubnext.com
 DOMAIN-SUFFIX,visualstudio.co.uk
 DOMAIN-SUFFIX,microsoftstore.com.hk
 DOMAIN-SUFFIX,live.com.au
