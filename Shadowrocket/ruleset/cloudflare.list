@@ -1,7 +1,7 @@
 # Shadowrocket rule-set: cloudflare
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cloudflare.json
-# Updated: 2026-08-03 09:46:29 (Beijing / UTC+8)
-# Rules: DOMAIN-SUFFIX=74
+# Updated: 2026-08-10 08:53:09 (Beijing / UTC+8)
+# Rules: DOMAIN-SUFFIX=76
 
 DOMAIN-SUFFIX,argotunnel.com
 DOMAIN-SUFFIX,browser.run
@@ -14,9 +14,11 @@ DOMAIN-SUFFIX,cloudflare-esni.com
 DOMAIN-SUFFIX,cloudflare-gateway.com
 DOMAIN-SUFFIX,cloudflare-quic.com
 DOMAIN-SUFFIX,cloudflare-terms-of-service-abuse.com
+DOMAIN-SUFFIX,cloudflare.app
 DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,cloudflare.dev
 DOMAIN-SUFFIX,cloudflare.net
+DOMAIN-SUFFIX,cloudflare.pay
 DOMAIN-SUFFIX,cloudflare.tv
 DOMAIN-SUFFIX,cloudflareaccess.com
 DOMAIN-SUFFIX,cloudflareapps.com

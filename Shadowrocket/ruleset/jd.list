@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: jd
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/jd.json
-# Updated: 2026-08-03 09:46:30 (Beijing / UTC+8)
+# Updated: 2026-08-10 08:53:10 (Beijing / UTC+8)
 # Rules: DOMAIN-SUFFIX=243
 
 DOMAIN-SUFFIX,jcloudlb.com

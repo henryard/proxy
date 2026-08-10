@@ -1,7 +1,7 @@
 # Shadowrocket rule-set: douyin
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/douyin.json
-# Updated: 2026-08-03 09:46:34 (Beijing / UTC+8)
-# Rules: DOMAIN-SUFFIX=68
+# Updated: 2026-08-10 08:53:14 (Beijing / UTC+8)
+# Rules: DOMAIN-SUFFIX=71
 
 DOMAIN-SUFFIX,activity-wbsj.com
 DOMAIN-SUFFIX,aihst8.com
@@ -67,7 +67,10 @@ DOMAIN-SUFFIX,supercachenode.com
 DOMAIN-SUFFIX,ultracachenode.com
 DOMAIN-SUFFIX,woaihuoshan.com
 DOMAIN-SUFFIX,wohst8.com
+DOMAIN-SUFFIX,douyinec.com
 DOMAIN-SUFFIX,douyinpay.com
+DOMAIN-SUFFIX,ulpay.com
+DOMAIN-SUFFIX,lifexue.com
 DOMAIN-SUFFIX,open-douyin.com
 DOMAIN-SUFFIX,qishui.com.cn
 DOMAIN-SUFFIX,qishuimusic.com.cn

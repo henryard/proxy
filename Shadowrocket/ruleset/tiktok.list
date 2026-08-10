@@ -1,7 +1,7 @@
 # Shadowrocket rule-set: tiktok
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/tiktok.json
-# Updated: 2026-08-03 09:46:20 (Beijing / UTC+8)
-# Rules: DOMAIN=5, DOMAIN-SUFFIX=32
+# Updated: 2026-08-10 08:53:05 (Beijing / UTC+8)
+# Rules: DOMAIN=5, DOMAIN-SUFFIX=31
 
 DOMAIN,p16-tiktokcdn-com.akamaized.net
 DOMAIN,roovza-launches.appsflyersdk.com
@@ -10,7 +10,6 @@ DOMAIN,roovza.launches.appsflyersdk.com
 DOMAIN,roovza.skadsdk.appsflyersdk.com
 
 DOMAIN-SUFFIX,bytedapm.com
-DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,muscdn.com
 DOMAIN-SUFFIX,musical.ly
 DOMAIN-SUFFIX,tik-tokapi.com
