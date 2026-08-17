@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: private
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/private.json
-# Updated: 2026-08-10 08:53:16 (Beijing / UTC+8)
+# Updated: 2026-08-17 08:35:03 (Beijing / UTC+8)
 # Rules: DOMAIN=12, DOMAIN-SUFFIX=118
 # Note: skipped 1 domain_regex rule(s) (unsupported by Shadowrocket)
 

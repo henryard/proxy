@@ -1,12 +1,12 @@
 # Shadowrocket rule-set: tencent
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/tencent.json
-# Updated: 2026-08-10 08:53:11 (Beijing / UTC+8)
-# Rules: DOMAIN=1, DOMAIN-SUFFIX=675
+# Updated: 2026-08-17 08:34:59 (Beijing / UTC+8)
+# Rules: DOMAIN=1, DOMAIN-SUFFIX=677
 
 DOMAIN,wetv.qq.com
 
 DOMAIN-SUFFIX,gaapqcloud.com
-DOMAIN-SUFFIX,syxlgame.com
+DOMAIN-SUFFIX,cloudbase.cn
 DOMAIN-SUFFIX,acimg.cn
 DOMAIN-SUFFIX,apcdns.net
 DOMAIN-SUFFIX,foxmail.com
@@ -42,10 +42,12 @@ DOMAIN-SUFFIX,weishi.com
 DOMAIN-SUFFIX,weixin.com
 DOMAIN-SUFFIX,weixinsxy.com
 DOMAIN-SUFFIX,weiyun.com
-DOMAIN-SUFFIX,wxaurl.cn
 DOMAIN-SUFFIX,wxcloudrun.com
 DOMAIN-SUFFIX,wxgateway.com
 DOMAIN-SUFFIX,wxlivecdn.com
+DOMAIN-SUFFIX,mmbizurl.cn
+DOMAIN-SUFFIX,url.cn
+DOMAIN-SUFFIX,wxaurl.cn
 DOMAIN-SUFFIX,wxmpurl.cn
 DOMAIN-SUFFIX,alloyteam.com
 DOMAIN-SUFFIX,imweb.io
@@ -115,7 +117,7 @@ DOMAIN-SUFFIX,hkgcloudcs.com
 DOMAIN-SUFFIX,ihappystudio.cn
 DOMAIN-SUFFIX,ihappystudio.com
 DOMAIN-SUFFIX,in.th
-DOMAIN-SUFFIX,qq.xn--fiqs8s
+DOMAIN-SUFFIX,ludosuperstar.cn
 DOMAIN-SUFFIX,ludoworld.net
 DOMAIN-SUFFIX,mahjongai.net
 DOMAIN-SUFFIX,battlecare.net
@@ -131,7 +133,7 @@ DOMAIN-SUFFIX,pubgtool.com
 DOMAIN-SUFFIX,qqgameapp.com
 DOMAIN-SUFFIX,rmwxgame.com
 DOMAIN-SUFFIX,skydweller.cn
-DOMAIN-SUFFIX,gitdrone.cn
+DOMAIN-SUFFIX,syxlgame.com
 DOMAIN-SUFFIX,tencent-gcloud.com
 DOMAIN-SUFFIX,tencentstart.com
 DOMAIN-SUFFIX,texasholdemcup.cn
@@ -243,7 +245,7 @@ DOMAIN-SUFFIX,apdcdn.com
 DOMAIN-SUFFIX,apdcdn.net
 DOMAIN-SUFFIX,apigwtencent.com
 DOMAIN-SUFFIX,bkapigw.com
-DOMAIN-SUFFIX,bkapps.com
+DOMAIN-SUFFIX,exmailgz.com
 DOMAIN-SUFFIX,bkclouds.cc
 DOMAIN-SUFFIX,acctdns.com
 DOMAIN-SUFFIX,build9s.io
@@ -258,7 +260,7 @@ DOMAIN-SUFFIX,cdnv1.cn
 DOMAIN-SUFFIX,cdnv2.cn
 DOMAIN-SUFFIX,cdnv3.cn
 DOMAIN-SUFFIX,cloud-industry-delivery.site
-DOMAIN-SUFFIX,cloudbase.cn
+DOMAIN-SUFFIX,fsphere.cn
 DOMAIN-SUFFIX,cloudbase.net
 DOMAIN-SUFFIX,cloudidaas.com
 DOMAIN-SUFFIX,cloudsite.vip
@@ -279,11 +281,11 @@ DOMAIN-SUFFIX,ectencent.cn
 DOMAIN-SUFFIX,edgeone.cool
 DOMAIN-SUFFIX,edgeonedy1.com
 DOMAIN-SUFFIX,essurl.com
-DOMAIN-SUFFIX,exmailgz.com
-DOMAIN-SUFFIX,fsphere.cn
-DOMAIN-SUFFIX,ludosuperstar.cn
+DOMAIN-SUFFIX,bkapps.com
 DOMAIN-SUFFIX,xn--r70as2s.xn--fiqs8s
-DOMAIN-SUFFIX,tcloudhw.net
+DOMAIN-SUFFIX,txbyod.com
+DOMAIN-SUFFIX,gitdrone.cn
+DOMAIN-SUFFIX,gmedev.cn
 DOMAIN-SUFFIX,govqcloud.com
 DOMAIN-SUFFIX,gsadds.com
 DOMAIN-SUFFIX,gtm.pub
@@ -363,7 +365,7 @@ DOMAIN-SUFFIX,tcloudbi.com
 DOMAIN-SUFFIX,tclouddrive.com
 DOMAIN-SUFFIX,tcloudedu.com
 DOMAIN-SUFFIX,tcloudhw.com
-DOMAIN-SUFFIX,gmedev.cn
+DOMAIN-SUFFIX,tcloudhw.net
 DOMAIN-SUFFIX,tcloudscdn.com
 DOMAIN-SUFFIX,tcloudscdn.net
 DOMAIN-SUFFIX,tdnsstic1.cn
@@ -378,7 +380,7 @@ DOMAIN-SUFFIX,tencentapps.com
 DOMAIN-SUFFIX,tencentbyod.com
 DOMAIN-SUFFIX,tencentcdb.cn
 DOMAIN-SUFFIX,tencentcdb.com
-DOMAIN-SUFFIX,txbyod.com
+DOMAIN-SUFFIX,qq.xn--fiqs8s
 DOMAIN-SUFFIX,acctdns.net
 DOMAIN-SUFFIX,bktencent.com
 DOMAIN-SUFFIX,tencentcloudapi.com

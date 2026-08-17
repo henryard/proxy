@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: apple@cn
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple@cn.json
-# Updated: 2026-08-10 08:53:08 (Beijing / UTC+8)
+# Updated: 2026-08-17 08:34:55 (Beijing / UTC+8)
 # Rules: DOMAIN=234, DOMAIN-SUFFIX=62
 
 DOMAIN,amp-api-edge.apps.apple.com
@@ -165,23 +165,6 @@ DOMAIN,weatherkit.apple.com
 DOMAIN,www.apple.com
 DOMAIN,www.apple.com.edgekey.net.globalredir.akadns.net
 DOMAIN,xp.apple.com
-DOMAIN,amp-api-edge.music.apple.com
-DOMAIN,amp-api.music.apple.com
-DOMAIN,js-cdn.music.apple.com
-DOMAIN,music.apple.com
-DOMAIN,musicstatus.music.apple.com
-DOMAIN,play.music.apple.com
-DOMAIN,speedysub.music.apple.com
-DOMAIN,certs-lb.apple.com.akadns.net
-DOMAIN,certs.apple.com
-DOMAIN,crl-lb.apple.com.akadns.net
-DOMAIN,crl.apple.com
-DOMAIN,ocsp.apple.com
-DOMAIN,ocsp2.apple.com
-DOMAIN,valid.apple.com
-DOMAIN,valid.origin-apple.com.akadns.net
-DOMAIN,amp-api.podcasts.apple.com
-DOMAIN,podcasts.apple.com
 DOMAIN,amp-api-edge-lb-cn.itunes-apple.com.akadns.net
 DOMAIN,amp-api-edge-lb.itunes-apple.com.akadns.net
 DOMAIN,aod-ssl.itunes.apple.com
@@ -227,6 +210,8 @@ DOMAIN,itunes-apple.com.akadns.net
 DOMAIN,itunes.apple.com
 DOMAIN,itunesconnect.apple.com
 DOMAIN,osxapps.itunes.g.aaplimg.com
+DOMAIN,amp-api.podcasts.apple.com
+DOMAIN,podcasts.apple.com
 DOMAIN,cdn.apple-mapkit.com
 DOMAIN,cdn1.apple-mapkit.com
 DOMAIN,cdn2.apple-mapkit.com
@@ -237,6 +222,21 @@ DOMAIN,cdn-cn1.apple-mapkit.com
 DOMAIN,cdn-cn2.apple-mapkit.com
 DOMAIN,cdn-cn3.apple-mapkit.com
 DOMAIN,cdn-cn4.apple-mapkit.com
+DOMAIN,amp-api-edge.music.apple.com
+DOMAIN,amp-api.music.apple.com
+DOMAIN,js-cdn.music.apple.com
+DOMAIN,music.apple.com
+DOMAIN,musicstatus.music.apple.com
+DOMAIN,play.music.apple.com
+DOMAIN,speedysub.music.apple.com
+DOMAIN,certs-lb.apple.com.akadns.net
+DOMAIN,certs.apple.com
+DOMAIN,crl-lb.apple.com.akadns.net
+DOMAIN,crl.apple.com
+DOMAIN,ocsp.apple.com
+DOMAIN,ocsp2.apple.com
+DOMAIN,valid.apple.com
+DOMAIN,valid.origin-apple.com.akadns.net
 
 DOMAIN-SUFFIX,apple.cn
 DOMAIN-SUFFIX,apple.com.cn
@@ -276,14 +276,6 @@ DOMAIN-SUFFIX,livephotos.com.cn
 DOMAIN-SUFFIX,xn--czrs0t4phtr3a.cn
 DOMAIN-SUFFIX,xn--fiqs8sxootzz.cn
 DOMAIN-SUFFIX,xn--ohq11k7pl25iyo8a.cn
-DOMAIN-SUFFIX,apple-icloud.cn
-DOMAIN-SUFFIX,appleicloud.cn
-DOMAIN-SUFFIX,icloud-apple.cn
-DOMAIN-SUFFIX,icloud-content.com.cn
-DOMAIN-SUFFIX,icloud.cn
-DOMAIN-SUFFIX,icloud.com.cn
-DOMAIN-SUFFIX,icloud.net.cn
-DOMAIN-SUFFIX,icloudapple.cn
 DOMAIN-SUFFIX,beats1.cn
 DOMAIN-SUFFIX,beats1.com.cn
 DOMAIN-SUFFIX,beats2.com.cn
@@ -296,6 +288,14 @@ DOMAIN-SUFFIX,itunes-apple.cn
 DOMAIN-SUFFIX,itunesapple.cn
 DOMAIN-SUFFIX,itunesradio.cn
 DOMAIN-SUFFIX,itunesradio.com.cn
+DOMAIN-SUFFIX,apple-icloud.cn
+DOMAIN-SUFFIX,appleicloud.cn
+DOMAIN-SUFFIX,icloud-apple.cn
+DOMAIN-SUFFIX,icloud-content.com.cn
+DOMAIN-SUFFIX,icloud.cn
+DOMAIN-SUFFIX,icloud.com.cn
+DOMAIN-SUFFIX,icloud.net.cn
+DOMAIN-SUFFIX,icloudapple.cn
 DOMAIN-SUFFIX,researchkit.cn
 DOMAIN-SUFFIX,researchkit.com.cn
 DOMAIN-SUFFIX,swiftui.cn
