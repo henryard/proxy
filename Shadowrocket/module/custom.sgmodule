@@ -3,6 +3,8 @@
 #!author=henry
 
 [Rule]
+DOMAIN,userlocations.googleapis.com,🤖 AI
+
 # ===== Claude / Anthropic =====
 # 核心域名
 DOMAIN-SUFFIX,anthropic.com,🤖 AI
