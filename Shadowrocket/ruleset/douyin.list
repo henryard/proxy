@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: douyin
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/douyin.json
-# Updated: 2026-08-24 08:37:00 (Beijing / UTC+8)
+# Updated: 2026-08-31 10:08:55 (Beijing / UTC+8)
 # Rules: DOMAIN-SUFFIX=71
 
 DOMAIN-SUFFIX,activity-wbsj.com
