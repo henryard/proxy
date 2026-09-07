@@ -1,6 +1,6 @@
 # Shadowrocket rule-set: apple-cn
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/apple-cn.json
-# Updated: 2026-08-31 10:08:48 (Beijing / UTC+8)
+# Updated: 2026-09-07 09:42:43 (Beijing / UTC+8)
 # Rules: DOMAIN=165
 
 DOMAIN,a1.mzstatic.com
