@@ -1,0 +1,65 @@
+name: Update Loon ruleset
+
+# Converts sing-box geosite JSON rule-sets (MetaCubeX/meta-rules-dat @sing)
+# into Loon-compatible .list files under Loon/ruleset/.
+# Mirrors update-shadowrocket-ruleset.yml: same source rule-sets, same
+# fetch logic - only the output directory and file header differ, since
+# Loon's rule-set syntax is identical to Shadowrocket's.
+
+on:
+  schedule:
+    # Weekly, every Monday 00:30 UTC = 08:30 Beijing time (UTC+8).
+    # Offset 30 minutes after update-shadowrocket-ruleset.yml so the two
+    # workflows don't commit/push to main at the same instant.
+    - cron: '30 0 * * 1'
+  workflow_dispatch: {}   # allow manual "Run workflow"
+
+# Allow the job to commit generated files back to the repo.
+permissions:
+  contents: write
+
+concurrency:
+  group: update-loon-ruleset
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Convert sing-box rulesets to Loon .list
+        run: |
+          python3 scripts/singbox_to_loon.py --out Loon/ruleset
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Loon/ruleset
+          if git diff --cached --quiet; then
+            echo "No ruleset changes to commit."
+          else
+            git commit -m "chore: update Loon rulesets ($(date -u +'%Y-%m-%d'))"
+            git push
+          fi
+
+      # 保活：不依赖第三方 action，规则长期无变化时也能防止定时任务被禁用
+      - name: Keepalive workflow
+        run: |
+          last=$(git log -1 --format=%ct)
+          now=$(date +%s)
+          days=$(( (now - last) / 86400 ))
+          echo "距上次提交已 ${days} 天"
+          if [ "$days" -ge 45 ]; then
+            git commit --allow-empty -m "chore: keepalive to prevent scheduled workflow from being disabled"
+            git push
+          else
+            echo "未满 45 天，跳过保活提交。"
+          fi
