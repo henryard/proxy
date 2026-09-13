@@ -1,0 +1,38 @@
+DOMAIN,mail.infomaniak.com
+DOMAIN-SUFFIX,readdle.com
+DOMAIN-SUFFIX,sparkmailapp.com
+DOMAIN-SUFFIX,gmail.com
+DOMAIN-SUFFIX,googlemail.com
+
+DOMAIN,userlocations.googleapis.com
+
+# ===== Claude / Anthropic =====
+# 核心域名
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,clau.de
+DOMAIN-SUFFIX,claudemcpclient.com
+DOMAIN-SUFFIX,claudemcpcontent.com
+DOMAIN-SUFFIX,claudeusercontent.com
+# CDN / 认证 / 内容
+DOMAIN,servd-anthropic-website.b-cdn.net
+DOMAIN,anthropic.com.cdn.cloudflare.net
+DOMAIN,anthropic.auth0.com
+DOMAIN,anthropic-com.ghost.io
+# 监控 / 遥测
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,statsigapi.net
+DOMAIN,browser-intake-us5-datadoghq.com
+DOMAIN-KEYWORD,datadog
+DOMAIN-KEYWORD,sift
+# 客服 / 统计 widget（纯 API/CLI 用户可删除下面 3 条）
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN,cdn.usefathom.com
+# IP 段兜底：域名规则因 DoH/ECH 失效时的最后防线
+IP-CIDR,160.79.104.0/21,no-resolve
+IP-CIDR6,2607:6bc0::/32,no-resolve
+# ===== Claude 分流结束 =====
+
+DOMAIN,ip.net.coffee
