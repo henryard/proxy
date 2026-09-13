@@ -1,0 +1,8 @@
+# Loon rule-set: douban
+# Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/douban.json
+# Updated: 2026-09-13 22:16:37 (Beijing / UTC+8)
+# Rules: DOMAIN-SUFFIX=3
+
+DOMAIN-SUFFIX,douban.com
+DOMAIN-SUFFIX,douban.fm
+DOMAIN-SUFFIX,doubanio.com
