@@ -1,7 +1,7 @@
 # Shadowrocket rule-set: nodeseek
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/nodeseek.json
-# Updated: 2026-09-07 09:42:41 (Beijing / UTC+8)
-# Rules: DOMAIN-SUFFIX=6
+# Updated: 2026-09-14 10:11:02 (Beijing / UTC+8)
+# Rules: DOMAIN-SUFFIX=7
 
 DOMAIN-SUFFIX,22112211.xyz
 DOMAIN-SUFFIX,deepflood.com
@@ -9,3 +9,4 @@ DOMAIN-SUFFIX,nodeget.com
 DOMAIN-SUFFIX,nodeimage.com
 DOMAIN-SUFFIX,nodequality.com
 DOMAIN-SUFFIX,nodeseek.com
+DOMAIN-SUFFIX,nodeseek.org
