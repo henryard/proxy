@@ -1,6 +1,6 @@
 # Loon rule-set: cloudflare
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cloudflare.json
-# Updated: 2026-09-13 22:16:32 (Beijing / UTC+8)
+# Updated: 2026-09-14 13:21:36 (Beijing / UTC+8)
 # Rules: DOMAIN-SUFFIX=76
 
 DOMAIN-SUFFIX,argotunnel.com

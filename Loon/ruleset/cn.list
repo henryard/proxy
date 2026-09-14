@@ -1,7 +1,7 @@
 # Loon rule-set: cn
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.json
-# Updated: 2026-09-13 22:16:40 (Beijing / UTC+8)
-# Rules: DOMAIN-SUFFIX=111022
+# Updated: 2026-09-14 13:21:44 (Beijing / UTC+8)
+# Rules: DOMAIN-SUFFIX=111021
 
 DOMAIN-SUFFIX,alibaba
 DOMAIN-SUFFIX,yun
@@ -56,7 +56,7 @@ DOMAIN-SUFFIX,baidu
 DOMAIN-SUFFIX,anquan
 DOMAIN-SUFFIX,alipay
 DOMAIN-SUFFIX,jsjgbxg.com
-DOMAIN-SUFFIX,taoyougou.com
+DOMAIN-SUFFIX,cargai.com
 DOMAIN-SUFFIX,027htxt.com
 DOMAIN-SUFFIX,027hxzy.com
 DOMAIN-SUFFIX,027hy.com
@@ -11300,7 +11300,7 @@ DOMAIN-SUFFIX,alu-ledprofile.com
 DOMAIN-SUFFIX,aluaa.com
 DOMAIN-SUFFIX,aluminiumchina.com
 DOMAIN-SUFFIX,aluntan.com
-DOMAIN-SUFFIX,jssihuan.com
+DOMAIN-SUFFIX,alwaysnb.com
 DOMAIN-SUFFIX,alwayzev.com
 DOMAIN-SUFFIX,alwindoor.com
 DOMAIN-SUFFIX,alxw.com
@@ -18298,7 +18298,7 @@ DOMAIN-SUFFIX,carellicpa.com
 DOMAIN-SUFFIX,carertec.com
 DOMAIN-SUFFIX,careuc.com
 DOMAIN-SUFFIX,carezb.com
-DOMAIN-SUFFIX,cargai.com
+DOMAIN-SUFFIX,jssia.org
 DOMAIN-SUFFIX,cargeer.com
 DOMAIN-SUFFIX,cargo001.com
 DOMAIN-SUFFIX,cargodiscovery.com
@@ -18956,7 +18956,7 @@ DOMAIN-SUFFIX,cded23c0b11011.beer
 DOMAIN-SUFFIX,cdedu.com
 DOMAIN-SUFFIX,cdeledu.com
 DOMAIN-SUFFIX,cdenvironment.com
-DOMAIN-SUFFIX,cdfanmu.com
+DOMAIN-SUFFIX,jssihuan.com
 DOMAIN-SUFFIX,cdfcjg.com
 DOMAIN-SUFFIX,cdfcn.com
 DOMAIN-SUFFIX,cdfeimi.com
@@ -52371,7 +52371,7 @@ DOMAIN-SUFFIX,jcnqqnf.com
 DOMAIN-SUFFIX,jcodecraeer.com
 DOMAIN-SUFFIX,jcorv.org
 DOMAIN-SUFFIX,jcpeixun.com
-DOMAIN-SUFFIX,jsshuntai.com
+DOMAIN-SUFFIX,jcpesz.com
 DOMAIN-SUFFIX,jcqzw.com
 DOMAIN-SUFFIX,jcrb.com
 DOMAIN-SUFFIX,jcrcw.com
@@ -55539,9 +55539,9 @@ DOMAIN-SUFFIX,jsshichuang.com
 DOMAIN-SUFFIX,jsshow.net
 DOMAIN-SUFFIX,jsshrzx.com
 DOMAIN-SUFFIX,jsshuangxin.com
-DOMAIN-SUFFIX,jcpesz.com
+DOMAIN-SUFFIX,lianqi.net
 DOMAIN-SUFFIX,027hpit.com
-DOMAIN-SUFFIX,alwaysnb.com
+DOMAIN-SUFFIX,cdfanmu.com
 DOMAIN-SUFFIX,jssjchyxh.com
 DOMAIN-SUFFIX,jssjrfw.com
 DOMAIN-SUFFIX,jssjxgyw.com
@@ -60498,7 +60498,7 @@ DOMAIN-SUFFIX,lianok.com
 DOMAIN-SUFFIX,lianouyiyuan.com
 DOMAIN-SUFFIX,lianpingroup.com
 DOMAIN-SUFFIX,lianpunet.com
-DOMAIN-SUFFIX,lianqi.net
+DOMAIN-SUFFIX,jsshuntai.com
 DOMAIN-SUFFIX,lianqigong.com
 DOMAIN-SUFFIX,liansaipiao.com
 DOMAIN-SUFFIX,lianshang.com
@@ -83765,7 +83765,6 @@ DOMAIN-SUFFIX,spsb114.com
 DOMAIN-SUFFIX,spsicloudport.com
 DOMAIN-SUFFIX,spsisctgroup.com
 DOMAIN-SUFFIX,spsisncl.com
-DOMAIN-SUFFIX,spst2.com
 DOMAIN-SUFFIX,spsy.org
 DOMAIN-SUFFIX,sptcc.com
 DOMAIN-SUFFIX,sptccn.com
@@ -86843,7 +86842,7 @@ DOMAIN-SUFFIX,taoxuemiao.com
 DOMAIN-SUFFIX,taoyaohh.site
 DOMAIN-SUFFIX,taoyitu.com
 DOMAIN-SUFFIX,taoyizhu.com
-DOMAIN-SUFFIX,jssia.org
+DOMAIN-SUFFIX,taoyougou.com
 DOMAIN-SUFFIX,taoyuanc.com
 DOMAIN-SUFFIX,taoyuewenhua.net
 DOMAIN-SUFFIX,taozg.store

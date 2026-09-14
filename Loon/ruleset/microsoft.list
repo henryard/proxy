@@ -1,6 +1,6 @@
 # Loon rule-set: microsoft
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/microsoft.json
-# Updated: 2026-09-13 22:16:27 (Beijing / UTC+8)
+# Updated: 2026-09-14 13:21:32 (Beijing / UTC+8)
 # Rules: DOMAIN=113, DOMAIN-SUFFIX=633, DOMAIN-KEYWORD=3
 
 DOMAIN,img-prod-cms-rt-microsoft-com.akamaized.net
@@ -15,8 +15,8 @@ DOMAIN,mscrl.microsoft.com
 DOMAIN,ocsp.microsoft.com
 DOMAIN,oneocsp.microsoft.com
 DOMAIN,www.microsoft.com
-DOMAIN,prodforza.blob.core.windows.net
 DOMAIN,flightsimulator.azureedge.net
+DOMAIN,prodforza.blob.core.windows.net
 DOMAIN,azure.microsoft.com
 DOMAIN,azuremarketplace.microsoft.com
 DOMAIN,location.microsoft.com
@@ -419,10 +419,6 @@ DOMAIN-SUFFIX,xboxplayanywhere.com
 DOMAIN-SUFFIX,xboxservices.com
 DOMAIN-SUFFIX,xboxstudios.com
 DOMAIN-SUFFIX,xbx.lv
-DOMAIN-SUFFIX,forza.net
-DOMAIN-SUFFIX,forzamotorsport.net
-DOMAIN-SUFFIX,forzaracingchampionship.com
-DOMAIN-SUFFIX,forzarc.com
 DOMAIN-SUFFIX,callersbane.com
 DOMAIN-SUFFIX,minecraft-services.net
 DOMAIN-SUFFIX,minecraft.net
@@ -437,6 +433,10 @@ DOMAIN-SUFFIX,bethesdagamestudios.com
 DOMAIN-SUFFIX,bethsoft.com
 DOMAIN-SUFFIX,doom.com
 DOMAIN-SUFFIX,elderscrolls.com
+DOMAIN-SUFFIX,forza.net
+DOMAIN-SUFFIX,forzamotorsport.net
+DOMAIN-SUFFIX,forzaracingchampionship.com
+DOMAIN-SUFFIX,forzarc.com
 DOMAIN-SUFFIX,microsoft.be
 DOMAIN-SUFFIX,aadrm.com
 DOMAIN-SUFFIX,azure-api.net
