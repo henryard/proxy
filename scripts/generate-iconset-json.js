@@ -18,12 +18,12 @@ const OUTPUT_FILE = 'IconSet.json';      // 生成的图标库 json 文件路径
 const COLLECTION_NAME = 'My IconSet';    // 图标库名称，会显示在 Loon「图标库」列表里
 const COLLECTION_DESC = '自用 Loon 图标合集，随 IconSet 文件夹自动更新';
 
-// 图片托管方式：默认用 jsDelivr（国内访问更快，但有几分钟到数十分钟的缓存延迟）
-// 如果想要“上传即生效、不等缓存”，把下面这行换成 raw.githubusercontent.com 那行
-const buildUrl = (repo, branch, file) =>
-  `https://cdn.jsdelivr.net/gh/${repo}@${branch}/${ICON_DIR}/${file}`;
+// 图片托管方式：用 raw.githubusercontent.com，上传后立即生效、没有 CDN 缓存延迟
+// 如果之后更在意国内访问速度、能接受几分钟到数十分钟的缓存延迟，可以换回 jsDelivr：
 // const buildUrl = (repo, branch, file) =>
-//   `https://raw.githubusercontent.com/${repo}/${branch}/${ICON_DIR}/${file}`;
+//   `https://cdn.jsdelivr.net/gh/${repo}@${branch}/${ICON_DIR}/${file}`;
+const buildUrl = (repo, branch, file) =>
+  `https://raw.githubusercontent.com/${repo}/${branch}/${ICON_DIR}/${file}`;
 
 const VALID_EXT = new Set(['.png', '.jpg', '.jpeg', '.webp']);
 // ============================================================
