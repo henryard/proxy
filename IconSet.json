@@ -1,0 +1,142 @@
+{
+  "name": "My IconSet",
+  "icons": [
+    {
+      "name": "Apple.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Apple.png"
+    },
+    {
+      "name": "Auto.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Auto.png"
+    },
+    {
+      "name": "ChatGPT.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/ChatGPT.png"
+    },
+    {
+      "name": "Claude.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Claude.png"
+    },
+    {
+      "name": "Clubhouse.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Clubhouse.png"
+    },
+    {
+      "name": "CN.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/CN.png"
+    },
+    {
+      "name": "Direct.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Direct.png"
+    },
+    {
+      "name": "Disney.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Disney.png"
+    },
+    {
+      "name": "DNS.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/DNS.png"
+    },
+    {
+      "name": "Element.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Element.png"
+    },
+    {
+      "name": "emby.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/emby.png"
+    },
+    {
+      "name": "Final.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Final.png"
+    },
+    {
+      "name": "ForeignMedia.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/ForeignMedia.png"
+    },
+    {
+      "name": "forward.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/forward.png"
+    },
+    {
+      "name": "Google.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Google.png"
+    },
+    {
+      "name": "Hand.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Hand.png"
+    },
+    {
+      "name": "HK.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/HK.png"
+    },
+    {
+      "name": "infuse.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/infuse.png"
+    },
+    {
+      "name": "JP.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/JP.png"
+    },
+    {
+      "name": "KR.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/KR.png"
+    },
+    {
+      "name": "Microsoft.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Microsoft.png"
+    },
+    {
+      "name": "Netflix.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Netflix.png"
+    },
+    {
+      "name": "Select.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Select.png"
+    },
+    {
+      "name": "senplayer.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/senplayer.png"
+    },
+    {
+      "name": "SG.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/SG.png"
+    },
+    {
+      "name": "Spotify.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Spotify.png"
+    },
+    {
+      "name": "Telegram.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Telegram.png"
+    },
+    {
+      "name": "Terminus-emby.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Terminus-emby.png"
+    },
+    {
+      "name": "TikTok.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/TikTok.png"
+    },
+    {
+      "name": "TW.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/TW.png"
+    },
+    {
+      "name": "US.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/US.png"
+    },
+    {
+      "name": "WeChat.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/WeChat.png"
+    },
+    {
+      "name": "YouTube_Music.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/YouTube_Music.png"
+    },
+    {
+      "name": "YouTube.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/YouTube.png"
+    }
+  ],
+  "description": "自用 Loon 图标合集，随 IconSet 文件夹自动更新"
+}
