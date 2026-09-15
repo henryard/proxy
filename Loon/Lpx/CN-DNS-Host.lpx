@@ -1,7 +1,7 @@
 #!name = 国内域名 DNS 映射
 #!desc = 将抖音/头条/腾讯/阿里/京东/微博/B站/小红书等国内域名强制指定走境内 DNS，避免境外加密DNS导致CDN选路异常、播放卡顿
 #!author = 自用整理
-#!icon = https://cdn.jsdelivr.net/gh/henryard/proxy@main/IconSet/CN.png
+#!icon = https://cdn.jsdelivr.net/gh/henryard/proxy@main/IconSet/Claude.png
 
 [host]
 # —— Apple ——
