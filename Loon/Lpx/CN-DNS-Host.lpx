@@ -6,6 +6,8 @@
 [host]
 # —— Apple ——
 iosapps.itunes.apple.com = iosapps.itunes.apple.com.download.ks-cdn.com
+*.itunes.apple.com = server:https://223.5.5.5/dns-query
+*.apps.apple.com = server:https://223.5.5.5/dns-query
 
 # —— Google ——
 dl.google.com = server:119.29.29.29
