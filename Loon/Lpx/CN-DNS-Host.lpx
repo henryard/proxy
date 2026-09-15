@@ -12,6 +12,7 @@ mtalk.google.com = 108.177.125.188
 
 # —— 百度系 ——
 *.baidu.com = server:https://223.5.5.5/dns-query
+*.bdimg.com = server:https://doh.pub/dns-query
 *.bdstatic.com = server:https://223.5.5.5/dns-query
 *.baidubce.com = server:https://223.5.5.5/dns-query
 *.bcebos.com = server:https://223.5.5.5/dns-query
@@ -25,6 +26,12 @@ mtalk.google.com = 108.177.125.188
 *.gtimg.com = server:https://doh.pub/dns-query
 *.qpic.cn = server:https://doh.pub/dns-query
 *.myqcloud.com = server:https://doh.pub/dns-query
+*.weixin.com = server:https://doh.pub/dns-query
+*.wechat.com = server:https://doh.pub/dns-query
+*.tenpay.com = server:https://doh.pub/dns-query
+*.weiyun.com = server:https://doh.pub/dns-query
+*.idqqimg.com = server:https://doh.pub/dns-query
+*.gcloudsdk.com = server:https://doh.pub/dns-query
 
 # —— 阿里系（淘宝/天猫/支付宝/阿里云）——
 *.taobao.com = server:https://223.5.5.5/dns-query
@@ -33,10 +40,12 @@ mtalk.google.com = 108.177.125.188
 *.alicdn.com = server:https://223.5.5.5/dns-query
 *.aliyun.com = server:https://223.5.5.5/dns-query
 *.aliyuncs.com = server:https://223.5.5.5/dns-query
+*.aliyundrive.com = server:https://223.5.5.5/dns-query
 *.alipayobjects.com = server:https://223.5.5.5/dns-query
 
 # —— 京东 ——
 *.jd.com = server:https://223.5.5.5/dns-query
+*.jdcloud.com = server:https://223.5.5.5/dns-query
 *.360buyimg.com = server:https://223.5.5.5/dns-query
 
 # —— 微博 ——
@@ -77,6 +86,8 @@ mtalk.google.com = 108.177.125.188
 *.vegslb.com = server:https://223.5.5.5/dns-query
 *.toutiaostatic.com = server:https://223.5.5.5/dns-query
 *.bigslb.cn = server:https://223.5.5.5/dns-query
+*.awemeughun.com = server:https://223.5.5.5/dns-query
+*.zijieapi.com = server:https://223.5.5.5/dns-query
 
 # —— 小红书 ——
 *.xiaohongshu.com = server:https://223.5.5.5/dns-query
@@ -86,6 +97,11 @@ mtalk.google.com = 108.177.125.188
 *.bilibili.com = server:https://223.5.5.5/dns-query
 *.hdslb.com = server:https://223.5.5.5/dns-query
 *.biliapi.net = server:https://223.5.5.5/dns-query
+*.bilivideo.com = server:https://223.5.5.5/dns-query
+*.bilivideo.cn = server:https://223.5.5.5/dns-query
+*.b23.tv = server:https://223.5.5.5/dns-query
+b23.tv = server:https://223.5.5.5/dns-query
+*.static.geetest.com = server:https://223.5.5.5/dns-query
 
 # —— 网易 ——
 *.163.com = server:https://223.5.5.5/dns-query
@@ -109,6 +125,22 @@ mtalk.google.com = 108.177.125.188
 *.zhihu.com = server:https://223.5.5.5/dns-query
 *.zhimg.com = server:https://223.5.5.5/dns-query
 
+# —— 豆瓣 ——
+*.douban.com = server:https://doh.pub/dns-query
+*.doubanio.com = server:https://doh.pub/dns-query
+*.douc.cc = server:https://doh.pub/dns-query
+
+# —— 新浪 ——
+*.weibo.com = server:https://doh.pub/dns-query
+*.miaopai.com = server:https://doh.pub/dns-query
+weibo.com = server:https://doh.pub/dns-query
+*.weibo.cn = server:https://doh.pub/dns-query
+*.weibocdn.com = server:https://doh.pub/dns-query
+*.sinaimg.com = server:https://doh.pub/dns-query
+*.miaopai.com = server:https://doh.pub/dns-query
+*.sina.com.cn = server:https://doh.pub/dns-query
+*.sinajs.cn = server:https://doh.pub/dns-query
+
 # —— 高德地图 ——
 *.amap.com = server:https://223.5.5.5/dns-query
 *.autonavi.com = server:https://223.5.5.5/dns-query
@@ -117,7 +149,13 @@ mtalk.google.com = 108.177.125.188
 *.youku.com = server:https://223.5.5.5/dns-query
 *.iqiyi.com = server:https://223.5.5.5/dns-query
 *.qiyi.com = server:https://223.5.5.5/dns-query
+*.iqiyipic.com = server:https://223.5.5.5/dns-query
+*.qiyipic.com = server:https://223.5.5.5/dns-query
+*.ppsimg.com = server:https://223.5.5.5/dns-query
 
 # —— 校园服务 ——
 wechatmini.59wanmei.com = server:https://223.5.5.5/dns-query
 ecardh5.17wanxiao.com = server:https://223.5.5.5/dns-query
+
+# —— 全局 ——
+*.cn = server:https://doh.pub/dns-query
