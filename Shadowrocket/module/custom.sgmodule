@@ -6,14 +6,6 @@
 DOMAIN,userlocations.googleapis.com,🤖 AI
 
 # ===== Claude / Anthropic =====
-# 核心域名
-DOMAIN-SUFFIX,anthropic.com,🤖 AI
-DOMAIN-SUFFIX,claude.ai,🤖 AI
-DOMAIN-SUFFIX,claude.com,🤖 AI
-DOMAIN-SUFFIX,clau.de,🤖 AI
-DOMAIN-SUFFIX,claudemcpclient.com,🤖 AI
-DOMAIN-SUFFIX,claudemcpcontent.com,🤖 AI
-DOMAIN-SUFFIX,claudeusercontent.com,🤖 AI
 # CDN / 认证 / 内容
 DOMAIN,servd-anthropic-website.b-cdn.net,🤖 AI
 DOMAIN,anthropic.com.cdn.cloudflare.net,🤖 AI
