@@ -7,14 +7,6 @@ DOMAIN-SUFFIX,googlemail.com
 DOMAIN,userlocations.googleapis.com
 
 # ===== Claude / Anthropic =====
-# 核心域名
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,claude.com
-DOMAIN-SUFFIX,clau.de
-DOMAIN-SUFFIX,claudemcpclient.com
-DOMAIN-SUFFIX,claudemcpcontent.com
-DOMAIN-SUFFIX,claudeusercontent.com
 # CDN / 认证 / 内容
 DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN,anthropic.com.cdn.cloudflare.net
