@@ -3,6 +3,12 @@
 #!author=henry
 
 [Rule]
+DOMAIN,mail.infomaniak.com,🤖 AI
+DOMAIN-SUFFIX,readdle.com,🤖 AI
+DOMAIN-SUFFIX,sparkmailapp.com,🤖 AI
+DOMAIN-SUFFIX,gmail.com,🤖 AI
+DOMAIN-SUFFIX,googlemail.com,🤖 AI
+
 DOMAIN,userlocations.googleapis.com,🤖 AI
 
 # ===== Claude / Anthropic =====
@@ -216,6 +222,3 @@ weibo.com = server:https://doh.pub/dns-query
 # —— 校园服务 ——
 wechatmini.59wanmei.com = server:https://223.5.5.5/dns-query
 ecardh5.17wanxiao.com = server:https://223.5.5.5/dns-query
-
-# —— 全局 ——
-*.cn = server:https://doh.pub/dns-query
