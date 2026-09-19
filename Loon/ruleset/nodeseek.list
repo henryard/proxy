@@ -1,6 +1,6 @@
 # Loon rule-set: nodeseek
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/nodeseek.json
-# Updated: 2026-09-14 13:21:29 (Beijing / UTC+8)
+# Updated: 2026-09-20 00:07:24 (Beijing / UTC+8)
 # Rules: DOMAIN-SUFFIX=7
 
 DOMAIN-SUFFIX,22112211.xyz

@@ -1,6 +1,6 @@
 # Loon rule-set: openai
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/openai.json
-# Updated: 2026-09-14 13:21:19 (Beijing / UTC+8)
+# Updated: 2026-09-20 00:07:22 (Beijing / UTC+8)
 # Rules: DOMAIN=9, DOMAIN-SUFFIX=13
 # Note: skipped 1 domain_regex rule(s) (unsupported by Loon)
 

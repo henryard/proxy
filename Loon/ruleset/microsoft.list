@@ -1,6 +1,6 @@
 # Loon rule-set: microsoft
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/microsoft.json
-# Updated: 2026-09-14 13:21:32 (Beijing / UTC+8)
+# Updated: 2026-09-20 00:07:25 (Beijing / UTC+8)
 # Rules: DOMAIN=113, DOMAIN-SUFFIX=633, DOMAIN-KEYWORD=3
 
 DOMAIN,img-prod-cms-rt-microsoft-com.akamaized.net
@@ -10,11 +10,6 @@ DOMAIN,officecdn-microsoft-com.akamaized.net
 DOMAIN,statics-marketingsites-eas-ms-com.akamaized.net
 DOMAIN,statics-marketingsites-eus-ms-com.akamaized.net
 DOMAIN,statics-marketingsites-wcus-ms-com.akamaized.net
-DOMAIN,crl.microsoft.com
-DOMAIN,mscrl.microsoft.com
-DOMAIN,ocsp.microsoft.com
-DOMAIN,oneocsp.microsoft.com
-DOMAIN,www.microsoft.com
 DOMAIN,flightsimulator.azureedge.net
 DOMAIN,prodforza.blob.core.windows.net
 DOMAIN,azure.microsoft.com
@@ -65,6 +60,11 @@ DOMAIN,vscode-sync.trafficmanager.net
 DOMAIN,vscode.blob.core.windows.net
 DOMAIN,vscode.search.windows.net
 DOMAIN,vsmarketplacebadge.apphb.com
+DOMAIN,crl.microsoft.com
+DOMAIN,mscrl.microsoft.com
+DOMAIN,ocsp.microsoft.com
+DOMAIN,oneocsp.microsoft.com
+DOMAIN,www.microsoft.com
 DOMAIN,azuremigrate.download.prss.microsoft.com
 DOMAIN,azuremigratetest.download.prss.microsoft.com
 DOMAIN,azurestackhub.download.prss.microsoft.com
@@ -127,11 +127,11 @@ DOMAIN-SUFFIX,azure
 DOMAIN-SUFFIX,xbox
 DOMAIN-SUFFIX,onedriveupdater
 DOMAIN-SUFFIX,onedrive
-DOMAIN-SUFFIX,microsoftnews.net
-DOMAIN-SUFFIX,visualstudio.com
+DOMAIN-SUFFIX,microsoftnews.org
+DOMAIN-SUFFIX,visualstudio.eu
 DOMAIN-SUFFIX,microsoft.com
 DOMAIN-SUFFIX,microsoft.cz
-DOMAIN-SUFFIX,microsoftnewskids.net
+DOMAIN-SUFFIX,microsoftnewskids.org
 DOMAIN-SUFFIX,microsoft.dk
 DOMAIN-SUFFIX,microsoft.ee
 DOMAIN-SUFFIX,microsoft.es
@@ -307,7 +307,7 @@ DOMAIN-SUFFIX,powerappscdn.net
 DOMAIN-SUFFIX,powerautomate.com
 DOMAIN-SUFFIX,powerbi.com
 DOMAIN-SUFFIX,powershellgallery.com
-DOMAIN-SUFFIX,msn.com
+DOMAIN-SUFFIX,msnewskids.com
 DOMAIN-SUFFIX,projectsangam.com
 DOMAIN-SUFFIX,pxt.io
 DOMAIN-SUFFIX,s-dc-msedge.net
@@ -360,21 +360,20 @@ DOMAIN-SUFFIX,windowsupdate.com
 DOMAIN-SUFFIX,winhec.com
 DOMAIN-SUFFIX,winhec.net
 DOMAIN-SUFFIX,yammer.com
-DOMAIN-SUFFIX,msocsp.com
 DOMAIN-SUFFIX,microsoftnews.cc
-DOMAIN-SUFFIX,xamarin.com
-DOMAIN-SUFFIX,vscodeedu.com
 DOMAIN-SUFFIX,microsoftnews.com
+DOMAIN-SUFFIX,msocsp.com
+DOMAIN-SUFFIX,xamarin.com
+DOMAIN-SUFFIX,microsoftnews.net
 DOMAIN-SUFFIX,microsoft.ch
-DOMAIN-SUFFIX,microsoftnews.org
 DOMAIN-SUFFIX,microsoftnewsforkids.com
 DOMAIN-SUFFIX,microsoftnewsforkids.net
 DOMAIN-SUFFIX,microsoftnewsforkids.org
 DOMAIN-SUFFIX,microsoftnewskids.com
+DOMAIN-SUFFIX,microsoftnewskids.net
 DOMAIN-SUFFIX,microsoft.de
 DOMAIN-SUFFIX,microsoft.cl
 DOMAIN-SUFFIX,projectmurphy.net
-DOMAIN-SUFFIX,msnewskids.com
 DOMAIN-SUFFIX,msnewskids.net
 DOMAIN-SUFFIX,msnewskids.org
 DOMAIN-SUFFIX,msnkids.com
@@ -386,6 +385,7 @@ DOMAIN-SUFFIX,onedrive.com
 DOMAIN-SUFFIX,sharepoint.cn
 DOMAIN-SUFFIX,livefilestore.com
 DOMAIN-SUFFIX,1drv.com
+DOMAIN-SUFFIX,vscodeedu.com
 DOMAIN-SUFFIX,vscodeedu.app
 DOMAIN-SUFFIX,vscode.dev
 DOMAIN-SUFFIX,vscode-webview.net
@@ -393,8 +393,7 @@ DOMAIN-SUFFIX,vscode-unpkg.net
 DOMAIN-SUFFIX,vscode-cdn.net
 DOMAIN-SUFFIX,vsassets.io
 DOMAIN-SUFFIX,visualstudio.net
-DOMAIN-SUFFIX,visualstudio.eu
-DOMAIN-SUFFIX,microsoftnewskids.org
+DOMAIN-SUFFIX,msn.com
 DOMAIN-SUFFIX,microsoft.by
 DOMAIN-SUFFIX,gamepass.com
 DOMAIN-SUFFIX,orithegame.com
@@ -419,12 +418,6 @@ DOMAIN-SUFFIX,xboxplayanywhere.com
 DOMAIN-SUFFIX,xboxservices.com
 DOMAIN-SUFFIX,xboxstudios.com
 DOMAIN-SUFFIX,xbx.lv
-DOMAIN-SUFFIX,callersbane.com
-DOMAIN-SUFFIX,minecraft-services.net
-DOMAIN-SUFFIX,minecraft.net
-DOMAIN-SUFFIX,minecraftservices.com
-DOMAIN-SUFFIX,minecraftshop.com
-DOMAIN-SUFFIX,mojang.com
 DOMAIN-SUFFIX,asobostudio.com
 DOMAIN-SUFFIX,flightsimulator.com
 DOMAIN-SUFFIX,beth.games
@@ -437,6 +430,12 @@ DOMAIN-SUFFIX,forza.net
 DOMAIN-SUFFIX,forzamotorsport.net
 DOMAIN-SUFFIX,forzaracingchampionship.com
 DOMAIN-SUFFIX,forzarc.com
+DOMAIN-SUFFIX,callersbane.com
+DOMAIN-SUFFIX,minecraft-services.net
+DOMAIN-SUFFIX,minecraft.net
+DOMAIN-SUFFIX,minecraftservices.com
+DOMAIN-SUFFIX,minecraftshop.com
+DOMAIN-SUFFIX,mojang.com
 DOMAIN-SUFFIX,microsoft.be
 DOMAIN-SUFFIX,aadrm.com
 DOMAIN-SUFFIX,azure-api.net
@@ -525,8 +524,8 @@ DOMAIN-SUFFIX,renovacionoffice.com
 DOMAIN-SUFFIX,sprinklesapp.com
 DOMAIN-SUFFIX,copilot-stg.com
 DOMAIN-SUFFIX,copilot.com
+DOMAIN-SUFFIX,visualstudio.com
 DOMAIN-SUFFIX,visualstudio.co
-DOMAIN-SUFFIX,visualstudio-staging.com
 DOMAIN-SUFFIX,atom.io
 DOMAIN-SUFFIX,dependabot.com
 DOMAIN-SUFFIX,gh.io
@@ -554,10 +553,10 @@ DOMAIN-SUFFIX,octocaptcha.com
 DOMAIN-SUFFIX,opensource.guide
 DOMAIN-SUFFIX,repo.new
 DOMAIN-SUFFIX,thegithubshop.com
-DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN-SUFFIX,npm.community
 DOMAIN-SUFFIX,npmjs.com
 DOMAIN-SUFFIX,npmjs.org
+DOMAIN-SUFFIX,githubcopilot.com
 DOMAIN-SUFFIX,adaptivecards.io
 DOMAIN-SUFFIX,api-extractor.com
 DOMAIN-SUFFIX,apisof.net
@@ -598,9 +597,10 @@ DOMAIN-SUFFIX,timelinestoryteller.com
 DOMAIN-SUFFIX,uwpcommunitytoolkit.com
 DOMAIN-SUFFIX,vfsforgit.com
 DOMAIN-SUFFIX,vfsforgit.org
+DOMAIN-SUFFIX,visualstudio-staging.com
 DOMAIN-SUFFIX,skypedata.akadns.net
-DOMAIN-SUFFIX,live.com.au
 DOMAIN-SUFFIX,visualstudio.co.uk
+DOMAIN-SUFFIX,live.com.au
 DOMAIN-SUFFIX,spoprod-a.akamaihd.net
 DOMAIN-SUFFIX,skype-edf.akadns.net
 DOMAIN-SUFFIX,microsoftstore.com.hk

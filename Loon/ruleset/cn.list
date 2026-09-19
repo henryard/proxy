@@ -1,6 +1,6 @@
 # Loon rule-set: cn
 # Converted from sing-box: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/cn.json
-# Updated: 2026-09-14 13:21:44 (Beijing / UTC+8)
+# Updated: 2026-09-20 00:07:27 (Beijing / UTC+8)
 # Rules: DOMAIN-SUFFIX=111021
 
 DOMAIN-SUFFIX,alibaba
