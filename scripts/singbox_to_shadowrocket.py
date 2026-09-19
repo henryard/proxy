@@ -60,10 +60,6 @@ RULESETS = [
     "apple-cn",
     "apple@cn",
     "apple",
-    "apple-domain",
-    "applestore",
-    "chinamax_to_ipv6",
-    "chinamax_domain",
     "cloudflare",
     "jd",
     "alibaba",
@@ -73,8 +69,7 @@ RULESETS = [
     "xiaohongshu",
     "douyin",
     "cn",
-    "private",
-    "lan"
+    "private"
 ]
 
 # Primary source (jsdelivr CDN) and a raw.githubusercontent fallback.
