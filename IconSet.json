@@ -2,8 +2,40 @@
   "name": "My IconSet",
   "icons": [
     {
+      "name": "AdBlack.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/AdBlack.png"
+    },
+    {
+      "name": "Advertising.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Advertising.png"
+    },
+    {
+      "name": "AdWhite.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/AdWhite.png"
+    },
+    {
+      "name": "AI.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/AI.png"
+    },
+    {
+      "name": "Airport.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Airport.png"
+    },
+    {
+      "name": "Apple_1.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Apple_1.png"
+    },
+    {
+      "name": "Apple_2.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Apple_2.png"
+    },
+    {
       "name": "Apple.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Apple.png"
+    },
+    {
+      "name": "Area.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Area.png"
     },
     {
       "name": "Auto.png",
@@ -12,6 +44,18 @@
     {
       "name": "Bot.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Bot.png"
+    },
+    {
+      "name": "Cat.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Cat.png"
+    },
+    {
+      "name": "Catnet.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Catnet.png"
+    },
+    {
+      "name": "Cellular.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Cellular.png"
     },
     {
       "name": "ChatGPT.png",
@@ -26,12 +70,20 @@
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Claude.png"
     },
     {
+      "name": "Cloudflare.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Cloudflare.png"
+    },
+    {
       "name": "Clubhouse.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Clubhouse.png"
     },
     {
       "name": "CN.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/CN.png"
+    },
+    {
+      "name": "Daily.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Daily.png"
     },
     {
       "name": "Direct.png",
@@ -50,12 +102,20 @@
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/DNSMap.png"
     },
     {
+      "name": "Domestic.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Domestic.png"
+    },
+    {
       "name": "Element.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Element.png"
     },
     {
       "name": "emby.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/emby.png"
+    },
+    {
+      "name": "Filter.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Filter.png"
     },
     {
       "name": "Final_1.png",
@@ -66,12 +126,20 @@
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Final.png"
     },
     {
+      "name": "Find_My.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Find_My.png"
+    },
+    {
       "name": "ForeignMedia.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/ForeignMedia.png"
     },
     {
       "name": "forward.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/forward.png"
+    },
+    {
+      "name": "Fries.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Fries.png"
     },
     {
       "name": "GitHub.png",
@@ -84,6 +152,14 @@
     {
       "name": "Hand.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Hand.png"
+    },
+    {
+      "name": "Heart.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Heart.png"
+    },
+    {
+      "name": "Hijacking.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Hijacking.png"
     },
     {
       "name": "HK_letter.png",
@@ -118,6 +194,22 @@
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/KR.png"
     },
     {
+      "name": "Lab.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Lab.png"
+    },
+    {
+      "name": "Loop.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Loop.png"
+    },
+    {
+      "name": "Luffy.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Luffy.png"
+    },
+    {
+      "name": "Magic.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Magic.png"
+    },
+    {
       "name": "Microsoft.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Microsoft.png"
     },
@@ -132,6 +224,34 @@
     {
       "name": "PayPal.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/PayPal.png"
+    },
+    {
+      "name": "Pirate_Nation.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Pirate_Nation.png"
+    },
+    {
+      "name": "Rainbow_1.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Rainbow_1.png"
+    },
+    {
+      "name": "Rainbow.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Rainbow.png"
+    },
+    {
+      "name": "Reject.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Reject.png"
+    },
+    {
+      "name": "Rocket.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Rocket.png"
+    },
+    {
+      "name": "Round_Robin_1.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Round_Robin_1.png"
+    },
+    {
+      "name": "Round_Robin.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Round_Robin.png"
     },
     {
       "name": "Scholar.png",
