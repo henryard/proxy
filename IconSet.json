@@ -58,6 +58,10 @@
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/emby.png"
     },
     {
+      "name": "Final_1.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Final_1.png"
+    },
+    {
       "name": "Final.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Final.png"
     },
@@ -70,6 +74,10 @@
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/forward.png"
     },
     {
+      "name": "GitHub.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/GitHub.png"
+    },
+    {
       "name": "Google.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Google.png"
     },
@@ -78,16 +86,32 @@
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Hand.png"
     },
     {
+      "name": "HK_letter.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/HK_letter.png"
+    },
+    {
       "name": "HK.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/HK.png"
+    },
+    {
+      "name": "iCloud.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/iCloud.png"
     },
     {
       "name": "infuse.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/infuse.png"
     },
     {
+      "name": "JP_letter.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/JP_letter.png"
+    },
+    {
       "name": "JP.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/JP.png"
+    },
+    {
+      "name": "KR_letter.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/KR_letter.png"
     },
     {
       "name": "KR.png",
@@ -102,6 +126,18 @@
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Netflix.png"
     },
     {
+      "name": "OneDrive.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/OneDrive.png"
+    },
+    {
+      "name": "PayPal.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/PayPal.png"
+    },
+    {
+      "name": "Scholar.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Scholar.png"
+    },
+    {
       "name": "Select.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Select.png"
     },
@@ -110,8 +146,16 @@
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/senplayer.png"
     },
     {
+      "name": "SG_letter.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/SG_letter.png"
+    },
+    {
       "name": "SG.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/SG.png"
+    },
+    {
+      "name": "Speedtest.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Speedtest.png"
     },
     {
       "name": "Spotify.png",
@@ -130,8 +174,20 @@
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/TikTok.png"
     },
     {
+      "name": "TW_letter.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/TW_letter.png"
+    },
+    {
       "name": "TW.png",
       "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/TW.png"
+    },
+    {
+      "name": "Twitter.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/Twitter.png"
+    },
+    {
+      "name": "US_letter.png",
+      "url": "https://raw.githubusercontent.com/henryard/proxy/main/IconSet/US_letter.png"
     },
     {
       "name": "US.png",
