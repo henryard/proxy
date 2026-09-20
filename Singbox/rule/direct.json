@@ -3,6 +3,9 @@
     "rules": [
         {
             "domain_suffix": [
+                "cc.cd",
+                "us.ci",
+                "qzz.io",
                 "pingan.com.cn",
                 "shudaozhigui.com",
                 "17wanxiao.com",
@@ -11,6 +14,7 @@
                 "mihdr.top"
             ],
             "domain": [
+                "emby.subx.us.ci",
                 "emby.xmby.cc.cd",
                 "china.69yun69.net",
                 "666.666291.xyz",
