@@ -1,0 +1,27 @@
+{
+    "version": 1,
+    "rules": [
+        {
+            "domain_suffix": [
+                stripchat.com,
+                stripol.com,
+                jable.tv,
+                cdnlab.live,
+                doppiocdn.com,
+                doppiocdn.net,
+                doppiocdn.org,
+                doppiocdn.media,
+                doppiostreams.com,
+                mushroomtrack.com,
+                strpst.com,
+                loo3laej,
+                eizzih.com,
+                strpssts-ana.com,
+                coconts.com,
+                thedd.online,
+                sc-apps.com,
+                chapturist.com
+            ]
+        }
+    ]
+}
