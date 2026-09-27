@@ -1,0 +1,32 @@
+#!name=Miraplay Rules
+#!desc=Miraplay直连规则
+#!author=henry
+
+[Rule]
+DOMAIN-SUFFIX,mihdr.top,🎯 Direct
+DOMAIN,666.666291.xyz,🎯 Direct
+DOMAIN,www.muou.asia,🎯 Direct
+DOMAIN,www.muou.site,🎯 Direct
+DOMAIN,fmao.shop,🎯 Direct
+DOMAIN,www.qiqk.cc,🎯 Direct
+DOMAIN,xiaomi666.fun,🎯 Direct
+DOMAIN,tv.214521.xyz,🎯 Direct
+DOMAIN,duo.hidns.vip,🎯 Direct
+DOMAIN,zhizhen1.top,🎯 Direct
+DOMAIN,xhban.xyz,🎯 Direct
+DOMAIN,xsayang.fun,🎯 Direct
+DOMAIN,woog.nxog.eu.org,🎯 Direct
+DOMAIN,sd.sduc.site,🎯 Direct
+
+DOMAIN-KEYWORD,wogg,🎯 Direct
+DOMAIN-KEYWORD,yydsys,🎯 Direct
+DOMAIN-KEYWORD,erxiaopan,🎯 Direct
+DOMAIN-KEYWORD,erixaopan,🎯 Direct
+DOMAIN-KEYWORD,erxiaozhan,🎯 Direct
+DOMAIN-KEYWORD,2xiaozhan,🎯 Direct
+DOMAIN-KEYWORD,2xiaopan,🎯 Direct
+DOMAIN-KEYWORD,wexwp,🎯 Direct
+
+IP-CIDR,154.222.27.33/32,🎯 Direct
+IP-CIDR,103.45.162.207/32,🎯 Direct
+IP-CIDR,154.201.83.50/32,🎯 Direct
