@@ -59,6 +59,14 @@ DOMAIN-SUFFIX,thedd.online,⛳️ JP2
 DOMAIN-SUFFIX,sc-apps.com,⛳️ JP2
 DOMAIN-SUFFIX,chapturist.com,⛳️ JP2
 
+# —— Google Drive ——
+DOMAIN-SUFFIX,drive.google.com,⛳️ SG1
+DOMAIN-SUFFIX,docs.google.com,⛳️ SG1
+DOMAIN-SUFFIX,usercontent.google.com,⛳️ SG1
+DOMAIN-SUFFIX,googleusercontent.com,⛳️ SG1
+DOMAIN-SUFFIX,drive.googleapis.com,⛳️ SG1
+DOMAIN-SUFFIX,googledrive.com,⛳️ SG1
+
 DOMAIN-SUFFIX,appstorrent.ru,🎯 Direct
 
 DOMAIN-SUFFIX,qzz.io,🎯 Direct
