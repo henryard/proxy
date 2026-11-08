@@ -1,0 +1,22 @@
+#!name=CF Nodes Rules
+#!desc=CF 节点规则
+#!author=henry
+
+[Rule]
+DOMAIN-SUFFIX,clients6.google.com,🤖 AI
+DOMAIN-SUFFIX,content.googleapis.com,🤖 AI
+DOMAIN-SUFFIX,www.googleapis.com,🤖 AI
+DOMAIN-SUFFIX,drive.google.com,🤖 AI
+DOMAIN-SUFFIX,docs.google.com,🤖 AI
+DOMAIN-SUFFIX,usercontent.google.com,🤖 AI
+DOMAIN-SUFFIX,googleusercontent.com,🤖 AI
+DOMAIN-SUFFIX,drive.googleapis.com,🤖 AI
+DOMAIN-SUFFIX,googledrive.com,🤖 AI
+DOMAIN-SUFFIX,visualstudio.com,🤖 AI
+DOMAIN-SUFFIX,vsassets.io,🤖 AI
+DOMAIN-SUFFIX,vscode-cdn.net,🤖 AI
+DOMAIN-SUFFIX,vscode-unpkg.net,🤖 AI
+DOMAIN-SUFFIX,vsmarketplacebadges.dev,🤖 AI
+DOMAIN-SUFFIX,vo.msecnd.net,🤖 AI
+DOMAIN-SUFFIX,vscode.download.prss.microsoft.com,🤖 AI
+DOMAIN-SUFFIX,download.visualstudio.microsoft.com,🤖 AI
