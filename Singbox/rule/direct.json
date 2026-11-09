@@ -3,6 +3,18 @@
     "rules": [
         {
             "domain_suffix": [
+                "qlogo.cn",
+                "qpic.cn",
+                "qq.com",
+                "weixin.qq.com",
+                "wechat.com",
+                "tencent.com",
+                "servicewechat.com",
+                "tenpay.com",
+                "gtimg.cn",
+                "gtimg.com",
+                "idqqimg.com",
+                "myqcloud.com",
                 "pp.ua",
                 "cc.cd",
                 "us.ci",
