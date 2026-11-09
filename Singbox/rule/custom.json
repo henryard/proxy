@@ -3,6 +3,25 @@
     "rules": [
         {
             "domain_suffix": [
+                "content.googleapis.com",
+                "www.googleapis.com",
+                "drive.google.com",
+                "docs.google.com",
+                "usercontent.google.com",
+                "googleusercontent.com",
+                "drive.googleapis.com",
+                "googledrive.com",
+                "visualstudio.com",
+                "vsassets.io",
+                "vscode-cdn.net",
+                "vscode-unpkg.net",
+                "vsmarketplacebadges.dev",
+                "vo.msecnd.net",
+                "vscode.download.prss.microsoft.com",
+                "download.visualstudio.microsoft.com",
+                "jable.tv",
+                "mushroomtrack.com",
+                "saawsedge.com",
                 "stripchat.com",
                 "stripol.com",
                 "cdnlab.live",
@@ -18,7 +37,8 @@
                 "coconts.com",
                 "thedd.online",
                 "sc-apps.com",
-                "chapturist.com"
+                "chapturist.com",
+                "clients6.google.com"
             ]
         }
     ]
