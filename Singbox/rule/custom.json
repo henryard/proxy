@@ -3,6 +3,7 @@
     "rules": [
         {
             "domain_suffix": [
+                "ip.net.coffee",
                 "content.googleapis.com",
                 "www.googleapis.com",
                 "drive.google.com",
